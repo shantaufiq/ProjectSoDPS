@@ -3,7 +3,17 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - GameController
+  - Player
+  - MainCamera
+  - EditorOnly
+  - Finish
+  - Respawn
+  - Untagged
+  - Left Hand
+  - Right Hand
+  - VideoPlayerCanvas
   layers:
   - Default
   - TransparentFX
@@ -11,13 +21,13 @@ TagManager:
   - 
   - Water
   - UI
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
+  - ray interaction
+  - direct interaction
+  - Intractable
+  - NonInteractable
+  - MyCustomLayer
+  - Player
+  - UI
   - 
   - 
   - 
