@@ -736,9 +736,9 @@ GameObject:
   - component: {fileID: 4823546455575980310}
   - component: {fileID: 1821682758722941891}
   - component: {fileID: 8717507572101833507}
-  m_Layer: 6
+  m_Layer: 7
   m_Name: Direct Interactor
-  m_TagString: Left Hand
+  m_TagString: Right Hand
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2954,7 +2954,7 @@ GameObject:
   - component: {fileID: 8349837493961849776}
   - component: {fileID: 3403921057434932735}
   - component: {fileID: 8222977081512977354}
-  m_Layer: 6
+  m_Layer: 7
   m_Name: Direct Interactor
   m_TagString: Left Hand
   m_Icon: {fileID: 0}
