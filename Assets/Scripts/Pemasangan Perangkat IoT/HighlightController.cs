@@ -37,11 +37,14 @@ namespace InstalasiIoT {
         {
             showNotif = true;
         }
-
+         
         public void StopAutoHighlight()
         {
             showNotif = false;
-            objectRenderer.materials = originalMaterials;
+            for (int i = 0; i < originalMaterials.Length; i++)
+            {
+                objectRenderer.materials[i] = new Material(originalMaterials[i]);
+            }
         }
 
         private void AutoHighlightAndUnhighlight()
