@@ -41,10 +41,6 @@ namespace InstalasiIoT {
         public void StopAutoHighlight()
         {
             showNotif = false;
-            for (int i = 0; i < originalMaterials.Length; i++)
-            {
-                objectRenderer.materials[i] = new Material(originalMaterials[i]);
-            }
         }
 
         private void AutoHighlightAndUnhighlight()
@@ -95,6 +91,7 @@ namespace InstalasiIoT {
         {
             isHovering = false;
             objectRenderer.materials = originalMaterials;
+            StopAllCoroutines();
         }
 
         private void Unhighlight()
