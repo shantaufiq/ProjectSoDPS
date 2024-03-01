@@ -41,6 +41,8 @@ namespace InstalasiIoT {
         public void StopAutoHighlight()
         {
             showNotif = false;
+            objectRenderer.materials = originalMaterials;
+            StopAllCoroutines();
         }
 
         private void AutoHighlightAndUnhighlight()
