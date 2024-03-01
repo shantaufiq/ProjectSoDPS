@@ -70,5 +70,7 @@ namespace PerencanaanPersiapanIoT
                 isBlinking = false; // Set animasi berhenti
             }
         }
+
+        
     }
 }

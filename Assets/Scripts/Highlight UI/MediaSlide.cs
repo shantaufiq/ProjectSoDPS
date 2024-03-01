@@ -2,58 +2,63 @@ using UnityEngine;
 using UnityEngine.UI;
 using System.Collections.Generic;
 
-public class MediaSlide : MonoBehaviour
+namespace PerencanaanPersiapanIoT
 {
-    public List<Sprite> images; // List gambar yang akan ditampilkan
-    public Image displayImage; // Komponen Image untuk menampilkan gambar
-    public Button nextButton; // Tombol next
-    public Button prevButton; // Tombol prev
-
-    private int currentIndex = 0; // Indeks gambar saat ini
-
-    void Start()
+    public class MediaSlide : MonoBehaviour
     {
-        // Memastikan ada gambar yang ditetapkan untuk ditampilkan
-        if (images.Count > 0)
-        {
-            // Menampilkan gambar pertama di awal
-            displayImage.sprite = images[currentIndex];
-            UpdateButtonInteractability(); // Memperbarui keadaan interaktif tombol
-        }
-    }
+        public List<Sprite> images; // List gambar yang akan ditampilkan
+        public Image displayImage; // Komponen Image untuk menampilkan gambar
+        public Button nextButton; // Tombol next
+        public Button prevButton; // Tombol prev
 
-    public void ShowNextImage()
-    {
-        // Mengecek apakah masih ada gambar berikutnya di dalam list
-        if (currentIndex < images.Count - 1)
+        private int currentIndex = 0; // Indeks gambar saat ini
+
+        void Start()
         {
-            currentIndex++;
-            displayImage.sprite = images[currentIndex];
+            // Memastikan ada gambar yang ditetapkan untuk ditampilkan
+            if (images.Count > 0)
+            {
+                // Menampilkan gambar pertama di awal
+                displayImage.sprite = images[currentIndex];
+                UpdateButtonInteractability(); // Memperbarui keadaan interaktif tombol
+            }
         }
 
-        // Memperbarui keadaan interaktif tombol setelah menampilkan gambar yang baru
-        UpdateButtonInteractability();
-    }
-
-    public void ShowPreviousImage()
-    {
-        // Mengecek apakah masih ada gambar sebelumnya di dalam list
-        if (currentIndex > 0)
+        public void ShowNextImage()
         {
-            currentIndex--;
-            displayImage.sprite = images[currentIndex];
+            // Mengecek apakah masih ada gambar berikutnya di dalam list
+            if (currentIndex < images.Count - 1)
+            {
+                currentIndex++;
+                displayImage.sprite = images[currentIndex];
+            }
+
+            // Memperbarui keadaan interaktif tombol setelah menampilkan gambar yang baru
+            UpdateButtonInteractability();
         }
 
-        // Memperbarui keadaan interaktif tombol setelah menampilkan gambar yang baru
-        UpdateButtonInteractability();
-    }
+        public void ShowPreviousImage()
+        {
+            // Mengecek apakah masih ada gambar sebelumnya di dalam list
+            if (currentIndex > 0)
+            {
+                currentIndex--;
+                displayImage.sprite = images[currentIndex];
+            }
 
-    private void UpdateButtonInteractability()
-    {
-        // Menonaktifkan tombol next jika sudah mencapai gambar terakhir
-        nextButton.interactable = currentIndex < images.Count - 1;
+            // Memperbarui keadaan interaktif tombol setelah menampilkan gambar yang baru
+            UpdateButtonInteractability();
+        }
 
-        // Menonaktifkan tombol prev jika sudah berada pada gambar pertama
-        prevButton.interactable = currentIndex > 0;
+        private void UpdateButtonInteractability()
+        {
+            // Menonaktifkan tombol next jika sudah mencapai gambar terakhir
+            nextButton.interactable = currentIndex < images.Count - 1;
+
+            // Menonaktifkan tombol prev jika sudah berada pada gambar pertama
+            prevButton.interactable = currentIndex > 0;
+        }
     }
 }
+
+
