@@ -1,6 +1,4 @@
 using System;
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
 
@@ -11,7 +9,7 @@ namespace Sandbox
         ESP32, SENSORDHT11, LCDM, Default
     }
 
-    public enum PortName
+    public enum PortIdentity
     {
         first, second
     }
@@ -60,12 +58,12 @@ namespace Sandbox
             pinName2Connected = PinHandler.PinName.Default;
         }
 
-        public void OnPortConnected(PortName port, PinHandler.PinName pinConnected, HardwareName hwConnected)
+        public void OnPortConnected(PortIdentity port, PinHandler.PinName pinConnected, HardwareName hwConnected)
         {
             if (_cableState == CableState.Idle) _cableState = CableState.Lookfor;
             else if (_cableState == CableState.Lookfor) _cableState = CableState.Connected;
 
-            if (port == PortName.first)
+            if (port == PortIdentity.first)
             {
                 hardwareName1Connected = hwConnected;
                 pinName1Connected = pinConnected;
@@ -80,12 +78,12 @@ namespace Sandbox
             CheckHardwareConnection(hardwareName1Connected, hardwareName2Connected);
         }
 
-        public void OnPortDisconnected(PortName port)
+        public void OnPortDisconnected(PortIdentity port)
         {
             if (_cableState == CableState.Connected) _cableState = CableState.Lookfor;
             else if (_cableState == CableState.Lookfor) _cableState = CableState.Idle;
 
-            if (port == PortName.first)
+            if (port == PortIdentity.first)
             {
                 hardwareName1Connected = HardwareName.Default;
                 pinName1Connected = PinHandler.PinName.Default;
