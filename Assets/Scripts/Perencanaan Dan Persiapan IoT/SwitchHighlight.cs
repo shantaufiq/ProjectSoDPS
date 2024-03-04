@@ -7,6 +7,14 @@ namespace PerencanaanPersiapanIoT
 {
     public class SwitchHighlight : MonoBehaviour
     {
+        [System.Serializable]
+        public struct ListImage
+        {
+            public Sprite imageDisplayList; // Menggunakan Sprite untuk menyimpan gambar
+            public Vector3 posisiButton;
+            public Vector2 buttonSize; // Ukuran tombol
+        }
+
         public List<ListImage> listImage;
         public Image imageDisplay;
         public Button ButtonHighlight;
@@ -17,6 +25,7 @@ namespace PerencanaanPersiapanIoT
 
         private void Start()
         {
+            currentIndex = 0;
             // Set gambar dan posisi tombol untuk indeks awal
             UpdateImageAndPosition();
         }
@@ -24,6 +33,8 @@ namespace PerencanaanPersiapanIoT
         // Method untuk mengganti gambar dan posisi tombol berdasarkan indeks
         private void UpdateImageAndPosition()
         {
+            if (listImage[currentIndex].imageDisplayList == null) return;
+
             if (currentIndex >= 0 && currentIndex < listImage.Count)
             {
                 // Mengganti gambar
@@ -63,13 +74,5 @@ namespace PerencanaanPersiapanIoT
             yield return new WaitForSeconds(cooldownTime);
             canPressButton = true;
         }
-    }
-
-    [System.Serializable]
-    public struct ListImage
-    {
-        public Sprite imageDisplayList; // Menggunakan Sprite untuk menyimpan gambar
-        public Vector3 posisiButton;
-        public Vector2 buttonSize; // Ukuran tombol
     }
 }

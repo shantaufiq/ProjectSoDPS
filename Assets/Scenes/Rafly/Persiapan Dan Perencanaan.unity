@@ -8785,10 +8785,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2fefd35606d9ef144ac3cdd4237cd2c4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  startColor: {r: 1, g: 0, b: 0, a: 0}
-  targetColor: {r: 1, g: 1, b: 1, a: 1}
+  startColor: {r: 1, g: 0, b: 0, a: 1}
+  targetColor: {r: 1, g: 1, b: 1, a: 0}
   duration: 1
-  delay: 0
+  delay: 1
   blinkCount: -1
 --- !u!1 &613512769
 GameObject:
@@ -19721,8 +19721,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   listImage:
   - imageDisplayList: {fileID: 21300000, guid: 1f8c3e677f8f8254cb0ef57aea9001ce, type: 3}
-    posisiButton: {x: -500, y: 0, z: 0}
-    buttonSize: {x: 100, y: 100}
+    posisiButton: {x: -602, y: 0, z: 0}
+    buttonSize: {x: 124.1, y: 100}
   - imageDisplayList: {fileID: 21300000, guid: 236067d7d0b82a740a1e15518ee8f538, type: 3}
     posisiButton: {x: 500, y: 0, z: 0}
     buttonSize: {x: 200, y: 200}
@@ -19731,7 +19731,7 @@ MonoBehaviour:
     buttonSize: {x: 300, y: 300}
   imageDisplay: {fileID: 1588494021}
   ButtonHighlight: {fileID: 589460122}
-  cooldownTime: 5
+  cooldownTime: 1.5
 --- !u!4 &1595140500 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5212901023958341418, guid: 7323f790a3f8a344cafb9a4f0e299797,
