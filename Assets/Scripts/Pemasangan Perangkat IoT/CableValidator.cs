@@ -22,17 +22,18 @@ namespace InstalasiIoT
                 boneCableController = boneCable;
                 var cableController = boneCableController.CableController;
 
-                if (cableController.sockets.Count <= 0)
+                if (cableController.sockets.Contains(otherPairSocket))
                 {
-                    cableController.sockets.Add(socketComponent);
+                    socketScoreChecker.FinishQuest();
+                    socketScoreChecker.SetStatus(Status.Connected);
                 }
-                else
+                else if (cableController.sockets.Count > 0 && !cableController.sockets.Contains(otherPairSocket))
                 {
-                    if (cableController.sockets.Contains(otherPairSocket))
-                    {
-                        socketScoreChecker.FinishQuest();
-                    }
+                    socketScoreChecker.SetStatus(Status.Error);
                 }
+
+                cableController.sockets.Add(socketComponent);
+
             }
         }
 
@@ -43,6 +44,7 @@ namespace InstalasiIoT
             if (cableController.sockets.Count > 0)
             {
                 cableController.sockets.Remove(socketComponent);
+                socketScoreChecker.SetStatus(Status.Error);
             }
         }
     }

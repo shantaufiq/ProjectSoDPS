@@ -11,22 +11,31 @@ namespace InstalasiIoT
         [SerializeField] private int questIndex;
         [SerializeField] private PartialQuestController _partialQuestController;
         [SerializeField] private SESocketInteractor[] sockets;
+        [SerializeField] private ConnectionStatus connectionStatus;
+        private Status status;
 
         public void FinishQuest()
         {
-            StartCoroutine(ValidateQuest());
-        }
-
-        private IEnumerator ValidateQuest()
-        {
             _partialQuestController.FinishItem(questIndex);
-            yield return new WaitForSeconds(1f);
-  /*          foreach (var obj in sockets)
-            {
-                obj.GetOldestInteractableSelected().transform.gameObject.GetComponent<XRGrabInteractableTwoAttach>().interactionLayers = LayerMask.GetMask("Nothing");
-            }*/
-
         }
 
+        private void ValidateConnection(Status statusValue)
+        {
+            switch (statusValue)
+            {
+                case Status.Connected:
+                    connectionStatus.SetStatus(Status.Connected);
+                    break;
+                case Status.Error:
+                    connectionStatus.SetStatus(Status.Error);
+                    break;
+            }
+        }
+
+        public void SetStatus(Status statusValue)
+        {
+            status = statusValue;
+            ValidateConnection(status);
+        }
     }
 }
