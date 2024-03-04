@@ -2,53 +2,41 @@ using Seville;
 using System.Collections;
 using Tproject.Quest;
 using UnityEngine;
+using UnityEngine.XR.Interaction.Toolkit;
 
 namespace InstalasiIoT
 {
     public class SocketScoreChecker : MonoBehaviour
     {
-        public int targetScore;
         [SerializeField] private int questIndex;
         [SerializeField] private PartialQuestController _partialQuestController;
-        [SerializeField] private XRGrabInteractableTwoAttach[] objectInteractables;
-        private int _currentScore;
-        private bool _isQuestFinished;
+        [SerializeField] private SESocketInteractor[] sockets;
+        [SerializeField] private ConnectionStatus connectionStatus;
+        private Status status;
 
-        public bool Success()
+        public void FinishQuest()
         {
-            if (_isQuestFinished)
-            {
-                return true;
-            }
-            else
-            {
-                return false;
-            }
+            _partialQuestController.FinishItem(questIndex);
         }
 
-        public void AddScore()
+        private void ValidateConnection(Status statusValue)
         {
-            _currentScore++;
-            StartCoroutine(ValidateQuest());
-        }
-
-        public void RemoveScore()
-        {
-            _currentScore--;
-        }
-
-        private IEnumerator ValidateQuest()
-        {
-            if (_currentScore >= targetScore)
+            if (connectionStatus == null) return;
+            switch (statusValue)
             {
-                _partialQuestController.FinishItem(questIndex);
-                yield return new WaitForSeconds(0.5f);
-                foreach (var obj in objectInteractables)
-                {
-                    obj.enabled = false;
-                }
+                case Status.Connected:
+                    connectionStatus.SetStatus(Status.Connected);
+                    break;
+                case Status.Error:
+                    connectionStatus.SetStatus(Status.Error);
+                    break;
             }
         }
 
+        public void SetStatus(Status statusValue)
+        {
+            status = statusValue;
+            ValidateConnection(status);
+        }
     }
 }
