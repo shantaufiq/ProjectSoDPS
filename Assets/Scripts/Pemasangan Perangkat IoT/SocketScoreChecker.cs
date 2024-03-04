@@ -21,6 +21,7 @@ namespace InstalasiIoT
 
         private void ValidateConnection(Status statusValue)
         {
+            if (connectionStatus == null) return;
             switch (statusValue)
             {
                 case Status.Connected:

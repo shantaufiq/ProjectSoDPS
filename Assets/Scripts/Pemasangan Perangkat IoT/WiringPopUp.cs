@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 using Seville;
 using TMPro;
+using UnityEditor;
+using UnityEngine.SceneManagement;
 
 namespace InstalasiIoT
 {
@@ -16,6 +18,11 @@ namespace InstalasiIoT
         {
             headerTMP.text = headerText;
             OnClickOpenPopup();
+        }
+
+        public void ChangeScene(string scene)
+        {
+            SceneManager.LoadScene(scene);
         }
     }
 }
