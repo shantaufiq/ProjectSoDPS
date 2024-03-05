@@ -6,10 +6,13 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/Haidar/SceneOpening.unity
+    path: Assets/Scenes/Haidar/SceneVidio.unity
+    guid: 1df859e2b2001c343bfb306a8c742a99
+  - enabled: 1
+    path: Assets/Scenes/Haidar/SceneTutorial.unity
     guid: 66233018408fe6f49ab6455d54a1d756
   - enabled: 1
-    path: Assets/Scenes/Haidar/Try.unity
+    path: Assets/Scenes/Haidar/Scene Level.unity
     guid: 37c4a02a8dbacd842842644f862b253a
   m_configObjects:
     Unity.XR.Oculus.Settings: {fileID: 11400000, guid: 5ffcd5f9b62d46444be35c8b56570576,
