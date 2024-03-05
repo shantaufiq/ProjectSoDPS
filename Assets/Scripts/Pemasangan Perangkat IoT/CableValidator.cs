@@ -9,6 +9,7 @@ namespace InstalasiIoT
         public SESocketInteractor otherPairSocket;
         [SerializeField] private SocketScoreChecker socketScoreChecker;
         private BoneCableController boneCableController;
+
         private void Start()
         {
             socketComponent = GetComponent<SESocketInteractor>();
@@ -24,14 +25,15 @@ namespace InstalasiIoT
 
                 if (cableController.sockets.Contains(otherPairSocket))
                 {
-                    socketScoreChecker.FinishQuest();
+                    socketScoreChecker.isQuestFinish = true;
+                    socketScoreChecker.ValidateQuest();
                     socketScoreChecker.SetStatus(Status.Connected);
                 }
                 else if (cableController.sockets.Count > 0 && !cableController.sockets.Contains(otherPairSocket))
                 {
                     socketScoreChecker.SetStatus(Status.Error);
+                    socketScoreChecker.isQuestFinish = false;
                 }
-
                 cableController.sockets.Add(socketComponent);
 
             }
@@ -45,6 +47,11 @@ namespace InstalasiIoT
             {
                 cableController.sockets.Remove(socketComponent);
                 socketScoreChecker.SetStatus(Status.Error);
+                if (socketScoreChecker.isQuestFinish)
+                {
+                    socketScoreChecker.isQuestFinish = false;
+                    socketScoreChecker.ValidateQuest();
+                }
             }
         }
     }
