@@ -3055,18 +3055,18 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 353625890}
-  m_LocalRotation: {x: 0.020096553, y: 0.3701293, z: 0.015432658, w: 0.92863464}
-  m_LocalPosition: {x: 0, y: 0, z: -8.828}
+  m_LocalRotation: {x: -0.015941912, y: 0.37044936, z: 0.0010630906, w: 0.9287153}
+  m_LocalPosition: {x: 0, y: 0, z: -8.8317585}
   m_LocalScale: {x: 0.0004660755, y: 0.0004660756, z: 0.0004660755}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 5884297240193723260}
   - {fileID: 704844309}
   m_Father: {fileID: 544133651}
-  m_LocalEulerAnglesHint: {x: 1.484, y: 43.494, z: 2.496}
+  m_LocalEulerAnglesHint: {x: -1.742, y: 43.501, z: -0.564}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 10.058, y: -3.493}
+  m_AnchoredPosition: {x: 10.058, y: -3.4778452}
   m_SizeDelta: {x: 2391.68, y: 1213.897}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &353625892
@@ -6909,7 +6909,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 878e5913545e415439d4615d67ff09b2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  targetNextSceneName: Try
+  targetNextSceneName: Scene Level
 --- !u!1 &704844312 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 3377108377699609893, guid: 2f7c9a91335112145a2742cb9b8763a2,
@@ -9248,7 +9248,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 878e5913545e415439d4615d67ff09b2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  targetNextSceneName: Try
+  targetNextSceneName: Scene Level
 --- !u!4 &960979502
 Transform:
   m_ObjectHideFlags: 0
@@ -10498,7 +10498,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1082246143
 MonoBehaviour:
   m_ObjectHideFlags: 0
