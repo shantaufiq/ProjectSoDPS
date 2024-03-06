@@ -123,6 +123,12 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!4 &14392340 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 744715879249613727, guid: 7955b698d10c2e149aa826481ab1138f,
+    type: 3}
+  m_PrefabInstance: {fileID: 1238702003}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &19286596
 GameObject:
   m_ObjectHideFlags: 0
@@ -218,7 +224,7 @@ PrefabInstance:
         type: 3}
       propertyPath: otherPairSocket
       value: 
-      objectReference: {fileID: 1238702004}
+      objectReference: {fileID: 1238702010}
     - target: {fileID: 689713473421437887, guid: 7955b698d10c2e149aa826481ab1138f,
         type: 3}
       propertyPath: socketScoreChecker
@@ -279,23 +285,25 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pin 21
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 3991555845399581002, guid: 7955b698d10c2e149aa826481ab1138f,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 7060005440088678722, guid: 7955b698d10c2e149aa826481ab1138f, type: 3}
     m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedGameObjects:
+    - targetCorrespondingSourceObject: {fileID: 3414966798959160300, guid: 7955b698d10c2e149aa826481ab1138f,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 650234143}
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 3991555845399581002, guid: 7955b698d10c2e149aa826481ab1138f,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1654661780}
   m_SourcePrefab: {fileID: 100100000, guid: 7955b698d10c2e149aa826481ab1138f, type: 3}
---- !u!114 &36214288 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 7060005440088678722, guid: 7955b698d10c2e149aa826481ab1138f,
-    type: 3}
-  m_PrefabInstance: {fileID: 36214287}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f8b932cf6b759c143bafb6e7c8a26204, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!4 &36214289 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3414966798959160300, guid: 7955b698d10c2e149aa826481ab1138f,
@@ -1594,10 +1602,14 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+  OnQuestFail:
+    m_PersistentCalls:
+      m_Calls: []
   sockets:
-  - {fileID: 818360895}
-  - {fileID: 883368552}
+  - {fileID: 0}
+  - {fileID: 0}
   connectionStatus: {fileID: 1871377578}
+  isQuestFinish: 0
 --- !u!1 &170596265
 GameObject:
   m_ObjectHideFlags: 0
@@ -1791,10 +1803,14 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+  OnQuestFail:
+    m_PersistentCalls:
+      m_Calls: []
   sockets:
-  - {fileID: 1089960992}
-  - {fileID: 489126971869997821}
+  - {fileID: 0}
+  - {fileID: 0}
   connectionStatus: {fileID: 1855688692}
+  isQuestFinish: 0
 --- !u!4 &188117452 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3919465152507962281, guid: e1a7e215924e96540a253e8c91542409,
@@ -2226,6 +2242,12 @@ Transform:
   - {fileID: 1152249723}
   m_Father: {fileID: 2013804912}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &227262496 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 744715879249613727, guid: 7955b698d10c2e149aa826481ab1138f,
+    type: 3}
+  m_PrefabInstance: {fileID: 263266151}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &236789554
 GameObject:
   m_ObjectHideFlags: 0
@@ -2542,7 +2564,7 @@ PrefabInstance:
         type: 3}
       propertyPath: otherPairSocket
       value: 
-      objectReference: {fileID: 1779378304}
+      objectReference: {fileID: 1779378309}
     - target: {fileID: 689713473421437887, guid: 7955b698d10c2e149aa826481ab1138f,
         type: 3}
       propertyPath: socketScoreChecker
@@ -2603,23 +2625,25 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pin 22
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 3991555845399581002, guid: 7955b698d10c2e149aa826481ab1138f,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 7060005440088678722, guid: 7955b698d10c2e149aa826481ab1138f, type: 3}
     m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedGameObjects:
+    - targetCorrespondingSourceObject: {fileID: 3414966798959160300, guid: 7955b698d10c2e149aa826481ab1138f,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 562066147}
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 3991555845399581002, guid: 7955b698d10c2e149aa826481ab1138f,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 604156626}
   m_SourcePrefab: {fileID: 100100000, guid: 7955b698d10c2e149aa826481ab1138f, type: 3}
---- !u!114 &263266152 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 7060005440088678722, guid: 7955b698d10c2e149aa826481ab1138f,
-    type: 3}
-  m_PrefabInstance: {fileID: 263266151}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f8b932cf6b759c143bafb6e7c8a26204, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!4 &263266153 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3414966798959160300, guid: 7955b698d10c2e149aa826481ab1138f,
@@ -2892,6 +2916,12 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!1 &307730646 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3991555845399581002, guid: 7955b698d10c2e149aa826481ab1138f,
+    type: 3}
+  m_PrefabInstance: {fileID: 1018512647}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &311442901
 GameObject:
   m_ObjectHideFlags: 0
@@ -2998,6 +3028,37 @@ Transform:
   m_Children: []
   m_Father: {fileID: 839319548}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &348696425
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 348696426}
+  m_Layer: 7
+  m_Name: SocketAttach (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 7174288486110832750, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &348696426
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 348696425}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 1, w: 0}
+  m_LocalPosition: {x: 0.0358, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 507327609}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 180}
 --- !u!1 &355175442
 GameObject:
   m_ObjectHideFlags: 0
@@ -4236,6 +4297,37 @@ Transform:
   m_Children: []
   m_Father: {fileID: 918053682}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &476373950
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 476373951}
+  m_Layer: 7
+  m_Name: SocketAttach (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 7174288486110832750, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &476373951
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 476373950}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 1, w: 0}
+  m_LocalPosition: {x: 0.0358, y: -0, z: -0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 883368550}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 180}
 --- !u!1 &496023945
 GameObject:
   m_ObjectHideFlags: 0
@@ -4534,8 +4626,13 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 4971538050872102287, guid: 7323f790a3f8a344cafb9a4f0e299797, type: 3}
+    - {fileID: 489126972085476740, guid: 7323f790a3f8a344cafb9a4f0e299797, type: 3}
     m_RemovedGameObjects: []
-    m_AddedGameObjects: []
+    m_AddedGameObjects:
+    - targetCorrespondingSourceObject: {fileID: 5212901023958341418, guid: 7323f790a3f8a344cafb9a4f0e299797,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1893868125}
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 5789180567590612364, guid: 7323f790a3f8a344cafb9a4f0e299797,
         type: 3}
@@ -4545,6 +4642,10 @@ PrefabInstance:
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 741022379}
+    - targetCorrespondingSourceObject: {fileID: 5789180567590612364, guid: 7323f790a3f8a344cafb9a4f0e299797,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 741022383}
   m_SourcePrefab: {fileID: 100100000, guid: 7323f790a3f8a344cafb9a4f0e299797, type: 3}
 --- !u!4 &503782828 stripped
 Transform:
@@ -4564,7 +4665,7 @@ PrefabInstance:
         type: 3}
       propertyPath: otherPairSocket
       value: 
-      objectReference: {fileID: 803380014}
+      objectReference: {fileID: 803380019}
     - target: {fileID: 689713473421437887, guid: 7955b698d10c2e149aa826481ab1138f,
         type: 3}
       propertyPath: socketScoreChecker
@@ -4625,23 +4726,25 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pin GND 2
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 3991555845399581002, guid: 7955b698d10c2e149aa826481ab1138f,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 7060005440088678722, guid: 7955b698d10c2e149aa826481ab1138f, type: 3}
     m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedGameObjects:
+    - targetCorrespondingSourceObject: {fileID: 3414966798959160300, guid: 7955b698d10c2e149aa826481ab1138f,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 348696426}
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 3991555845399581002, guid: 7955b698d10c2e149aa826481ab1138f,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2074078273}
   m_SourcePrefab: {fileID: 100100000, guid: 7955b698d10c2e149aa826481ab1138f, type: 3}
---- !u!114 &507327608 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 7060005440088678722, guid: 7955b698d10c2e149aa826481ab1138f,
-    type: 3}
-  m_PrefabInstance: {fileID: 507327607}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f8b932cf6b759c143bafb6e7c8a26204, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!4 &507327609 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3414966798959160300, guid: 7955b698d10c2e149aa826481ab1138f,
@@ -4843,10 +4946,14 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+  OnQuestFail:
+    m_PersistentCalls:
+      m_Calls: []
   sockets:
-  - {fileID: 36214288}
-  - {fileID: 1779378304}
+  - {fileID: 0}
+  - {fileID: 0}
   connectionStatus: {fileID: 918396437}
+  isQuestFinish: 0
 --- !u!1 &514479545
 GameObject:
   m_ObjectHideFlags: 0
@@ -5213,17 +5320,17 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 538273470}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 2.787}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0.001, y: 0.001, z: 0.001}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1716196448}
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 602112511}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 2.518, y: 1.268}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 416.0026, y: 270.4393}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &538831115
@@ -5551,6 +5658,12 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 545543054}
   m_CullTransparentMesh: 1
+--- !u!1 &551680536 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3991555845399581002, guid: 7955b698d10c2e149aa826481ab1138f,
+    type: 3}
+  m_PrefabInstance: {fileID: 803380012}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &553060120
 GameObject:
   m_ObjectHideFlags: 0
@@ -5690,6 +5803,37 @@ Transform:
   - {fileID: 918053682}
   m_Father: {fileID: 2071855214}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &562066146
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 562066147}
+  m_Layer: 7
+  m_Name: SocketAttach (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 7174288486110832750, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &562066147
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 562066146}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 1, w: 0}
+  m_LocalPosition: {x: 0.0358, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 263266153}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 180}
 --- !u!1 &564888598
 GameObject:
   m_ObjectHideFlags: 0
@@ -5924,6 +6068,147 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 594369961}
   m_CullTransparentMesh: 1
+--- !u!1 &602112510
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 602112511}
+  m_Layer: 0
+  m_Name: Panels Connection
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &602112511
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 602112510}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 2.518, y: 1.268, z: 2.787}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1871377582}
+  - {fileID: 1855688696}
+  - {fileID: 2094200503}
+  - {fileID: 1255780699}
+  - {fileID: 918396441}
+  - {fileID: 1623757871}
+  - {fileID: 538273475}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &604156621 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3991555845399581002, guid: 7955b698d10c2e149aa826481ab1138f,
+    type: 3}
+  m_PrefabInstance: {fileID: 263266151}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &604156622 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 689713473421437887, guid: 7955b698d10c2e149aa826481ab1138f,
+    type: 3}
+  m_PrefabInstance: {fileID: 263266151}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 604156621}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9ce6f7100e4c21e448bf9578f0ad2f96, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &604156626
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 604156621}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9677824b82e68794db765c233b7b1ad9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_InteractionManager: {fileID: 0}
+  m_InteractionLayerMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_InteractionLayers:
+    m_Bits: 4294967295
+  m_AttachTransform: {fileID: 0}
+  m_KeepSelectedTargetValid: 1
+  m_DisableVisualsWhenBlockedInGroup: 1
+  m_StartingSelectedInteractable: {fileID: 0}
+  m_StartingTargetFilter: {fileID: 0}
+  m_HoverEntered:
+    m_PersistentCalls:
+      m_Calls: []
+  m_HoverExited:
+    m_PersistentCalls:
+      m_Calls: []
+  m_SelectEntered:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 604156622}
+        m_TargetAssemblyTypeName: InstalasiIoT.CableValidator, Assembly-CSharp
+        m_MethodName: CheckCable
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  m_SelectExited:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 604156622}
+        m_TargetAssemblyTypeName: InstalasiIoT.CableValidator, Assembly-CSharp
+        m_MethodName: Detach
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  m_StartingHoverFilters: []
+  m_StartingSelectFilters: []
+  m_OnHoverEntered:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnHoverExited:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnSelectEntered:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnSelectExited:
+    m_PersistentCalls:
+      m_Calls: []
+  m_ShowInteractableHoverMeshes: 1
+  m_InteractableHoverMeshMaterial: {fileID: 2100000, guid: a45dc7a5e1bd45e44adf083cc805c710,
+    type: 2}
+  m_InteractableCantHoverMeshMaterial: {fileID: 0}
+  m_SocketActive: 1
+  m_InteractableHoverScale: 1
+  m_RecycleDelayTime: 1
+  targetAttach1: {fileID: 227262496}
+  targetAttach2: {fileID: 562066147}
+  parentArea: {fileID: 0}
+  targetObjNames:
+  - Kabel FF
 --- !u!1 &615597724
 GameObject:
   m_ObjectHideFlags: 0
@@ -6761,6 +7046,43 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 646928227}
   m_CullTransparentMesh: 1
+--- !u!1 &650234142
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 650234143}
+  m_Layer: 7
+  m_Name: SocketAttach (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 7174288486110832750, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &650234143
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 650234142}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 1, w: 0}
+  m_LocalPosition: {x: 0.0358, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 36214289}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 180}
+--- !u!4 &657391892 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7883081436880449369, guid: 7323f790a3f8a344cafb9a4f0e299797,
+    type: 3}
+  m_PrefabInstance: {fileID: 818360893}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &658453589
 GameObject:
   m_ObjectHideFlags: 0
@@ -6797,6 +7119,18 @@ RectTransform:
   m_AnchoredPosition: {x: -5, y: 0}
   m_SizeDelta: {x: -20, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!4 &675515335 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 744715879249613727, guid: 7955b698d10c2e149aa826481ab1138f,
+    type: 3}
+  m_PrefabInstance: {fileID: 36214287}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &677355876 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7883081436880449369, guid: 7323f790a3f8a344cafb9a4f0e299797,
+    type: 3}
+  m_PrefabInstance: {fileID: 883368549}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &680043094
 GameObject:
   m_ObjectHideFlags: 0
@@ -6841,10 +7175,14 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+  OnQuestFail:
+    m_PersistentCalls:
+      m_Calls: []
   sockets:
-  - {fileID: 507327608}
-  - {fileID: 803380014}
+  - {fileID: 0}
+  - {fileID: 0}
   connectionStatus: {fileID: 538273471}
+  isQuestFinish: 0
 --- !u!4 &680043096
 Transform:
   m_ObjectHideFlags: 0
@@ -7320,18 +7658,6 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 503782827}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &741022375 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 489126972085476740, guid: 7323f790a3f8a344cafb9a4f0e299797,
-    type: 3}
-  m_PrefabInstance: {fileID: 503782827}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 741022374}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f8b932cf6b759c143bafb6e7c8a26204, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &741022379
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7344,7 +7670,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9ce6f7100e4c21e448bf9578f0ad2f96, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  otherPairSocket: {fileID: 1356116565}
+  otherPairSocket: {fileID: 1356116573}
   socketScoreChecker: {fileID: 1501937516}
 --- !u!136 &741022380
 CapsuleCollider:
@@ -7369,6 +7695,91 @@ CapsuleCollider:
   m_Height: 0.023043638
   m_Direction: 0
   m_Center: {x: 0.01114559, y: 0.0000000026573153, z: 0}
+--- !u!114 &741022383
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 741022374}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9677824b82e68794db765c233b7b1ad9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_InteractionManager: {fileID: 0}
+  m_InteractionLayerMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_InteractionLayers:
+    m_Bits: 4294967295
+  m_AttachTransform: {fileID: 0}
+  m_KeepSelectedTargetValid: 1
+  m_DisableVisualsWhenBlockedInGroup: 1
+  m_StartingSelectedInteractable: {fileID: 0}
+  m_StartingTargetFilter: {fileID: 0}
+  m_HoverEntered:
+    m_PersistentCalls:
+      m_Calls: []
+  m_HoverExited:
+    m_PersistentCalls:
+      m_Calls: []
+  m_SelectEntered:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 741022379}
+        m_TargetAssemblyTypeName: InstalasiIoT.CableValidator, Assembly-CSharp
+        m_MethodName: CheckCable
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  m_SelectExited:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 741022379}
+        m_TargetAssemblyTypeName: InstalasiIoT.CableValidator, Assembly-CSharp
+        m_MethodName: Detach
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  m_StartingHoverFilters: []
+  m_StartingSelectFilters: []
+  m_OnHoverEntered:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnHoverExited:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnSelectEntered:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnSelectExited:
+    m_PersistentCalls:
+      m_Calls: []
+  m_ShowInteractableHoverMeshes: 1
+  m_InteractableHoverMeshMaterial: {fileID: 2100000, guid: a45dc7a5e1bd45e44adf083cc805c710,
+    type: 2}
+  m_InteractableCantHoverMeshMaterial: {fileID: 0}
+  m_SocketActive: 1
+  m_InteractableHoverScale: 1
+  m_RecycleDelayTime: 1
+  targetAttach1: {fileID: 2045690418}
+  targetAttach2: {fileID: 1893868125}
+  parentArea: {fileID: 0}
+  targetObjNames:
+  - Kabel FF
 --- !u!1 &747237271
 GameObject:
   m_ObjectHideFlags: 0
@@ -7479,7 +7890,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &762315217
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7676,6 +8087,12 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1159746207}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &772836380 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3991555845399581002, guid: 7955b698d10c2e149aa826481ab1138f,
+    type: 3}
+  m_PrefabInstance: {fileID: 8597283312762571631}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &787334968
 GameObject:
   m_ObjectHideFlags: 0
@@ -8124,7 +8541,7 @@ PrefabInstance:
         type: 3}
       propertyPath: otherPairSocket
       value: 
-      objectReference: {fileID: 507327608}
+      objectReference: {fileID: 6637069775256437745}
     - target: {fileID: 689713473421437887, guid: 7955b698d10c2e149aa826481ab1138f,
         type: 3}
       propertyPath: socketScoreChecker
@@ -8200,10 +8617,19 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 7
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 7060005440088678722, guid: 7955b698d10c2e149aa826481ab1138f, type: 3}
     m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedGameObjects:
+    - targetCorrespondingSourceObject: {fileID: 3414966798959160300, guid: 7955b698d10c2e149aa826481ab1138f,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2025944485}
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 3991555845399581002, guid: 7955b698d10c2e149aa826481ab1138f,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 803380019}
   m_SourcePrefab: {fileID: 100100000, guid: 7955b698d10c2e149aa826481ab1138f, type: 3}
 --- !u!4 &803380013 stripped
 Transform:
@@ -8211,18 +8637,103 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 803380012}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &803380014 stripped
+--- !u!114 &803380015 stripped
 MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 7060005440088678722, guid: 7955b698d10c2e149aa826481ab1138f,
+  m_CorrespondingSourceObject: {fileID: 689713473421437887, guid: 7955b698d10c2e149aa826481ab1138f,
     type: 3}
   m_PrefabInstance: {fileID: 803380012}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+  m_GameObject: {fileID: 551680536}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f8b932cf6b759c143bafb6e7c8a26204, type: 3}
+  m_Script: {fileID: 11500000, guid: 9ce6f7100e4c21e448bf9578f0ad2f96, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &803380019
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 551680536}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9677824b82e68794db765c233b7b1ad9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_InteractionManager: {fileID: 0}
+  m_InteractionLayerMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_InteractionLayers:
+    m_Bits: 4294967295
+  m_AttachTransform: {fileID: 0}
+  m_KeepSelectedTargetValid: 1
+  m_DisableVisualsWhenBlockedInGroup: 1
+  m_StartingSelectedInteractable: {fileID: 0}
+  m_StartingTargetFilter: {fileID: 0}
+  m_HoverEntered:
+    m_PersistentCalls:
+      m_Calls: []
+  m_HoverExited:
+    m_PersistentCalls:
+      m_Calls: []
+  m_SelectEntered:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 803380015}
+        m_TargetAssemblyTypeName: InstalasiIoT.CableValidator, Assembly-CSharp
+        m_MethodName: CheckCable
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  m_SelectExited:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 803380015}
+        m_TargetAssemblyTypeName: InstalasiIoT.CableValidator, Assembly-CSharp
+        m_MethodName: Detach
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  m_StartingHoverFilters: []
+  m_StartingSelectFilters: []
+  m_OnHoverEntered:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnHoverExited:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnSelectEntered:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnSelectExited:
+    m_PersistentCalls:
+      m_Calls: []
+  m_ShowInteractableHoverMeshes: 1
+  m_InteractableHoverMeshMaterial: {fileID: 2100000, guid: a45dc7a5e1bd45e44adf083cc805c710,
+    type: 2}
+  m_InteractableCantHoverMeshMaterial: {fileID: 0}
+  m_SocketActive: 1
+  m_InteractableHoverScale: 1
+  m_RecycleDelayTime: 1
+  targetAttach1: {fileID: 2025944485}
+  targetAttach2: {fileID: 1308526148}
+  parentArea: {fileID: 0}
+  targetObjNames:
+  - Kabel FF
 --- !u!1 &805685440
 GameObject:
   m_ObjectHideFlags: 0
@@ -8382,7 +8893,7 @@ PrefabInstance:
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 1530440710}
+    m_TransformParent: {fileID: 1356116564}
     m_Modifications:
     - target: {fileID: 489126972085476740, guid: 7323f790a3f8a344cafb9a4f0e299797,
         type: 3}
@@ -8517,17 +9028,17 @@ PrefabInstance:
     - target: {fileID: 5212901023958341418, guid: 7323f790a3f8a344cafb9a4f0e299797,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.00012
+      value: -0.009499924
       objectReference: {fileID: 0}
     - target: {fileID: 5212901023958341418, guid: 7323f790a3f8a344cafb9a4f0e299797,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.0607
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5212901023958341418, guid: 7323f790a3f8a344cafb9a4f0e299797,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0.0146
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5212901023958341418, guid: 7323f790a3f8a344cafb9a4f0e299797,
         type: 3}
@@ -8537,17 +9048,17 @@ PrefabInstance:
     - target: {fileID: 5212901023958341418, guid: 7323f790a3f8a344cafb9a4f0e299797,
         type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 5212901023958341418, guid: 7323f790a3f8a344cafb9a4f0e299797,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 5212901023958341418, guid: 7323f790a3f8a344cafb9a4f0e299797,
         type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 5212901023958341418, guid: 7323f790a3f8a344cafb9a4f0e299797,
         type: 3}
@@ -8616,8 +9127,13 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 4971538050872102287, guid: 7323f790a3f8a344cafb9a4f0e299797, type: 3}
+    - {fileID: 489126972085476740, guid: 7323f790a3f8a344cafb9a4f0e299797, type: 3}
     m_RemovedGameObjects: []
-    m_AddedGameObjects: []
+    m_AddedGameObjects:
+    - targetCorrespondingSourceObject: {fileID: 5212901023958341418, guid: 7323f790a3f8a344cafb9a4f0e299797,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1741422926}
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 5789180567590612364, guid: 7323f790a3f8a344cafb9a4f0e299797,
         type: 3}
@@ -8627,6 +9143,10 @@ PrefabInstance:
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 818360900}
+    - targetCorrespondingSourceObject: {fileID: 5789180567590612364, guid: 7323f790a3f8a344cafb9a4f0e299797,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 818360903}
   m_SourcePrefab: {fileID: 100100000, guid: 7323f790a3f8a344cafb9a4f0e299797, type: 3}
 --- !u!4 &818360894 stripped
 Transform:
@@ -8634,18 +9154,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 818360893}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &818360895 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 489126972085476740, guid: 7323f790a3f8a344cafb9a4f0e299797,
-    type: 3}
-  m_PrefabInstance: {fileID: 818360893}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 205807610}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f8b932cf6b759c143bafb6e7c8a26204, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!136 &818360899
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -8665,10 +9173,10 @@ CapsuleCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 0.0006
+  m_Radius: 0.003
   m_Height: 0.0326833
   m_Direction: 1
-  m_Center: {x: 0, y: -0.004819831, z: 1.2982778e-17}
+  m_Center: {x: 0, y: -0.02, z: 1.2982778e-17}
 --- !u!114 &818360900
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8681,8 +9189,93 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9ce6f7100e4c21e448bf9578f0ad2f96, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  otherPairSocket: {fileID: 883368552}
+  otherPairSocket: {fileID: 883368560}
   socketScoreChecker: {fileID: 169746245}
+--- !u!114 &818360903
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 205807610}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9677824b82e68794db765c233b7b1ad9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_InteractionManager: {fileID: 0}
+  m_InteractionLayerMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_InteractionLayers:
+    m_Bits: 4294967295
+  m_AttachTransform: {fileID: 0}
+  m_KeepSelectedTargetValid: 1
+  m_DisableVisualsWhenBlockedInGroup: 1
+  m_StartingSelectedInteractable: {fileID: 0}
+  m_StartingTargetFilter: {fileID: 0}
+  m_HoverEntered:
+    m_PersistentCalls:
+      m_Calls: []
+  m_HoverExited:
+    m_PersistentCalls:
+      m_Calls: []
+  m_SelectEntered:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 818360900}
+        m_TargetAssemblyTypeName: InstalasiIoT.CableValidator, Assembly-CSharp
+        m_MethodName: CheckCable
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  m_SelectExited:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 818360900}
+        m_TargetAssemblyTypeName: InstalasiIoT.CableValidator, Assembly-CSharp
+        m_MethodName: Detach
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  m_StartingHoverFilters: []
+  m_StartingSelectFilters: []
+  m_OnHoverEntered:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnHoverExited:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnSelectEntered:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnSelectExited:
+    m_PersistentCalls:
+      m_Calls: []
+  m_ShowInteractableHoverMeshes: 1
+  m_InteractableHoverMeshMaterial: {fileID: 2100000, guid: a45dc7a5e1bd45e44adf083cc805c710,
+    type: 2}
+  m_InteractableCantHoverMeshMaterial: {fileID: 0}
+  m_SocketActive: 1
+  m_InteractableHoverScale: 1
+  m_RecycleDelayTime: 1
+  targetAttach1: {fileID: 1741422926}
+  targetAttach2: {fileID: 657391892}
+  parentArea: {fileID: 0}
+  targetObjNames:
+  - Kabel FF
 --- !u!1 &822336702
 GameObject:
   m_ObjectHideFlags: 0
@@ -8933,6 +9526,12 @@ Transform:
   - {fileID: 2132140239}
   m_Father: {fileID: 1002117604}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &838779423 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3991555845399581002, guid: 7955b698d10c2e149aa826481ab1138f,
+    type: 3}
+  m_PrefabInstance: {fileID: 1238702003}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &839319547
 GameObject:
   m_ObjectHideFlags: 0
@@ -10128,17 +10727,26 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 4971538050872102287, guid: 7323f790a3f8a344cafb9a4f0e299797, type: 3}
+    - {fileID: 489126972085476740, guid: 7323f790a3f8a344cafb9a4f0e299797, type: 3}
     m_RemovedGameObjects: []
-    m_AddedGameObjects: []
+    m_AddedGameObjects:
+    - targetCorrespondingSourceObject: {fileID: 5212901023958341418, guid: 7323f790a3f8a344cafb9a4f0e299797,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 476373951}
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 5789180567590612364, guid: 7323f790a3f8a344cafb9a4f0e299797,
         type: 3}
-      insertIndex: 3
+      insertIndex: -1
       addedObject: {fileID: 883368556}
     - targetCorrespondingSourceObject: {fileID: 5789180567590612364, guid: 7323f790a3f8a344cafb9a4f0e299797,
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 883368557}
+    - targetCorrespondingSourceObject: {fileID: 5789180567590612364, guid: 7323f790a3f8a344cafb9a4f0e299797,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 883368560}
   m_SourcePrefab: {fileID: 100100000, guid: 7323f790a3f8a344cafb9a4f0e299797, type: 3}
 --- !u!4 &883368550 stripped
 Transform:
@@ -10152,18 +10760,6 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 883368549}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &883368552 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 489126972085476740, guid: 7323f790a3f8a344cafb9a4f0e299797,
-    type: 3}
-  m_PrefabInstance: {fileID: 883368549}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 883368551}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f8b932cf6b759c143bafb6e7c8a26204, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!136 &883368556
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -10199,8 +10795,93 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9ce6f7100e4c21e448bf9578f0ad2f96, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  otherPairSocket: {fileID: 818360895}
+  otherPairSocket: {fileID: 818360903}
   socketScoreChecker: {fileID: 169746245}
+--- !u!114 &883368560
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 883368551}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9677824b82e68794db765c233b7b1ad9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_InteractionManager: {fileID: 0}
+  m_InteractionLayerMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_InteractionLayers:
+    m_Bits: 4294967295
+  m_AttachTransform: {fileID: 0}
+  m_KeepSelectedTargetValid: 1
+  m_DisableVisualsWhenBlockedInGroup: 1
+  m_StartingSelectedInteractable: {fileID: 0}
+  m_StartingTargetFilter: {fileID: 0}
+  m_HoverEntered:
+    m_PersistentCalls:
+      m_Calls: []
+  m_HoverExited:
+    m_PersistentCalls:
+      m_Calls: []
+  m_SelectEntered:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 883368557}
+        m_TargetAssemblyTypeName: InstalasiIoT.CableValidator, Assembly-CSharp
+        m_MethodName: CheckCable
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  m_SelectExited:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 883368557}
+        m_TargetAssemblyTypeName: InstalasiIoT.CableValidator, Assembly-CSharp
+        m_MethodName: Detach
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  m_StartingHoverFilters: []
+  m_StartingSelectFilters: []
+  m_OnHoverEntered:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnHoverExited:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnSelectEntered:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnSelectExited:
+    m_PersistentCalls:
+      m_Calls: []
+  m_ShowInteractableHoverMeshes: 1
+  m_InteractableHoverMeshMaterial: {fileID: 2100000, guid: a45dc7a5e1bd45e44adf083cc805c710,
+    type: 2}
+  m_InteractableCantHoverMeshMaterial: {fileID: 0}
+  m_SocketActive: 1
+  m_InteractableHoverScale: 1
+  m_RecycleDelayTime: 1
+  targetAttach1: {fileID: 677355876}
+  targetAttach2: {fileID: 476373951}
+  parentArea: {fileID: 0}
+  targetObjNames:
+  - Kabel FF
 --- !u!1001 &889692010
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -10209,6 +10890,16 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1673012865}
     m_Modifications:
+    - target: {fileID: 543819392931600123, guid: e1a7e215924e96540a253e8c91542409,
+        type: 3}
+      propertyPath: m_TagString
+      value: SocketAttach2
+      objectReference: {fileID: 0}
+    - target: {fileID: 769126241759656390, guid: e1a7e215924e96540a253e8c91542409,
+        type: 3}
+      propertyPath: m_TagString
+      value: SocketAttach1
+      objectReference: {fileID: 0}
     - target: {fileID: 3712752834093291970, guid: e1a7e215924e96540a253e8c91542409,
         type: 3}
       propertyPath: m_Materials.Array.data[2]
@@ -10722,17 +11413,17 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 918396436}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 2.787}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0.001, y: 0.001, z: 0.001}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 636438691}
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 602112511}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 1.602, y: 1.268}
+  m_AnchoredPosition: {x: -0.9159999, y: 0}
   m_SizeDelta: {x: 416.0026, y: 270.4393}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &963178739
@@ -11539,6 +12230,37 @@ Transform:
   - {fileID: 1270623679}
   m_Father: {fileID: 760516144}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1017304677
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1017304678}
+  m_Layer: 7
+  m_Name: SocketAttach (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 7174288486110832750, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1017304678
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1017304677}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 1, w: 0}
+  m_LocalPosition: {x: -0.017, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1238702005}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 180}
 --- !u!1001 &1018512647
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -11551,7 +12273,7 @@ PrefabInstance:
         type: 3}
       propertyPath: otherPairSocket
       value: 
-      objectReference: {fileID: 1092389283}
+      objectReference: {fileID: 1203618725}
     - target: {fileID: 689713473421437887, guid: 7955b698d10c2e149aa826481ab1138f,
         type: 3}
       propertyPath: socketScoreChecker
@@ -11612,29 +12334,128 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pin VIN
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 3991555845399581002, guid: 7955b698d10c2e149aa826481ab1138f,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 7060005440088678722, guid: 7955b698d10c2e149aa826481ab1138f, type: 3}
     m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedGameObjects:
+    - targetCorrespondingSourceObject: {fileID: 3414966798959160300, guid: 7955b698d10c2e149aa826481ab1138f,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1077504175}
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 3991555845399581002, guid: 7955b698d10c2e149aa826481ab1138f,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1018512654}
   m_SourcePrefab: {fileID: 100100000, guid: 7955b698d10c2e149aa826481ab1138f, type: 3}
---- !u!114 &1018512648 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 7060005440088678722, guid: 7955b698d10c2e149aa826481ab1138f,
-    type: 3}
-  m_PrefabInstance: {fileID: 1018512647}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f8b932cf6b759c143bafb6e7c8a26204, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!4 &1018512649 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3414966798959160300, guid: 7955b698d10c2e149aa826481ab1138f,
     type: 3}
   m_PrefabInstance: {fileID: 1018512647}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1018512650 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 689713473421437887, guid: 7955b698d10c2e149aa826481ab1138f,
+    type: 3}
+  m_PrefabInstance: {fileID: 1018512647}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 307730646}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9ce6f7100e4c21e448bf9578f0ad2f96, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1018512654
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 307730646}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9677824b82e68794db765c233b7b1ad9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_InteractionManager: {fileID: 0}
+  m_InteractionLayerMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_InteractionLayers:
+    m_Bits: 4294967295
+  m_AttachTransform: {fileID: 0}
+  m_KeepSelectedTargetValid: 1
+  m_DisableVisualsWhenBlockedInGroup: 1
+  m_StartingSelectedInteractable: {fileID: 0}
+  m_StartingTargetFilter: {fileID: 0}
+  m_HoverEntered:
+    m_PersistentCalls:
+      m_Calls: []
+  m_HoverExited:
+    m_PersistentCalls:
+      m_Calls: []
+  m_SelectEntered:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1018512650}
+        m_TargetAssemblyTypeName: InstalasiIoT.CableValidator, Assembly-CSharp
+        m_MethodName: CheckCable
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  m_SelectExited:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1018512650}
+        m_TargetAssemblyTypeName: InstalasiIoT.CableValidator, Assembly-CSharp
+        m_MethodName: Detach
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  m_StartingHoverFilters: []
+  m_StartingSelectFilters: []
+  m_OnHoverEntered:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnHoverExited:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnSelectEntered:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnSelectExited:
+    m_PersistentCalls:
+      m_Calls: []
+  m_ShowInteractableHoverMeshes: 1
+  m_InteractableHoverMeshMaterial: {fileID: 2100000, guid: a45dc7a5e1bd45e44adf083cc805c710,
+    type: 2}
+  m_InteractableCantHoverMeshMaterial: {fileID: 0}
+  m_SocketActive: 1
+  m_InteractableHoverScale: 1
+  m_RecycleDelayTime: 1
+  targetAttach1: {fileID: 1198772867}
+  targetAttach2: {fileID: 1077504175}
+  parentArea: {fileID: 0}
+  targetObjNames:
+  - Kabel FF
 --- !u!1 &1021200015
 GameObject:
   m_ObjectHideFlags: 0
@@ -11750,6 +12571,37 @@ Transform:
   m_Children: []
   m_Father: {fileID: 918053682}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1043372893
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1043372894}
+  m_Layer: 7
+  m_Name: SocketAttach (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 7174288486110832750, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1043372894
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1043372893}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 1, w: 0}
+  m_LocalPosition: {x: -0.017, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1092389282}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 180}
 --- !u!1 &1050806905
 GameObject:
   m_ObjectHideFlags: 0
@@ -11799,6 +12651,12 @@ MonoBehaviour:
   m_UseLocalSpace: 1
   m_AngleStabilization: 20
   m_PositionStabilization: 0.25
+--- !u!4 &1053233613 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7883081436880449369, guid: 7323f790a3f8a344cafb9a4f0e299797,
+    type: 3}
+  m_PrefabInstance: {fileID: 1356116563}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1062794494
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -11861,6 +12719,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2496461136231742627, guid: 9e3f2186e00930a43ae50d2fe493de6b,
+        type: 3}
+      propertyPath: m_TagString
+      value: SocketAttach1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3424216533856080798, guid: 9e3f2186e00930a43ae50d2fe493de6b,
+        type: 3}
+      propertyPath: m_TagString
+      value: SocketAttach2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -11989,6 +12857,37 @@ Transform:
   - {fileID: 1050806906}
   m_Father: {fileID: 970342643}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1077504174
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1077504175}
+  m_Layer: 7
+  m_Name: SocketAttach (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 7174288486110832750, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1077504175
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1077504174}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 1, w: 0}
+  m_LocalPosition: {x: 0.0358, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1018512649}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 180}
 --- !u!1 &1081828727
 GameObject:
   m_ObjectHideFlags: 0
@@ -12026,18 +12925,103 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 8597283312762571631}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1089960992 stripped
+--- !u!114 &1089960993 stripped
 MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 7060005440088678722, guid: 7955b698d10c2e149aa826481ab1138f,
+  m_CorrespondingSourceObject: {fileID: 689713473421437887, guid: 7955b698d10c2e149aa826481ab1138f,
     type: 3}
   m_PrefabInstance: {fileID: 8597283312762571631}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+  m_GameObject: {fileID: 772836380}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f8b932cf6b759c143bafb6e7c8a26204, type: 3}
+  m_Script: {fileID: 11500000, guid: 9ce6f7100e4c21e448bf9578f0ad2f96, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1089960997
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 772836380}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9677824b82e68794db765c233b7b1ad9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_InteractionManager: {fileID: 0}
+  m_InteractionLayerMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_InteractionLayers:
+    m_Bits: 4294967295
+  m_AttachTransform: {fileID: 0}
+  m_KeepSelectedTargetValid: 1
+  m_DisableVisualsWhenBlockedInGroup: 1
+  m_StartingSelectedInteractable: {fileID: 0}
+  m_StartingTargetFilter: {fileID: 0}
+  m_HoverEntered:
+    m_PersistentCalls:
+      m_Calls: []
+  m_HoverExited:
+    m_PersistentCalls:
+      m_Calls: []
+  m_SelectEntered:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1089960993}
+        m_TargetAssemblyTypeName: InstalasiIoT.CableValidator, Assembly-CSharp
+        m_MethodName: CheckCable
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  m_SelectExited:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1089960993}
+        m_TargetAssemblyTypeName: InstalasiIoT.CableValidator, Assembly-CSharp
+        m_MethodName: Detach
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  m_StartingHoverFilters: []
+  m_StartingSelectFilters: []
+  m_OnHoverEntered:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnHoverExited:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnSelectEntered:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnSelectExited:
+    m_PersistentCalls:
+      m_Calls: []
+  m_ShowInteractableHoverMeshes: 1
+  m_InteractableHoverMeshMaterial: {fileID: 2100000, guid: a45dc7a5e1bd45e44adf083cc805c710,
+    type: 2}
+  m_InteractableCantHoverMeshMaterial: {fileID: 0}
+  m_SocketActive: 1
+  m_InteractableHoverScale: 1
+  m_RecycleDelayTime: 1
+  targetAttach1: {fileID: 1304918898}
+  targetAttach2: {fileID: 2064996599}
+  parentArea: {fileID: 0}
+  targetObjNames:
+  - Kabel FF
 --- !u!1001 &1092389281
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -12050,7 +13034,7 @@ PrefabInstance:
         type: 3}
       propertyPath: otherPairSocket
       value: 
-      objectReference: {fileID: 1018512648}
+      objectReference: {fileID: 1018512654}
     - target: {fileID: 689713473421437887, guid: 7955b698d10c2e149aa826481ab1138f,
         type: 3}
       propertyPath: socketScoreChecker
@@ -12126,10 +13110,19 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 7
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 7060005440088678722, guid: 7955b698d10c2e149aa826481ab1138f, type: 3}
     m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedGameObjects:
+    - targetCorrespondingSourceObject: {fileID: 3414966798959160300, guid: 7955b698d10c2e149aa826481ab1138f,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1043372894}
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 3991555845399581002, guid: 7955b698d10c2e149aa826481ab1138f,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1203618725}
   m_SourcePrefab: {fileID: 100100000, guid: 7955b698d10c2e149aa826481ab1138f, type: 3}
 --- !u!4 &1092389282 stripped
 Transform:
@@ -12137,18 +13130,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1092389281}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1092389283 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 7060005440088678722, guid: 7955b698d10c2e149aa826481ab1138f,
-    type: 3}
-  m_PrefabInstance: {fileID: 1092389281}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f8b932cf6b759c143bafb6e7c8a26204, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1092688537
 GameObject:
   m_ObjectHideFlags: 0
@@ -12283,6 +13264,37 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1092688537}
   m_CullTransparentMesh: 1
+--- !u!1 &1093429041
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1093429042}
+  m_Layer: 7
+  m_Name: SocketAttach (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 7174288486110832750, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1093429042
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1093429041}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 1, w: 0}
+  m_LocalPosition: {x: -0.017, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1779378303}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 180}
 --- !u!1 &1103783117
 GameObject:
   m_ObjectHideFlags: 0
@@ -12457,6 +13469,16 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1673012865}
     m_Modifications:
+    - target: {fileID: 543819392931600123, guid: e1a7e215924e96540a253e8c91542409,
+        type: 3}
+      propertyPath: m_TagString
+      value: SocketAttach2
+      objectReference: {fileID: 0}
+    - target: {fileID: 769126241759656390, guid: e1a7e215924e96540a253e8c91542409,
+        type: 3}
+      propertyPath: m_TagString
+      value: SocketAttach1
+      objectReference: {fileID: 0}
     - target: {fileID: 3919465152507962281, guid: e1a7e215924e96540a253e8c91542409,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -13615,6 +14637,12 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1174077336}
   m_CullTransparentMesh: 1
+--- !u!4 &1198772867 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 744715879249613727, guid: 7955b698d10c2e149aa826481ab1138f,
+    type: 3}
+  m_PrefabInstance: {fileID: 1018512647}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1201625599
 GameObject:
   m_ObjectHideFlags: 0
@@ -13657,6 +14685,109 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!1 &1203618720 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3991555845399581002, guid: 7955b698d10c2e149aa826481ab1138f,
+    type: 3}
+  m_PrefabInstance: {fileID: 1092389281}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1203618721 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 689713473421437887, guid: 7955b698d10c2e149aa826481ab1138f,
+    type: 3}
+  m_PrefabInstance: {fileID: 1092389281}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1203618720}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9ce6f7100e4c21e448bf9578f0ad2f96, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1203618725
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1203618720}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9677824b82e68794db765c233b7b1ad9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_InteractionManager: {fileID: 0}
+  m_InteractionLayerMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_InteractionLayers:
+    m_Bits: 4294967295
+  m_AttachTransform: {fileID: 0}
+  m_KeepSelectedTargetValid: 1
+  m_DisableVisualsWhenBlockedInGroup: 1
+  m_StartingSelectedInteractable: {fileID: 0}
+  m_StartingTargetFilter: {fileID: 0}
+  m_HoverEntered:
+    m_PersistentCalls:
+      m_Calls: []
+  m_HoverExited:
+    m_PersistentCalls:
+      m_Calls: []
+  m_SelectEntered:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1203618721}
+        m_TargetAssemblyTypeName: InstalasiIoT.CableValidator, Assembly-CSharp
+        m_MethodName: CheckCable
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  m_SelectExited:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1203618721}
+        m_TargetAssemblyTypeName: InstalasiIoT.CableValidator, Assembly-CSharp
+        m_MethodName: Detach
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  m_StartingHoverFilters: []
+  m_StartingSelectFilters: []
+  m_OnHoverEntered:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnHoverExited:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnSelectEntered:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnSelectExited:
+    m_PersistentCalls:
+      m_Calls: []
+  m_ShowInteractableHoverMeshes: 1
+  m_InteractableHoverMeshMaterial: {fileID: 2100000, guid: a45dc7a5e1bd45e44adf083cc805c710,
+    type: 2}
+  m_InteractableCantHoverMeshMaterial: {fileID: 0}
+  m_SocketActive: 1
+  m_InteractableHoverScale: 1
+  m_RecycleDelayTime: 1
+  targetAttach1: {fileID: 1043372894}
+  targetAttach2: {fileID: 1628424603}
+  parentArea: {fileID: 0}
+  targetObjNames:
+  - Kabel FF
 --- !u!1 &1211744957
 GameObject:
   m_ObjectHideFlags: 0
@@ -13771,7 +14902,7 @@ PrefabInstance:
         type: 3}
       propertyPath: otherPairSocket
       value: 
-      objectReference: {fileID: 36214288}
+      objectReference: {fileID: 1654661780}
     - target: {fileID: 689713473421437887, guid: 7955b698d10c2e149aa826481ab1138f,
         type: 3}
       propertyPath: socketScoreChecker
@@ -13847,29 +14978,123 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 7
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 7060005440088678722, guid: 7955b698d10c2e149aa826481ab1138f, type: 3}
     m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedGameObjects:
+    - targetCorrespondingSourceObject: {fileID: 3414966798959160300, guid: 7955b698d10c2e149aa826481ab1138f,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1017304678}
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 3991555845399581002, guid: 7955b698d10c2e149aa826481ab1138f,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1238702010}
   m_SourcePrefab: {fileID: 100100000, guid: 7955b698d10c2e149aa826481ab1138f, type: 3}
---- !u!114 &1238702004 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 7060005440088678722, guid: 7955b698d10c2e149aa826481ab1138f,
-    type: 3}
-  m_PrefabInstance: {fileID: 1238702003}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f8b932cf6b759c143bafb6e7c8a26204, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!4 &1238702005 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3414966798959160300, guid: 7955b698d10c2e149aa826481ab1138f,
     type: 3}
   m_PrefabInstance: {fileID: 1238702003}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1238702006 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 689713473421437887, guid: 7955b698d10c2e149aa826481ab1138f,
+    type: 3}
+  m_PrefabInstance: {fileID: 1238702003}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 838779423}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9ce6f7100e4c21e448bf9578f0ad2f96, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1238702010
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 838779423}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9677824b82e68794db765c233b7b1ad9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_InteractionManager: {fileID: 0}
+  m_InteractionLayerMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_InteractionLayers:
+    m_Bits: 4294967295
+  m_AttachTransform: {fileID: 0}
+  m_KeepSelectedTargetValid: 1
+  m_DisableVisualsWhenBlockedInGroup: 1
+  m_StartingSelectedInteractable: {fileID: 0}
+  m_StartingTargetFilter: {fileID: 0}
+  m_HoverEntered:
+    m_PersistentCalls:
+      m_Calls: []
+  m_HoverExited:
+    m_PersistentCalls:
+      m_Calls: []
+  m_SelectEntered:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1238702006}
+        m_TargetAssemblyTypeName: InstalasiIoT.CableValidator, Assembly-CSharp
+        m_MethodName: CheckCable
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  m_SelectExited:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1238702006}
+        m_TargetAssemblyTypeName: InstalasiIoT.CableValidator, Assembly-CSharp
+        m_MethodName: Detach
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  m_StartingHoverFilters: []
+  m_StartingSelectFilters: []
+  m_OnHoverEntered:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnHoverExited:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnSelectEntered:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnSelectExited:
+    m_PersistentCalls:
+      m_Calls: []
+  m_ShowInteractableHoverMeshes: 1
+  m_InteractableHoverMeshMaterial: {fileID: 2100000, guid: a45dc7a5e1bd45e44adf083cc805c710,
+    type: 2}
+  m_InteractableCantHoverMeshMaterial: {fileID: 0}
+  m_SocketActive: 1
+  m_InteractableHoverScale: 1
+  m_RecycleDelayTime: 1
+  targetAttach1: {fileID: 1017304678}
+  targetAttach2: {fileID: 14392340}
+  parentArea: {fileID: 0}
+  targetObjNames:
+  - Kabel FF
 --- !u!1 &1244020855
 GameObject:
   m_ObjectHideFlags: 0
@@ -14876,17 +16101,17 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1255780694}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 2.787}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0.001, y: 0.001, z: 0.001}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 293785730}
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 602112511}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 1.155, y: 1.268}
+  m_AnchoredPosition: {x: -1.3629999, y: 0}
   m_SizeDelta: {x: 416.0026, y: 270.4393}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1261978975
@@ -15638,6 +16863,49 @@ PrefabInstance:
       insertIndex: -1
       addedObject: {fileID: 892603103}
   m_SourcePrefab: {fileID: 100100000, guid: e952ff55ae1a6b84198e235c2ca13177, type: 3}
+--- !u!4 &1304918898 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 744715879249613727, guid: 7955b698d10c2e149aa826481ab1138f,
+    type: 3}
+  m_PrefabInstance: {fileID: 8597283312762571631}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &1308526148 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 744715879249613727, guid: 7955b698d10c2e149aa826481ab1138f,
+    type: 3}
+  m_PrefabInstance: {fileID: 803380012}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1344307374
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1344307375}
+  m_Layer: 7
+  m_Name: SocketAttach (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 7174288486110832750, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1344307375
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1344307374}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: -0.7071068, w: 0.7071068}
+  m_LocalPosition: {x: 0, y: -0.0309, z: -0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1356116564}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -90}
 --- !u!1 &1355828167
 GameObject:
   m_ObjectHideFlags: 0
@@ -15795,12 +17063,12 @@ PrefabInstance:
     - target: {fileID: 5212901023958341418, guid: 7323f790a3f8a344cafb9a4f0e299797,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.00867
+      value: 0.00938
       objectReference: {fileID: 0}
     - target: {fileID: 5212901023958341418, guid: 7323f790a3f8a344cafb9a4f0e299797,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.0607
+      value: -0.0582
       objectReference: {fileID: 0}
     - target: {fileID: 5212901023958341418, guid: 7323f790a3f8a344cafb9a4f0e299797,
         type: 3}
@@ -15894,8 +17162,21 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 4971538050872102287, guid: 7323f790a3f8a344cafb9a4f0e299797, type: 3}
+    - {fileID: 489126972085476740, guid: 7323f790a3f8a344cafb9a4f0e299797, type: 3}
     m_RemovedGameObjects: []
-    m_AddedGameObjects: []
+    m_AddedGameObjects:
+    - targetCorrespondingSourceObject: {fileID: 5212901023958341418, guid: 7323f790a3f8a344cafb9a4f0e299797,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1344307375}
+    - targetCorrespondingSourceObject: {fileID: 5212901023958341418, guid: 7323f790a3f8a344cafb9a4f0e299797,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 818360894}
+    - targetCorrespondingSourceObject: {fileID: 5212901023958341418, guid: 7323f790a3f8a344cafb9a4f0e299797,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 5212901024039608403}
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 5789180567590612364, guid: 7323f790a3f8a344cafb9a4f0e299797,
         type: 3}
@@ -15905,6 +17186,10 @@ PrefabInstance:
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 1356116569}
+    - targetCorrespondingSourceObject: {fileID: 5789180567590612364, guid: 7323f790a3f8a344cafb9a4f0e299797,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1356116573}
   m_SourcePrefab: {fileID: 100100000, guid: 7323f790a3f8a344cafb9a4f0e299797, type: 3}
 --- !u!4 &1356116564 stripped
 Transform:
@@ -15912,18 +17197,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1356116563}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1356116565 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 489126972085476740, guid: 7323f790a3f8a344cafb9a4f0e299797,
-    type: 3}
-  m_PrefabInstance: {fileID: 1356116563}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1153736641}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f8b932cf6b759c143bafb6e7c8a26204, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &1356116569
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15936,7 +17209,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9ce6f7100e4c21e448bf9578f0ad2f96, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  otherPairSocket: {fileID: 741022375}
+  otherPairSocket: {fileID: 741022383}
   socketScoreChecker: {fileID: 1501937516}
 --- !u!136 &1356116570
 CapsuleCollider:
@@ -15957,10 +17230,101 @@ CapsuleCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 0.0006
+  m_Radius: 0.002
   m_Height: 0.0326833
   m_Direction: 1
-  m_Center: {x: 0, y: -0.004819831, z: 1.2982778e-17}
+  m_Center: {x: 0, y: -0.02, z: 1.2982778e-17}
+--- !u!114 &1356116573
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1153736641}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9677824b82e68794db765c233b7b1ad9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_InteractionManager: {fileID: 0}
+  m_InteractionLayerMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_InteractionLayers:
+    m_Bits: 4294967295
+  m_AttachTransform: {fileID: 0}
+  m_KeepSelectedTargetValid: 1
+  m_DisableVisualsWhenBlockedInGroup: 1
+  m_StartingSelectedInteractable: {fileID: 0}
+  m_StartingTargetFilter: {fileID: 0}
+  m_HoverEntered:
+    m_PersistentCalls:
+      m_Calls: []
+  m_HoverExited:
+    m_PersistentCalls:
+      m_Calls: []
+  m_SelectEntered:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1356116569}
+        m_TargetAssemblyTypeName: InstalasiIoT.CableValidator, Assembly-CSharp
+        m_MethodName: CheckCable
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  m_SelectExited:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1356116569}
+        m_TargetAssemblyTypeName: InstalasiIoT.CableValidator, Assembly-CSharp
+        m_MethodName: Detach
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  m_StartingHoverFilters: []
+  m_StartingSelectFilters: []
+  m_OnHoverEntered:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnHoverExited:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnSelectEntered:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnSelectExited:
+    m_PersistentCalls:
+      m_Calls: []
+  m_ShowInteractableHoverMeshes: 1
+  m_InteractableHoverMeshMaterial: {fileID: 2100000, guid: a45dc7a5e1bd45e44adf083cc805c710,
+    type: 2}
+  m_InteractableCantHoverMeshMaterial: {fileID: 0}
+  m_SocketActive: 1
+  m_InteractableHoverScale: 1
+  m_RecycleDelayTime: 1
+  targetAttach1: {fileID: 1344307375}
+  targetAttach2: {fileID: 1053233613}
+  parentArea: {fileID: 0}
+  targetObjNames:
+  - Kabel FF
+--- !u!4 &1371925109 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 744715879249613727, guid: 7955b698d10c2e149aa826481ab1138f,
+    type: 3}
+  m_PrefabInstance: {fileID: 507327607}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1372184035
 GameObject:
   m_ObjectHideFlags: 0
@@ -16247,6 +17611,43 @@ MonoBehaviour:
   m_ChildScaleWidth: 0
   m_ChildScaleHeight: 0
   m_ReverseArrangement: 0
+--- !u!1 &1401103684 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3991555845399581002, guid: 7955b698d10c2e149aa826481ab1138f,
+    type: 3}
+  m_PrefabInstance: {fileID: 1779378302}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1403434752
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1403434753}
+  m_Layer: 7
+  m_Name: SocketAttach (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 7174288486110832750, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1403434753
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1403434752}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: -0.7071068, w: 0.7071068}
+  m_LocalPosition: {x: 0, y: -0.0309, z: -0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 5212901024039608403}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -90}
 --- !u!1 &1408621140
 GameObject:
   m_ObjectHideFlags: 0
@@ -17649,6 +19050,16 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1673012865}
     m_Modifications:
+    - target: {fileID: 543819392931600123, guid: e1a7e215924e96540a253e8c91542409,
+        type: 3}
+      propertyPath: m_TagString
+      value: SocketAttach2
+      objectReference: {fileID: 0}
+    - target: {fileID: 769126241759656390, guid: e1a7e215924e96540a253e8c91542409,
+        type: 3}
+      propertyPath: m_TagString
+      value: SocketAttach1
+      objectReference: {fileID: 0}
     - target: {fileID: 3712752834093291970, guid: e1a7e215924e96540a253e8c91542409,
         type: 3}
       propertyPath: m_Materials.Array.data[2]
@@ -18009,10 +19420,14 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+  OnQuestFail:
+    m_PersistentCalls:
+      m_Calls: []
   sockets:
-  - {fileID: 741022375}
-  - {fileID: 1356116565}
+  - {fileID: 0}
+  - {fileID: 0}
   connectionStatus: {fileID: 2094200499}
+  isQuestFinish: 0
 --- !u!1001 &1514153994
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -18021,6 +19436,16 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1673012865}
     m_Modifications:
+    - target: {fileID: 543819392931600123, guid: e1a7e215924e96540a253e8c91542409,
+        type: 3}
+      propertyPath: m_TagString
+      value: SocketAttach2
+      objectReference: {fileID: 0}
+    - target: {fileID: 769126241759656390, guid: e1a7e215924e96540a253e8c91542409,
+        type: 3}
+      propertyPath: m_TagString
+      value: SocketAttach1
+      objectReference: {fileID: 0}
     - target: {fileID: 3712752834093291970, guid: e1a7e215924e96540a253e8c91542409,
         type: 3}
       propertyPath: m_Materials.Array.data[2]
@@ -18328,14 +19753,6 @@ PrefabInstance:
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 2121873391}
-    - targetCorrespondingSourceObject: {fileID: -8679921383154817045, guid: 925bec7074e397a4d8d8be12cf977f0f,
-        type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 818360894}
-    - targetCorrespondingSourceObject: {fileID: -8679921383154817045, guid: 925bec7074e397a4d8d8be12cf977f0f,
-        type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 5212901024039608403}
     - targetCorrespondingSourceObject: {fileID: -8679921383154817045, guid: 925bec7074e397a4d8d8be12cf977f0f,
         type: 3}
       insertIndex: -1
@@ -18848,6 +20265,16 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1673012865}
     m_Modifications:
+    - target: {fileID: 543819392931600123, guid: e1a7e215924e96540a253e8c91542409,
+        type: 3}
+      propertyPath: m_TagString
+      value: SocketAttach2
+      objectReference: {fileID: 0}
+    - target: {fileID: 769126241759656390, guid: e1a7e215924e96540a253e8c91542409,
+        type: 3}
+      propertyPath: m_TagString
+      value: SocketAttach1
+      objectReference: {fileID: 0}
     - target: {fileID: 2904651225643691515, guid: e1a7e215924e96540a253e8c91542409,
         type: 3}
       propertyPath: m_Size.x
@@ -19836,17 +21263,17 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1623757866}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 2.787}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0.001, y: 0.001, z: 0.001}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 397969224}
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 602112511}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 2.056, y: 1.268}
+  m_AnchoredPosition: {x: -0.4619999, y: 0}
   m_SizeDelta: {x: 416.0026, y: 270.4393}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1626081520
@@ -19880,6 +21307,12 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1120716075}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &1628424603 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 744715879249613727, guid: 7955b698d10c2e149aa826481ab1138f,
+    type: 3}
+  m_PrefabInstance: {fileID: 1092389281}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1642558146
 GameObject:
   m_ObjectHideFlags: 0
@@ -20070,6 +21503,109 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_System: {fileID: 1439455601}
   m_DelayTime: 0
+--- !u!1 &1654661775 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3991555845399581002, guid: 7955b698d10c2e149aa826481ab1138f,
+    type: 3}
+  m_PrefabInstance: {fileID: 36214287}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1654661776 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 689713473421437887, guid: 7955b698d10c2e149aa826481ab1138f,
+    type: 3}
+  m_PrefabInstance: {fileID: 36214287}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1654661775}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9ce6f7100e4c21e448bf9578f0ad2f96, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1654661780
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1654661775}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9677824b82e68794db765c233b7b1ad9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_InteractionManager: {fileID: 0}
+  m_InteractionLayerMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_InteractionLayers:
+    m_Bits: 4294967295
+  m_AttachTransform: {fileID: 0}
+  m_KeepSelectedTargetValid: 1
+  m_DisableVisualsWhenBlockedInGroup: 1
+  m_StartingSelectedInteractable: {fileID: 0}
+  m_StartingTargetFilter: {fileID: 0}
+  m_HoverEntered:
+    m_PersistentCalls:
+      m_Calls: []
+  m_HoverExited:
+    m_PersistentCalls:
+      m_Calls: []
+  m_SelectEntered:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1654661776}
+        m_TargetAssemblyTypeName: InstalasiIoT.CableValidator, Assembly-CSharp
+        m_MethodName: CheckCable
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  m_SelectExited:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1654661776}
+        m_TargetAssemblyTypeName: InstalasiIoT.CableValidator, Assembly-CSharp
+        m_MethodName: Detach
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  m_StartingHoverFilters: []
+  m_StartingSelectFilters: []
+  m_OnHoverEntered:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnHoverExited:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnSelectEntered:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnSelectExited:
+    m_PersistentCalls:
+      m_Calls: []
+  m_ShowInteractableHoverMeshes: 1
+  m_InteractableHoverMeshMaterial: {fileID: 2100000, guid: a45dc7a5e1bd45e44adf083cc805c710,
+    type: 2}
+  m_InteractableCantHoverMeshMaterial: {fileID: 0}
+  m_SocketActive: 1
+  m_InteractableHoverScale: 1
+  m_RecycleDelayTime: 1
+  targetAttach1: {fileID: 675515335}
+  targetAttach2: {fileID: 650234143}
+  parentArea: {fileID: 0}
+  targetObjNames:
+  - Kabel FF
 --- !u!1 &1657456800
 GameObject:
   m_ObjectHideFlags: 0
@@ -20993,6 +22529,37 @@ MonoBehaviour:
   m_UseLocalSpace: 1
   m_AngleStabilization: 20
   m_PositionStabilization: 0.25
+--- !u!1 &1741422925
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1741422926}
+  m_Layer: 7
+  m_Name: SocketAttach (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 7174288486110832750, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1741422926
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1741422925}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: -0.7071068, w: 0.7071068}
+  m_LocalPosition: {x: 0, y: -0.0309, z: -0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 818360894}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -90}
 --- !u!1 &1746906903
 GameObject:
   m_ObjectHideFlags: 0
@@ -22044,10 +23611,14 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+  OnQuestFail:
+    m_PersistentCalls:
+      m_Calls: []
   sockets:
-  - {fileID: 1018512648}
-  - {fileID: 1092389283}
+  - {fileID: 0}
+  - {fileID: 0}
   connectionStatus: {fileID: 1623757867}
+  isQuestFinish: 0
 --- !u!4 &1772576058
 Transform:
   m_ObjectHideFlags: 0
@@ -22082,10 +23653,10 @@ CapsuleCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 0.0006
+  m_Radius: 0.002
   m_Height: 0.0326833
   m_Direction: 1
-  m_Center: {x: 0, y: -0.004819831, z: 1.2982778e-17}
+  m_Center: {x: 0, y: -0.02, z: 1.2982778e-17}
 --- !u!114 &1773111664
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -22098,7 +23669,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9ce6f7100e4c21e448bf9578f0ad2f96, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  otherPairSocket: {fileID: 1089960992}
+  otherPairSocket: {fileID: 1089960997}
   socketScoreChecker: {fileID: 172693089}
 --- !u!1001 &1779378302
 PrefabInstance:
@@ -22112,7 +23683,7 @@ PrefabInstance:
         type: 3}
       propertyPath: otherPairSocket
       value: 
-      objectReference: {fileID: 263266152}
+      objectReference: {fileID: 604156626}
     - target: {fileID: 689713473421437887, guid: 7955b698d10c2e149aa826481ab1138f,
         type: 3}
       propertyPath: socketScoreChecker
@@ -22188,10 +23759,19 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 7
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 7060005440088678722, guid: 7955b698d10c2e149aa826481ab1138f, type: 3}
     m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedGameObjects:
+    - targetCorrespondingSourceObject: {fileID: 3414966798959160300, guid: 7955b698d10c2e149aa826481ab1138f,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1093429042}
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 3991555845399581002, guid: 7955b698d10c2e149aa826481ab1138f,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1779378309}
   m_SourcePrefab: {fileID: 100100000, guid: 7955b698d10c2e149aa826481ab1138f, type: 3}
 --- !u!4 &1779378303 stripped
 Transform:
@@ -22199,18 +23779,103 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1779378302}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1779378304 stripped
+--- !u!114 &1779378305 stripped
 MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 7060005440088678722, guid: 7955b698d10c2e149aa826481ab1138f,
+  m_CorrespondingSourceObject: {fileID: 689713473421437887, guid: 7955b698d10c2e149aa826481ab1138f,
     type: 3}
   m_PrefabInstance: {fileID: 1779378302}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+  m_GameObject: {fileID: 1401103684}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f8b932cf6b759c143bafb6e7c8a26204, type: 3}
+  m_Script: {fileID: 11500000, guid: 9ce6f7100e4c21e448bf9578f0ad2f96, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1779378309
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1401103684}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9677824b82e68794db765c233b7b1ad9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_InteractionManager: {fileID: 0}
+  m_InteractionLayerMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_InteractionLayers:
+    m_Bits: 4294967295
+  m_AttachTransform: {fileID: 0}
+  m_KeepSelectedTargetValid: 1
+  m_DisableVisualsWhenBlockedInGroup: 1
+  m_StartingSelectedInteractable: {fileID: 0}
+  m_StartingTargetFilter: {fileID: 0}
+  m_HoverEntered:
+    m_PersistentCalls:
+      m_Calls: []
+  m_HoverExited:
+    m_PersistentCalls:
+      m_Calls: []
+  m_SelectEntered:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1779378305}
+        m_TargetAssemblyTypeName: InstalasiIoT.CableValidator, Assembly-CSharp
+        m_MethodName: CheckCable
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  m_SelectExited:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1779378305}
+        m_TargetAssemblyTypeName: InstalasiIoT.CableValidator, Assembly-CSharp
+        m_MethodName: Detach
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  m_StartingHoverFilters: []
+  m_StartingSelectFilters: []
+  m_OnHoverEntered:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnHoverExited:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnSelectEntered:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnSelectExited:
+    m_PersistentCalls:
+      m_Calls: []
+  m_ShowInteractableHoverMeshes: 1
+  m_InteractableHoverMeshMaterial: {fileID: 2100000, guid: a45dc7a5e1bd45e44adf083cc805c710,
+    type: 2}
+  m_InteractableCantHoverMeshMaterial: {fileID: 0}
+  m_SocketActive: 1
+  m_InteractableHoverScale: 1
+  m_RecycleDelayTime: 1
+  targetAttach1: {fileID: 1093429042}
+  targetAttach2: {fileID: 2109506318}
+  parentArea: {fileID: 0}
+  targetObjNames:
+  - Kabel FF
 --- !u!1 &1782701552
 GameObject:
   m_ObjectHideFlags: 0
@@ -22255,10 +23920,14 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+  OnQuestFail:
+    m_PersistentCalls:
+      m_Calls: []
   sockets:
-  - {fileID: 263266152}
-  - {fileID: 1779378304}
+  - {fileID: 0}
+  - {fileID: 0}
   connectionStatus: {fileID: 1255780695}
+  isQuestFinish: 0
 --- !u!4 &1782701554
 Transform:
   m_ObjectHideFlags: 0
@@ -22927,17 +24596,17 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1855688691}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 2.787}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0.001, y: 0.001, z: 0.001}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1062826501}
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 602112511}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0.259, y: 1.268}
+  m_AnchoredPosition: {x: -2.2589998, y: 0}
   m_SizeDelta: {x: 416.0026, y: 270.4393}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1855857402
@@ -23212,17 +24881,17 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1871377577}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 2.787}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0.001, y: 0.001, z: 0.001}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 880984550}
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 602112511}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: -0.189, y: 1.268}
+  m_AnchoredPosition: {x: -2.7069998, y: 0}
   m_SizeDelta: {x: 416.0026, y: 270.4393}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1875635165
@@ -23502,6 +25171,37 @@ MonoBehaviour:
   m_hasFontAssetChanged: 0
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!1 &1893868124
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1893868125}
+  m_Layer: 7
+  m_Name: SocketAttach (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 7174288486110832750, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1893868125
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1893868124}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 1, w: 0}
+  m_LocalPosition: {x: 0.0358, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 503782828}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 180}
 --- !u!1 &1900306836
 GameObject:
   m_ObjectHideFlags: 0
@@ -24604,6 +26304,37 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!1 &2025944484
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2025944485}
+  m_Layer: 7
+  m_Name: SocketAttach (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 7174288486110832750, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2025944485
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2025944484}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 1, w: 0}
+  m_LocalPosition: {x: -0.017, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 803380013}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 180}
 --- !u!1 &2038828982
 GameObject:
   m_ObjectHideFlags: 0
@@ -24742,6 +26473,12 @@ Transform:
   - {fileID: 429667616}
   m_Father: {fileID: 130267471}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &2045690418 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7883081436880449369, guid: 7323f790a3f8a344cafb9a4f0e299797,
+    type: 3}
+  m_PrefabInstance: {fileID: 503782827}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &2058513878
 GameObject:
   m_ObjectHideFlags: 0
@@ -24849,6 +26586,37 @@ Transform:
   - {fileID: 1436543603}
   m_Father: {fileID: 1617122023}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &2064996598
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2064996599}
+  m_Layer: 7
+  m_Name: SocketAttach (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 7174288486110832750, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2064996599
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2064996598}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 1, w: 0}
+  m_LocalPosition: {x: 0.0358, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1089960991}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 180}
 --- !u!1 &2071855213
 GameObject:
   m_ObjectHideFlags: 0
@@ -24944,6 +26712,109 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!1 &2074078268 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3991555845399581002, guid: 7955b698d10c2e149aa826481ab1138f,
+    type: 3}
+  m_PrefabInstance: {fileID: 507327607}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &2074078269 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 689713473421437887, guid: 7955b698d10c2e149aa826481ab1138f,
+    type: 3}
+  m_PrefabInstance: {fileID: 507327607}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2074078268}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9ce6f7100e4c21e448bf9578f0ad2f96, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &2074078273
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2074078268}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9677824b82e68794db765c233b7b1ad9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_InteractionManager: {fileID: 0}
+  m_InteractionLayerMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_InteractionLayers:
+    m_Bits: 4294967295
+  m_AttachTransform: {fileID: 0}
+  m_KeepSelectedTargetValid: 1
+  m_DisableVisualsWhenBlockedInGroup: 1
+  m_StartingSelectedInteractable: {fileID: 0}
+  m_StartingTargetFilter: {fileID: 0}
+  m_HoverEntered:
+    m_PersistentCalls:
+      m_Calls: []
+  m_HoverExited:
+    m_PersistentCalls:
+      m_Calls: []
+  m_SelectEntered:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 2074078269}
+        m_TargetAssemblyTypeName: InstalasiIoT.CableValidator, Assembly-CSharp
+        m_MethodName: CheckCable
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  m_SelectExited:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 2074078269}
+        m_TargetAssemblyTypeName: InstalasiIoT.CableValidator, Assembly-CSharp
+        m_MethodName: Detach
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  m_StartingHoverFilters: []
+  m_StartingSelectFilters: []
+  m_OnHoverEntered:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnHoverExited:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnSelectEntered:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnSelectExited:
+    m_PersistentCalls:
+      m_Calls: []
+  m_ShowInteractableHoverMeshes: 1
+  m_InteractableHoverMeshMaterial: {fileID: 2100000, guid: a45dc7a5e1bd45e44adf083cc805c710,
+    type: 2}
+  m_InteractableCantHoverMeshMaterial: {fileID: 0}
+  m_SocketActive: 1
+  m_InteractableHoverScale: 1
+  m_RecycleDelayTime: 1
+  targetAttach1: {fileID: 1371925109}
+  targetAttach2: {fileID: 348696426}
+  parentArea: {fileID: 0}
+  targetObjNames:
+  - Kabel FF
 --- !u!1 &2076520142
 GameObject:
   m_ObjectHideFlags: 0
@@ -25231,17 +27102,17 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2094200498}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 2.787}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0.001, y: 0.001, z: 0.001}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 979684283}
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 602112511}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0.709, y: 1.268}
+  m_AnchoredPosition: {x: -1.8089997, y: 0}
   m_SizeDelta: {x: 416.0026, y: 270.4393}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &2095000683
@@ -25377,6 +27248,12 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2095000683}
   m_CullTransparentMesh: 1
+--- !u!4 &2109506318 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 744715879249613727, guid: 7955b698d10c2e149aa826481ab1138f,
+    type: 3}
+  m_PrefabInstance: {fileID: 1779378302}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &2109772229
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -26199,89 +28076,6 @@ MonoBehaviour:
   m_ChildScaleWidth: 0
   m_ChildScaleHeight: 0
   m_ReverseArrangement: 0
---- !u!114 &489126971869997821
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5789180567639366389}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f8b932cf6b759c143bafb6e7c8a26204, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_InteractionManager: {fileID: 0}
-  m_InteractionLayerMask:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_InteractionLayers:
-    m_Bits: 4294967295
-  m_AttachTransform: {fileID: 7883081436697466912}
-  m_KeepSelectedTargetValid: 1
-  m_DisableVisualsWhenBlockedInGroup: 1
-  m_StartingSelectedInteractable: {fileID: 0}
-  m_StartingTargetFilter: {fileID: 0}
-  m_HoverEntered:
-    m_PersistentCalls:
-      m_Calls: []
-  m_HoverExited:
-    m_PersistentCalls:
-      m_Calls: []
-  m_SelectEntered:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1773111664}
-        m_TargetAssemblyTypeName: InstalasiIoT.CableValidator, Assembly-CSharp
-        m_MethodName: CheckCable
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-  m_SelectExited:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1773111664}
-        m_TargetAssemblyTypeName: InstalasiIoT.CableValidator, Assembly-CSharp
-        m_MethodName: Detach
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-  m_StartingHoverFilters: []
-  m_StartingSelectFilters: []
-  m_OnHoverEntered:
-    m_PersistentCalls:
-      m_Calls: []
-  m_OnHoverExited:
-    m_PersistentCalls:
-      m_Calls: []
-  m_OnSelectEntered:
-    m_PersistentCalls:
-      m_Calls: []
-  m_OnSelectExited:
-    m_PersistentCalls:
-      m_Calls: []
-  m_ShowInteractableHoverMeshes: 1
-  m_InteractableHoverMeshMaterial: {fileID: 2100000, guid: a45dc7a5e1bd45e44adf083cc805c710,
-    type: 2}
-  m_InteractableCantHoverMeshMaterial: {fileID: 0}
-  m_SocketActive: 1
-  m_InteractableHoverScale: 1
-  m_RecycleDelayTime: 1
-  parentArea: {fileID: 0}
-  targetObjNames:
-  - Kabel FF
 --- !u!222 &612345947575241416
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -27165,13 +28959,14 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5789180567639366389}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.0085, y: -0.0607, z: 0.0146}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0.018489975, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 7883081436697466912}
-  m_Father: {fileID: 1530440710}
+  - {fileID: 1403434753}
+  m_Father: {fileID: 1356116564}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!222 &5257432681888646220
 CanvasRenderer:
@@ -27212,9 +29007,9 @@ GameObject:
   - component: {fileID: 5212901024039608403}
   - component: {fileID: 6637069775256437744}
   - component: {fileID: 4999745578037392677}
-  - component: {fileID: 489126971869997821}
   - component: {fileID: 1773111663}
   - component: {fileID: 1773111664}
+  - component: {fileID: 6637069775256437745}
   m_Layer: 0
   m_Name: GND
   m_TagString: Untagged
@@ -27264,6 +29059,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 543819392931600123, guid: e1a7e215924e96540a253e8c91542409,
+        type: 3}
+      propertyPath: m_TagString
+      value: SocketAttach2
+      objectReference: {fileID: 0}
+    - target: {fileID: 769126241759656390, guid: e1a7e215924e96540a253e8c91542409,
+        type: 3}
+      propertyPath: m_TagString
+      value: SocketAttach1
       objectReference: {fileID: 0}
     - target: {fileID: 2904651225643691515, guid: e1a7e215924e96540a253e8c91542409,
         type: 3}
@@ -27455,6 +29260,91 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5789180567639366389}
   m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &6637069775256437745
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5789180567639366389}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9677824b82e68794db765c233b7b1ad9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_InteractionManager: {fileID: 0}
+  m_InteractionLayerMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_InteractionLayers:
+    m_Bits: 4294967295
+  m_AttachTransform: {fileID: 0}
+  m_KeepSelectedTargetValid: 1
+  m_DisableVisualsWhenBlockedInGroup: 1
+  m_StartingSelectedInteractable: {fileID: 0}
+  m_StartingTargetFilter: {fileID: 0}
+  m_HoverEntered:
+    m_PersistentCalls:
+      m_Calls: []
+  m_HoverExited:
+    m_PersistentCalls:
+      m_Calls: []
+  m_SelectEntered:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1773111664}
+        m_TargetAssemblyTypeName: InstalasiIoT.CableValidator, Assembly-CSharp
+        m_MethodName: CheckCable
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  m_SelectExited:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1773111664}
+        m_TargetAssemblyTypeName: InstalasiIoT.CableValidator, Assembly-CSharp
+        m_MethodName: Detach
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  m_StartingHoverFilters: []
+  m_StartingSelectFilters: []
+  m_OnHoverEntered:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnHoverExited:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnSelectEntered:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnSelectExited:
+    m_PersistentCalls:
+      m_Calls: []
+  m_ShowInteractableHoverMeshes: 1
+  m_InteractableHoverMeshMaterial: {fileID: 2100000, guid: a45dc7a5e1bd45e44adf083cc805c710,
+    type: 2}
+  m_InteractableCantHoverMeshMaterial: {fileID: 0}
+  m_SocketActive: 1
+  m_InteractableHoverScale: 1
+  m_RecycleDelayTime: 1
+  targetAttach1: {fileID: 1403434753}
+  targetAttach2: {fileID: 7883081436697466912}
+  parentArea: {fileID: 0}
+  targetObjNames:
+  - Kabel FF
 --- !u!224 &6722139921816370313
 RectTransform:
   m_ObjectHideFlags: 0
@@ -27578,7 +29468,7 @@ PrefabInstance:
         type: 3}
       propertyPath: otherPairSocket
       value: 
-      objectReference: {fileID: 489126971869997821}
+      objectReference: {fileID: 6637069775256437745}
     - target: {fileID: 689713473421437887, guid: 7955b698d10c2e149aa826481ab1138f,
         type: 3}
       propertyPath: socketScoreChecker
@@ -27639,10 +29529,24 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pin GND 1
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 3991555845399581002, guid: 7955b698d10c2e149aa826481ab1138f,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 7060005440088678722, guid: 7955b698d10c2e149aa826481ab1138f, type: 3}
     m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedGameObjects:
+    - targetCorrespondingSourceObject: {fileID: 3414966798959160300, guid: 7955b698d10c2e149aa826481ab1138f,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2064996599}
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 3991555845399581002, guid: 7955b698d10c2e149aa826481ab1138f,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1089960997}
   m_SourcePrefab: {fileID: 100100000, guid: 7955b698d10c2e149aa826481ab1138f, type: 3}
 --- !u!1 &8631994924712411465
 GameObject:
@@ -27819,11 +29723,5 @@ SceneRoots:
   - {fileID: 581620885}
   - {fileID: 747237272}
   - {fileID: 1673012865}
-  - {fileID: 1871377582}
-  - {fileID: 1855688696}
-  - {fileID: 2094200503}
-  - {fileID: 1255780699}
-  - {fileID: 918396441}
-  - {fileID: 1623757871}
-  - {fileID: 538273475}
+  - {fileID: 602112511}
   - {fileID: 1938282135}

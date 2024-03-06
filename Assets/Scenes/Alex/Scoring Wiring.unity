@@ -2063,7 +2063,6 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 709587385}
   - {fileID: 249787538}
   - {fileID: 1095570679}
   - {fileID: 551034127}
@@ -3035,9 +3034,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-  sockets:
-  - {fileID: 1148176118}
-  - {fileID: 918783857}
   connectionStatus: {fileID: 0}
   isQuestFinish: 0
 --- !u!1001 &251429217
@@ -4256,18 +4252,6 @@ PrefabInstance:
       insertIndex: -1
       addedObject: {fileID: 400378721}
   m_SourcePrefab: {fileID: 100100000, guid: 7323f790a3f8a344cafb9a4f0e299797, type: 3}
---- !u!114 &400378718 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 489126972085476740, guid: 7323f790a3f8a344cafb9a4f0e299797,
-    type: 3}
-  m_PrefabInstance: {fileID: 400378717}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 400378720}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f8b932cf6b759c143bafb6e7c8a26204, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!4 &400378719 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5212901023958341418, guid: 7323f790a3f8a344cafb9a4f0e299797,
@@ -4292,7 +4276,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9ce6f7100e4c21e448bf9578f0ad2f96, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  otherPairSocket: {fileID: 2101361182}
+  otherPairSocket: {fileID: 0}
   socketScoreChecker: {fileID: 1095570680}
 --- !u!136 &400378722
 CapsuleCollider:
@@ -4735,18 +4719,6 @@ PrefabInstance:
       insertIndex: -1
       addedObject: {fileID: 424127052}
   m_SourcePrefab: {fileID: 100100000, guid: 7323f790a3f8a344cafb9a4f0e299797, type: 3}
---- !u!114 &424127049 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 489126972085476740, guid: 7323f790a3f8a344cafb9a4f0e299797,
-    type: 3}
-  m_PrefabInstance: {fileID: 424127048}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 424127051}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f8b932cf6b759c143bafb6e7c8a26204, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!4 &424127050 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5212901023958341418, guid: 7323f790a3f8a344cafb9a4f0e299797,
@@ -4771,7 +4743,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9ce6f7100e4c21e448bf9578f0ad2f96, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  otherPairSocket: {fileID: 1705765808}
+  otherPairSocket: {fileID: 0}
   socketScoreChecker: {fileID: 709587386}
 --- !u!136 &424127053
 CapsuleCollider:
@@ -5648,9 +5620,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-  sockets:
-  - {fileID: 12062852}
-  - {fileID: 251429218}
   connectionStatus: {fileID: 0}
   isQuestFinish: 0
 --- !u!4 &551034127
@@ -5665,7 +5634,8 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0.3793}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 709587385}
   m_Father: {fileID: 154312605}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &556261194
@@ -6861,11 +6831,11 @@ Transform:
   m_GameObject: {fileID: 709587384}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: 1, z: -0, w: 0}
-  m_LocalPosition: {x: -0.40900004, y: -0.27799994, z: -0.14899993}
+  m_LocalPosition: {x: -0.40900004, y: -0.27799988, z: -0.5282999}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 154312605}
+  m_Father: {fileID: 551034127}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &709587386
 MonoBehaviour:
@@ -6909,9 +6879,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-  sockets:
-  - {fileID: 1705765808}
-  - {fileID: 424127049}
   connectionStatus: {fileID: 0}
   isQuestFinish: 0
 --- !u!1001 &714490611
@@ -7540,9 +7507,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-  sockets:
-  - {fileID: 416400357}
-  - {fileID: 582215271}
   connectionStatus: {fileID: 0}
   isQuestFinish: 0
 --- !u!4 &736083377
@@ -10114,7 +10078,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9ce6f7100e4c21e448bf9578f0ad2f96, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  otherPairSocket: {fileID: 1148176118}
+  otherPairSocket: {fileID: 0}
   socketScoreChecker: {fileID: 249787539}
 --- !u!4 &918783859
 Transform:
@@ -11655,9 +11619,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-  sockets:
-  - {fileID: 400378718}
-  - {fileID: 2101361182}
   connectionStatus: {fileID: 0}
   isQuestFinish: 0
 --- !u!1 &1100937298
@@ -12653,18 +12614,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7955b698d10c2e149aa826481ab1138f, type: 3}
---- !u!114 &1148176118 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 7060005440088678722, guid: 7955b698d10c2e149aa826481ab1138f,
-    type: 3}
-  m_PrefabInstance: {fileID: 1148176117}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f8b932cf6b759c143bafb6e7c8a26204, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!4 &1148176119 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3414966798959160300, guid: 7955b698d10c2e149aa826481ab1138f,
@@ -13858,9 +13807,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-  sockets:
-  - {fileID: 1035737378}
-  - {fileID: 251429218}
   connectionStatus: {fileID: 0}
   isQuestFinish: 0
 --- !u!1 &1357670298
@@ -18154,18 +18100,6 @@ PrefabInstance:
       insertIndex: -1
       addedObject: {fileID: 1705765811}
   m_SourcePrefab: {fileID: 100100000, guid: 7323f790a3f8a344cafb9a4f0e299797, type: 3}
---- !u!114 &1705765808 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 489126972085476740, guid: 7323f790a3f8a344cafb9a4f0e299797,
-    type: 3}
-  m_PrefabInstance: {fileID: 1705765807}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1705765810}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f8b932cf6b759c143bafb6e7c8a26204, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!4 &1705765809 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5212901023958341418, guid: 7323f790a3f8a344cafb9a4f0e299797,
@@ -18190,7 +18124,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9ce6f7100e4c21e448bf9578f0ad2f96, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  otherPairSocket: {fileID: 424127049}
+  otherPairSocket: {fileID: 0}
   socketScoreChecker: {fileID: 709587386}
 --- !u!136 &1705765812
 CapsuleCollider:
@@ -19853,9 +19787,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-  sockets:
-  - {fileID: 123579238}
-  - {fileID: 174744545}
   connectionStatus: {fileID: 0}
   isQuestFinish: 0
 --- !u!1 &1908346781
@@ -19903,6 +19834,7 @@ GameObject:
   - component: {fileID: 1924385998}
   - component: {fileID: 1924385997}
   - component: {fileID: 1924385996}
+  - component: {fileID: 1924386001}
   m_Layer: 5
   m_Name: Score Canvas
   m_TagString: Untagged
@@ -20015,6 +19947,25 @@ RectTransform:
   m_AnchoredPosition: {x: 1.165, y: 1.62}
   m_SizeDelta: {x: 1920, y: 1080}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1924386001
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1924385995}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7951c64acb0fa62458bf30a60089fe2d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_IgnoreReversedGraphics: 0
+  m_CheckFor2DOcclusion: 0
+  m_CheckFor3DOcclusion: 0
+  m_BlockingMask:
+    serializedVersion: 2
+    m_Bits: 1
+  m_RaycastTriggerInteraction: 2
 --- !u!1 &1932736621
 GameObject:
   m_ObjectHideFlags: 0
@@ -21663,18 +21614,6 @@ PrefabInstance:
       insertIndex: -1
       addedObject: {fileID: 2101361185}
   m_SourcePrefab: {fileID: 100100000, guid: 7323f790a3f8a344cafb9a4f0e299797, type: 3}
---- !u!114 &2101361182 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 489126972085476740, guid: 7323f790a3f8a344cafb9a4f0e299797,
-    type: 3}
-  m_PrefabInstance: {fileID: 2101361181}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2101361184}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f8b932cf6b759c143bafb6e7c8a26204, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!4 &2101361183 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5212901023958341418, guid: 7323f790a3f8a344cafb9a4f0e299797,
@@ -21699,7 +21638,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9ce6f7100e4c21e448bf9578f0ad2f96, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  otherPairSocket: {fileID: 400378718}
+  otherPairSocket: {fileID: 0}
   socketScoreChecker: {fileID: 1095570680}
 --- !u!136 &2101361186
 CapsuleCollider:

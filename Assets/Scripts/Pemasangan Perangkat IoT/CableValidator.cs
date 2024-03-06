@@ -1,3 +1,4 @@
+using Sandbox;
 using Seville;
 using UnityEngine;
 using UnityEngine.XR.Interaction.Toolkit;
@@ -5,14 +6,14 @@ namespace InstalasiIoT
 {
     public class CableValidator : MonoBehaviour
     {
-        private SESocketInteractor socketComponent;
-        public SESocketInteractor otherPairSocket;
+        private SocketInteractorTwoAttach socketComponent;
+        public SocketInteractorTwoAttach otherPairSocket;
         [SerializeField] private SocketScoreChecker socketScoreChecker;
         private BoneCableController boneCableController;
 
         private void Start()
         {
-            socketComponent = GetComponent<SESocketInteractor>();
+            socketComponent = GetComponent<SocketInteractorTwoAttach>();
         }
 
         public void CheckCable()

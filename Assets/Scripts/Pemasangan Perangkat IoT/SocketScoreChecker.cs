@@ -12,7 +12,6 @@ namespace InstalasiIoT
     {
         [SerializeField] private UnityEvent OnQuestFinish;
         [SerializeField] private UnityEvent OnQuestFail;
-        [SerializeField] private SESocketInteractor[] sockets;
         [SerializeField] private ConnectionStatus connectionStatus;
         public bool isQuestFinish;
         private Status status;
