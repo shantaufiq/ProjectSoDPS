@@ -14,6 +14,9 @@ TagManager:
   - Left Hand
   - Right Hand
   - VideoPlayerCanvas
+  - Object
+  - SocketAttach1
+  - SocketAttach2
   layers:
   - Default
   - TransparentFX
