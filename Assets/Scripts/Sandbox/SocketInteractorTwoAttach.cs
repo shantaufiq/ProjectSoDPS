@@ -65,7 +65,7 @@ namespace Sandbox
         {
             base.OnHoverEntered(interactable);
 
-            attachTransform = null;
+          //attachTransform = null;
 
             ToggleMesh(true);
         }
