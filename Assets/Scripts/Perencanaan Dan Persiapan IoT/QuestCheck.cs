@@ -10,7 +10,7 @@ namespace PerencanaanPersiapanIoT
         private string objectName = "";
         [SerializeField] private List<QuestPicker> questList;
 
-        public PartialQuestController partialQuestController;
+        public ToDoController toDoController;
 
         private void OnTriggerEnter(Collider other)
         {
@@ -40,7 +40,7 @@ namespace PerencanaanPersiapanIoT
                     Debug.Log("Barang dengan nama " + objectName + " cocok dengan quest yang telah selesai.");
 
                     foundMatchingQuest = true;
-                    partialQuestController.FinishItem(quest.questNumber);
+                    toDoController.FinishItem(quest.questNumber);
 
                     // Menandai quest sebagai selesai
                     isQuestCompleted = true;
