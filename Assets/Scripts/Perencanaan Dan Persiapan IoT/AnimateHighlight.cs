@@ -5,14 +5,21 @@ using UnityEngine.UI;
 
 namespace PerencanaanPersiapanIoT
 {
-    public class SwitchHighlight : MonoBehaviour
+    public class AnimateHighlight : MonoBehaviour
     {
         [System.Serializable]
         public struct ListImage
         {
-            public Sprite imageDisplayList; // Menggunakan Sprite untuk menyimpan gambar
+            public Sprite imageDisplayList; // Menggunakan Sprite pada Background
+            public Sprite imageButton;
             public Vector3 posisiButton;
-            public Vector2 buttonSize; // Ukuran tombol
+            public float Width;
+            public float height;
+            public movementType myMovement;
+            public enum movementType
+            {
+                leftToRight, rightToLeft
+            }
         }
 
         public List<ListImage> listImage;
@@ -40,11 +47,13 @@ namespace PerencanaanPersiapanIoT
                 // Mengganti gambar
                 imageDisplay.sprite = listImage[currentIndex].imageDisplayList;
 
-                // Mengganti posisi tombol
-                ButtonHighlight.transform.localPosition = listImage[currentIndex].posisiButton;
 
-                // Mengatur ukuran tombol
-                ButtonHighlight.GetComponent<RectTransform>().sizeDelta = listImage[currentIndex].buttonSize;
+
+                //// Mengganti posisi tombol
+                //ButtonHighlight.transform.localPosition = listImage[currentIndex].posisiButton;
+
+                //// Mengatur ukuran tombol
+                //ButtonHighlight.GetComponent<RectTransform>().sizeDelta = listImage[currentIndex].buttonSize;
             }
             else
             {
