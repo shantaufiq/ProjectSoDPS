@@ -14,6 +14,8 @@ namespace Sandbox
         public MovementType defaultMovement;
         public GameObject targetObject;
 
+        private int _animationId;
+
         // public Sprite spriteExample;
 
         private void Awake()
@@ -39,23 +41,32 @@ namespace Sandbox
             if (_movementType == MovementType.RightToLeft)
             {
                 targetObject.GetComponent<RectTransform>().pivot = new Vector2(0.5f, 0.5f);
-                LeanTween.moveLocalX(targetObject, 20f, _time).setEaseInQuad().setLoopPingPong();
+                int i = LeanTween.moveLocalX(targetObject, 20f, _time).setEaseInQuad().setLoopPingPong().id;
+                _animationId = i;
             }
             else if (_movementType == MovementType.LeftToRight)
             {
                 targetObject.GetComponent<RectTransform>().pivot = new Vector2(0.5f, 0.5f);
-                LeanTween.moveLocalX(targetObject, -20f, _time).setEaseInQuad().setLoopPingPong();
+                int i = LeanTween.moveLocalX(targetObject, -20f, _time).setEaseInQuad().setLoopPingPong().id;
+                _animationId = i;
             }
             else if (_movementType == MovementType.DownToUp)
             {
                 targetObject.GetComponent<RectTransform>().pivot = new Vector2(0.5f, 0.5f);
-                LeanTween.moveLocalY(targetObject, 20f, _time).setEaseInQuad().setLoopPingPong();
+                int i = LeanTween.moveLocalY(targetObject, 20f, _time).setEaseInQuad().setLoopPingPong().id;
+                _animationId = i;
             }
             else if (_movementType == MovementType.UpToDown)
             {
                 targetObject.GetComponent<RectTransform>().pivot = new Vector2(0.5f, 0.5f);
-                LeanTween.moveLocalY(targetObject, 20f, _time).setEaseInQuad().setLoopPingPong();
+                int i = LeanTween.moveLocalY(targetObject, 20f, _time).setEaseInQuad().setLoopPingPong().id;
+                _animationId = i;
             }
+        }
+
+        public void StopAnimate()
+        {
+            LeanTween.cancel(_animationId);
         }
     }
 }

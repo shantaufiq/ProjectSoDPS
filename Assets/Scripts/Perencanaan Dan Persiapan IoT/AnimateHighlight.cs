@@ -2,58 +2,100 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
-
+using Sandbox;
+using UnityEngine.Events;
 namespace PerencanaanPersiapanIoT
 {
     public class AnimateHighlight : MonoBehaviour
     {
+        public static AnimateHighlight instance;
+
         [System.Serializable]
-        public struct ListImage
+        public struct contentFormat
         {
-            public Sprite imageDisplayList; // Menggunakan Sprite pada Background
-            public Sprite imageButton;
-            public Vector3 posisiButton;
-            public float Width;
-            public float height;
-            public movementType myMovement;
-            public enum movementType
+            public List<data> contentData;
+
+            [System.Serializable]
+            public struct data
             {
-                leftToRight, rightToLeft
+                public Sprite imageDisplayBackground;
+                [Header("Button Component")]
+                public Vector3 buttonPosition;
+                public Vector3 buttonSize;
+                [Header("Pop Up Component")]
+                public Sprite imagePopUp;
+                public Vector3 popUpPosition;
+                public AnimatePingpong.MovementType myMovement;
+
             }
         }
 
-        public List<ListImage> listImage;
+        public List<contentFormat> contentManager;
+
+        public int currentIndex = 0;
+        [SerializeField] private List<contentFormat.data> stagingData;
+
+        public GameObject[] ObjectToSetActive;
         public Image imageDisplay;
         public Button ButtonHighlight;
 
-        private int currentIndex = 0;
+        [Header("External Assets")]
+        [SerializeField] private AnimatePingpong popupAnimation; 
+
         private bool canPressButton = true;
         public float cooldownTime = 1.0f; // Waktu cooldown dalam detik
 
+        [Header("Check Data")]
+        public bool isArduinoIoT;
+
+        private void Awake()
+        {
+            instance = this;
+        }
         private void Start()
         {
             currentIndex = 0;
-            // Set gambar dan posisi tombol untuk indeks awal
-            UpdateImageAndPosition();
+            //UpdateImageAndPosition();
         }
 
-        // Method untuk mengganti gambar dan posisi tombol berdasarkan indeks
-        private void UpdateImageAndPosition()
+        public void ObjectToSetActiveState(bool isActive)
         {
-            if (listImage[currentIndex].imageDisplayList == null) return;
 
-            if (currentIndex >= 0 && currentIndex < listImage.Count)
+            foreach (var item in ObjectToSetActive)
             {
-                // Mengganti gambar
-                imageDisplay.sprite = listImage[currentIndex].imageDisplayList;
+                item.SetActive(isActive);
+            }
+        }
 
+        public void OnClickShowContent(int _index)
+        {
+            for (int i = 0; i < contentManager[_index].contentData.Count; i++)
+            {
+                stagingData.Add(contentManager[_index].contentData[i]);
+            }
 
+            ObjectToSetActiveState(true);
+            PrintDataToCanvas();
+        }
 
-                //// Mengganti posisi tombol
-                //ButtonHighlight.transform.localPosition = listImage[currentIndex].posisiButton;
+        public void PrintDataToCanvas()
+        {
+            if (stagingData[currentIndex].imageDisplayBackground == null) return;
 
-                //// Mengatur ukuran tombol
-                //ButtonHighlight.GetComponent<RectTransform>().sizeDelta = listImage[currentIndex].buttonSize;
+            popupAnimation.StopAnimate();
+
+            if (currentIndex >= 0 && currentIndex < stagingData.Count)
+            {
+                // mengganti gambar
+                imageDisplay.sprite = stagingData[currentIndex].imageDisplayBackground;
+
+                popupAnimation.SetDescriptionBtn(stagingData[currentIndex].imagePopUp, stagingData[currentIndex].popUpPosition, stagingData[currentIndex].myMovement);
+
+                // mengganti posisi tombol
+                ButtonHighlight.transform.localPosition = stagingData[currentIndex].buttonPosition;
+
+                //// mengatur ukuran tombol
+                ButtonHighlight.GetComponent<RectTransform>().sizeDelta = stagingData[currentIndex].buttonSize;
             }
             else
             {
@@ -61,15 +103,21 @@ namespace PerencanaanPersiapanIoT
             }
         }
 
-        // Method untuk menangani ketika tombol ditekan
         public void OnButtonPressed()
         {
+             if (currentIndex >= stagingData.Count - 1)
+            {
+                stagingData.Clear();
+                currentIndex = 0;
+                ObjectToSetActiveState(false);
+                return;
+            }
+
             if (canPressButton)
             {
-                // Tingkatkan indeks dan pastikan tetap dalam rentang yang valid
-                currentIndex = (currentIndex + 1) % listImage.Count;
-                // Update gambar dan posisi tombol sesuai dengan indeks baru
-                UpdateImageAndPosition();
+                currentIndex = (currentIndex + 1);
+
+                PrintDataToCanvas();
 
                 // Mengatur cooldown
                 StartCoroutine(ButtonCooldown());
