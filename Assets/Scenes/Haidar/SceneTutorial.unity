@@ -8709,10 +8709,6 @@ PrefabInstance:
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 704844313}
-    - targetCorrespondingSourceObject: {fileID: 2464896033409426358, guid: 2f7c9a91335112145a2742cb9b8763a2,
-        type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 704844311}
   m_SourcePrefab: {fileID: 100100000, guid: 2f7c9a91335112145a2742cb9b8763a2, type: 3}
 --- !u!224 &704844309 stripped
 RectTransform:
@@ -8720,25 +8716,6 @@ RectTransform:
     type: 3}
   m_PrefabInstance: {fileID: 704844308}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &704844310 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 2464896033409426358, guid: 2f7c9a91335112145a2742cb9b8763a2,
-    type: 3}
-  m_PrefabInstance: {fileID: 704844308}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &704844311
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 704844310}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 878e5913545e415439d4615d67ff09b2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  targetNextSceneName: 'SceneTutorial '
 --- !u!1 &704844312 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 3377108377699609893, guid: 2f7c9a91335112145a2742cb9b8763a2,
@@ -11667,7 +11644,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 878e5913545e415439d4615d67ff09b2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  targetNextSceneName: SceneTutorial
+  targetNextSceneName: Scene Level
 --- !u!4 &960979502
 Transform:
   m_ObjectHideFlags: 0
@@ -13693,7 +13670,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &1082246143
 MonoBehaviour:
   m_ObjectHideFlags: 0
