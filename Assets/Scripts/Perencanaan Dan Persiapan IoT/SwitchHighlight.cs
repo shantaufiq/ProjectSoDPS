@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 using UnityEngine.UI;
 
 namespace PerencanaanPersiapanIoT
@@ -18,6 +19,7 @@ namespace PerencanaanPersiapanIoT
         public List<ListImage> listImage;
         public Image imageDisplay;
         public Button ButtonHighlight;
+        public UnityEvent OnCurrentIndexMax;
 
         private int currentIndex = 0;
         private bool canPressButton = true;
@@ -59,6 +61,12 @@ namespace PerencanaanPersiapanIoT
             {
                 // Tingkatkan indeks dan pastikan tetap dalam rentang yang valid
                 currentIndex = (currentIndex + 1) % listImage.Count;
+
+                if (currentIndex == listImage.Count - 1)
+                {
+                    OnCurrentIndexMax?.Invoke();
+                }
+
                 // Update gambar dan posisi tombol sesuai dengan indeks baru
                 UpdateImageAndPosition();
 

@@ -1,3 +1,4 @@
+using Sandbox;
 using Seville;
 using System.Collections;
 using System.Collections.Generic;
@@ -7,6 +8,6 @@ namespace InstalasiIoT
 {
     public class CableController : MonoBehaviour
     {
-        public List<SESocketInteractor> sockets = new List<SESocketInteractor>();
+        public List<SocketInteractorTwoAttach> sockets = new List<SocketInteractorTwoAttach>();
     }
 }

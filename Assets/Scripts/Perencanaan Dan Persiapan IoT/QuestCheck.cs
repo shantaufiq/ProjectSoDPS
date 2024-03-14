@@ -10,13 +10,15 @@ namespace PerencanaanPersiapanIoT
         private string objectName = "";
         [SerializeField] private List<QuestPicker> questList;
 
-        public PartialQuestController partialQuestController;
+        public ToDoController toDoController;
+        private GameObject canvasObject; // Mengubah menjadi private karena akan diakses melalui transform parent
 
         private void OnTriggerEnter(Collider other)
         {
             if (other.CompareTag("Object") && !isQuestCompleted)
             {
                 objectName = other.gameObject.name;
+                canvasObject = FindCanvasInParent(other.gameObject);
                 CheckQuestCompletion();
             }
         }
@@ -26,8 +28,20 @@ namespace PerencanaanPersiapanIoT
             if (other.CompareTag("Object") && !isQuestCompleted)
             {
                 objectName = other.gameObject.name;
+                canvasObject = FindCanvasInParent(other.gameObject);
                 CheckQuestCompletion();
             }
+        }
+
+        private GameObject FindCanvasInParent(GameObject parentObject)
+        {
+            // Mencari objek canvas dalam parent
+            Canvas canvas = parentObject.GetComponentInChildren<Canvas>();
+            if (canvas != null)
+            {
+                return canvas.gameObject;
+            }
+            return null;
         }
 
         private void CheckQuestCompletion()
@@ -40,10 +54,16 @@ namespace PerencanaanPersiapanIoT
                     Debug.Log("Barang dengan nama " + objectName + " cocok dengan quest yang telah selesai.");
 
                     foundMatchingQuest = true;
-                    partialQuestController.FinishItem(quest.questNumber);
+                    toDoController.FinishItem(quest.questNumber);
 
                     // Menandai quest sebagai selesai
                     isQuestCompleted = true;
+
+                    // Menonaktifkan canvas
+                    if (canvasObject != null)
+                    {
+                        canvasObject.SetActive(false);
+                    }
 
                     break;
                 }
@@ -54,7 +74,7 @@ namespace PerencanaanPersiapanIoT
                 Debug.Log("Barang dengan nama " + objectName + " tidak cocok dengan quest yang telah selesai.");
             }
         }
-        
+
     }
 
     [System.Serializable]

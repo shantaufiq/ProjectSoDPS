@@ -52,7 +52,7 @@ namespace Sandbox
         protected override void OnHoverEntered(XRBaseInteractable interactable)
         {
             base.OnHoverEntered(interactable);
-
+            if (this.GetOldestInteractableSelected() != null) return;
             if (interactable.gameObject.CompareTag("SocketAttach1")) attachTransform = targetAttach1;
             else if (interactable.gameObject.CompareTag("SocketAttach2")) attachTransform = targetAttach2;
             else attachTransform = null;
@@ -65,7 +65,7 @@ namespace Sandbox
         {
             base.OnHoverEntered(interactable);
 
-            attachTransform = null;
+          //attachTransform = null;
 
             ToggleMesh(true);
         }
