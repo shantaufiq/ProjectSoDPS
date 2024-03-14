@@ -9777,7 +9777,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &756501649
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14201,6 +14201,9 @@ MonoBehaviour:
   prefabQuest: {fileID: -8692590128191793959, guid: f3abb4e3088f4404b89b178017dcf27a,
     type: 3}
   itemListParent: {fileID: 1439822813}
+  OnQuestFinished:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &1136327831 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4182649044132593697, guid: 0633005dc2b5f0a4e8fb9055efe422db,
