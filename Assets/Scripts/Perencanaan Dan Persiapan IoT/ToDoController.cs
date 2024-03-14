@@ -2,6 +2,8 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 using UnityEngine.UI;
+using UnityEngine.Events;
+using System.Linq;
 
 namespace PerencanaanPersiapanIoT
 {
@@ -17,6 +19,7 @@ namespace PerencanaanPersiapanIoT
         public List<ItemList> itemLists;
         public ToDoHandler prefabQuest;
         public Transform itemListParent;
+        public UnityEvent OnQuestFinished;
 
         void Start()
         {
@@ -56,6 +59,11 @@ namespace PerencanaanPersiapanIoT
                 temp.isCompleted = true;
 
                 questData[index] = temp;
+            }
+
+            if (itemLists.All(item => item.isCompleted))
+            {
+                OnQuestFinished.Invoke();
             }
 
             DisplayItemList();

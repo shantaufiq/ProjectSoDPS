@@ -1,3 +1,4 @@
+using Sandbox;
 using Seville;
 using UnityEngine;
 using UnityEngine.XR.Interaction.Toolkit;
@@ -5,13 +6,14 @@ namespace InstalasiIoT
 {
     public class CableValidator : MonoBehaviour
     {
-        private SESocketInteractor socketComponent;
-        public SESocketInteractor otherPairSocket;
+        private SocketInteractorTwoAttach socketComponent;
+        public SocketInteractorTwoAttach otherPairSocket;
         [SerializeField] private SocketScoreChecker socketScoreChecker;
         private BoneCableController boneCableController;
+
         private void Start()
         {
-            socketComponent = GetComponent<SESocketInteractor>();
+            socketComponent = GetComponent<SocketInteractorTwoAttach>();
         }
 
         public void CheckCable()
@@ -24,14 +26,15 @@ namespace InstalasiIoT
 
                 if (cableController.sockets.Contains(otherPairSocket))
                 {
-                    socketScoreChecker.FinishQuest();
+                    socketScoreChecker.isQuestFinish = true;
+                    socketScoreChecker.ValidateQuest();
                     socketScoreChecker.SetStatus(Status.Connected);
                 }
                 else if (cableController.sockets.Count > 0 && !cableController.sockets.Contains(otherPairSocket))
                 {
                     socketScoreChecker.SetStatus(Status.Error);
+                    socketScoreChecker.isQuestFinish = false;
                 }
-
                 cableController.sockets.Add(socketComponent);
 
             }
@@ -45,6 +48,11 @@ namespace InstalasiIoT
             {
                 cableController.sockets.Remove(socketComponent);
                 socketScoreChecker.SetStatus(Status.Error);
+                if (socketScoreChecker.isQuestFinish)
+                {
+                    socketScoreChecker.isQuestFinish = false;
+                    socketScoreChecker.ValidateQuest();
+                }
             }
         }
     }

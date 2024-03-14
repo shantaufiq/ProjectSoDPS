@@ -1,22 +1,32 @@
 using Seville;
+using System;
 using System.Collections;
 using Tproject.Quest;
 using UnityEngine;
+using UnityEngine.Events;
 using UnityEngine.XR.Interaction.Toolkit;
 
 namespace InstalasiIoT
 {
     public class SocketScoreChecker : MonoBehaviour
     {
-        [SerializeField] private int questIndex;
-        [SerializeField] private PartialQuestController _partialQuestController;
-        [SerializeField] private SESocketInteractor[] sockets;
+        [SerializeField] private UnityEvent OnQuestFinish;
+        [SerializeField] private UnityEvent OnQuestFail;
         [SerializeField] private ConnectionStatus connectionStatus;
+        public bool isQuestFinish;
         private Status status;
 
-        public void FinishQuest()
+        public void ValidateQuest()
         {
-            _partialQuestController.FinishItem(questIndex);
+            if (isQuestFinish)
+            {
+                OnQuestFinish?.Invoke();
+            }
+            else
+            {
+                OnQuestFail?.Invoke();
+            }
+            
         }
 
         private void ValidateConnection(Status statusValue)

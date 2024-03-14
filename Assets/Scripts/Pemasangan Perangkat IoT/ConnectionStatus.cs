@@ -8,8 +8,9 @@ namespace InstalasiIoT
     {
         [SerializeField] private TextMeshProUGUI valueStatus;
         [SerializeField] private string connected;
-        [SerializeField] private string disconnected;
+        [SerializeField] private Sprite connectedSprite;
         [SerializeField] private string error;
+        [SerializeField] private Sprite errorSprite;
         [SerializeField] private Image panelImage;
 
 
@@ -19,11 +20,11 @@ namespace InstalasiIoT
             {
                 case Status.Connected:
                     valueStatus.text = connected;
-                    panelImage.color = Color.green;
-                    break;
+                    panelImage.sprite = connectedSprite;
+                    break; 
                 case Status.Error:
                     valueStatus.text = error;
-                    panelImage.color = Color.red;
+                    panelImage.sprite = errorSprite;
                     break;
             }
         }
