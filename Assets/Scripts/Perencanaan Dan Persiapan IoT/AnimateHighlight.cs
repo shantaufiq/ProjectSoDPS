@@ -36,11 +36,12 @@ namespace PerencanaanPersiapanIoT
         [SerializeField] private List<contentFormat.data> stagingData;
 
         public GameObject[] ObjectToSetActive;
+        public GameObject menuCanvas;
         public Image imageDisplay;
         public Button ButtonHighlight;
 
         [Header("External Assets")]
-        [SerializeField] private AnimatePingpong popupAnimation; 
+        [SerializeField] private AnimatePingpong popupAnimation;
 
         private bool canPressButton = true;
         public float cooldownTime = 1.0f; // Waktu cooldown dalam detik
@@ -65,6 +66,8 @@ namespace PerencanaanPersiapanIoT
             {
                 item.SetActive(isActive);
             }
+
+            menuCanvas.SetActive(!isActive);
         }
 
         public void OnClickShowContent(int _index)
@@ -105,7 +108,7 @@ namespace PerencanaanPersiapanIoT
 
         public void OnButtonPressed()
         {
-             if (currentIndex >= stagingData.Count - 1)
+            if (currentIndex >= stagingData.Count - 1)
             {
                 stagingData.Clear();
                 currentIndex = 0;
