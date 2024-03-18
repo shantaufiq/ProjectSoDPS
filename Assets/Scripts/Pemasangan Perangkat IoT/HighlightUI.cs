@@ -127,6 +127,7 @@ namespace InstalasiIoT
                 {
                     borderTransform.anchoredPosition = data.borderPosition;
                     borderTransform.sizeDelta = data.borderSize;
+                    borderGameobject.SetActive(false);
                     borderGameobject.SetActive(true);
                 }
                 else

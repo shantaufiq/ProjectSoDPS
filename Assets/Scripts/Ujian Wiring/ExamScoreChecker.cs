@@ -108,7 +108,7 @@ namespace InstalasiIoT
             int currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
 
             // Reload the current scene
-            SceneManager.LoadScene(currentSceneIndex);
+            SceneManager.LoadSceneAsync(currentSceneIndex,LoadSceneMode.Single);
         }
     }
 }
