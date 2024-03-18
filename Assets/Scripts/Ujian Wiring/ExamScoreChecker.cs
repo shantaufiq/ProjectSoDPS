@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 namespace InstalasiIoT
@@ -99,6 +100,15 @@ namespace InstalasiIoT
                 starUIImage[i].sprite = starFill;
             }
         
+        }
+
+        public void RestartLevel()
+        {
+            // Get the index of the current active scene
+            int currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
+
+            // Reload the current scene
+            SceneManager.LoadScene(currentSceneIndex);
         }
     }
 }
