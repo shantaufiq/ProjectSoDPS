@@ -22,7 +22,7 @@ namespace InstalasiIoT
         void AnimateMovement()
         {
             // Move the image up and down using LeanTween
-            LeanTween.moveLocalY(gameObject, movementDistance, movementSpeed)
+            LeanTween.moveY(gameObject, movementDistance, movementSpeed)
                 .setLoopPingPong();
         }
 

@@ -13,6 +13,10 @@ namespace InstalasiIoT
         [SerializeField] private TextMeshProUGUI headerTMP;
         [SerializeField] private string headerText;
 
+        public void Enabled(bool value)
+        {
+            this.enabled = value;
+        }
 
         public void OpenPopup()
         {
