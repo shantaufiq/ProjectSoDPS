@@ -23,6 +23,17 @@ namespace PerencanaanPersiapanIoT
             }
         }
 
+        private void OnTriggerExit(Collider other)
+        {
+            if (other.CompareTag("Object"))
+            {
+                // Reset objectName and canvasObject when object exits the trigger
+                objectName = "";
+                canvasObject = null;
+                isQuestCompleted = false; // Set isQuestCompleted to false when the object exits the trigger
+            }
+        }
+
         private void OnTriggerStay(Collider other)
         {
             if (other.CompareTag("Object") && !isQuestCompleted)
