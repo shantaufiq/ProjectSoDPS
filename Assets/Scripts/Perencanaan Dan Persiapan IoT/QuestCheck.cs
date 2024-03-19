@@ -41,6 +41,7 @@ namespace PerencanaanPersiapanIoT
                 objectName = other.gameObject.name;
                 canvasObject = FindCanvasInParent(other.gameObject);
                 CheckQuestCompletion();
+                
             }
         }
 

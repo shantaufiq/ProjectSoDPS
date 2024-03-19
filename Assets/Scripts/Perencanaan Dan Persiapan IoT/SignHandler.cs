@@ -36,6 +36,13 @@ public class SignHandler : MonoBehaviour
         objectGrabbedPlayer = false;
     }
 
+    public void Matikan()
+    {
+        signRectTransform.enabled = false;
+        //LeanTween.cancel(tween.id);
+        isTweening = false; // Set tweener telah dibatalkan
+    }
+
     public void ObjectGrabbed()
     {
         if (objectGrabbedPlayer && !isTweening) // Hanya mulai tween jika belum ada tweener yang berjalan
