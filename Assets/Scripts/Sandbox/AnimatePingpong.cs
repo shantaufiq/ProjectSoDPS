@@ -32,6 +32,7 @@ namespace Sandbox
         {
             this.transform.localPosition = _transform;
             targetObject.GetComponentInChildren<Image>().sprite = _img;
+            targetObject.transform.localPosition = Vector3.zero;
 
             PingpongObject(_type, .7f);
         }
@@ -67,6 +68,7 @@ namespace Sandbox
         public void StopAnimate()
         {
             LeanTween.cancel(_animationId);
+            targetObject.transform.localPosition = Vector3.zero;
         }
     }
 }

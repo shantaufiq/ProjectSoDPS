@@ -20,6 +20,22 @@ namespace PerencanaanPersiapanIoT
         private bool isBlinking = false; // Menandakan apakah animasi berkedip sedang berlangsung
         private int blinkCounter = 0;
 
+        private void OnEnable()
+        {
+            button = GetComponent<Button>();
+            buttonImage = button.image;
+            originalColor = buttonImage.color; // Simpan warna asli tombol
+
+            // Panggil fungsi Blink() setelah penundaan (jika ada)
+            LeanTween.delayedCall(gameObject, delay, Blink);
+        }
+
+        private void OnDisable()
+        {
+            StopBlinking();
+        }
+        
+
         void Start()
         {
             button = GetComponent<Button>();
