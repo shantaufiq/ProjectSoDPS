@@ -21,21 +21,6 @@ EditorBuildSettings:
     path: Assets/Scenes/Alex/Object Interaction.unity
     guid: 81d2d7844fca9f24282c1e95b96db49c
   - enabled: 1
-    path: Assets/Scenes/Haidar/SceneVidio.unity
-    guid: 1df859e2b2001c343bfb306a8c742a99
-  - enabled: 1
-    path: Assets/Scenes/Haidar/SceneTutorial.unity
-    guid: 66233018408fe6f49ab6455d54a1d756
-  - enabled: 1
-    path: Assets/Scenes/Haidar/Scene Level.unity
-    guid: 37c4a02a8dbacd842842644f862b253a
-  - enabled: 1
-    path: Assets/Scenes/Rafly/Persiapan Dan Perencanaan.unity
-    guid: 8b1a3994527bb5c47bc4142c34a9ff3c
-  - enabled: 1
-    path: Assets/Scenes/Alex/Object Interaction.unity
-    guid: 81d2d7844fca9f24282c1e95b96db49c
-  - enabled: 1
     path: Assets/Scenes/Alex/Scoring Wiring.unity
     guid: d39bb7fe351b902458fd252e634a8a6e
   - enabled: 0
