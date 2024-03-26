@@ -24,6 +24,7 @@ namespace Sandbox
         {
             base.Awake();
             mesh = GetComponent<MeshRenderer>();
+            if (attachTransform != null) attachTransform = null;
         }
 
         [System.Obsolete]
@@ -31,11 +32,16 @@ namespace Sandbox
         {
             base.OnSelectEntered(interactable);
 
-            interactable.transform.SetParent(parentArea);
+            if (interactable.gameObject.CompareTag("SocketAttach1")) attachTransform = targetAttach1;
+            else if (interactable.gameObject.CompareTag("SocketAttach2")) attachTransform = targetAttach2;
+
+            interactable.transform.SetParent(parentArea, false);
             ToggleMesh(false);
 
             var obj = interactable.GetComponent<XRGrabInteractableTwoAttach>();
             obj.retainTransformParent = false;
+            interactable.transform.localPosition = attachTransform.position;
+            interactable.transform.localRotation = attachTransform.rotation;
         }
 
         [System.Obsolete]
@@ -63,9 +69,9 @@ namespace Sandbox
         [System.Obsolete]
         protected override void OnHoverExited(XRBaseInteractable interactable)
         {
-            base.OnHoverEntered(interactable);
+            base.OnHoverExited(interactable);
 
-          //attachTransform = null;
+            if (this.GetOldestInteractableSelected() == null) attachTransform = null;
 
             ToggleMesh(true);
         }
