@@ -13,15 +13,15 @@ namespace PerencanaanPersiapanIoT
         public ToDoController toDoController;
         private GameObject canvasObject; // Mengubah menjadi private karena akan diakses melalui transform parent
 
-        private void OnTriggerEnter(Collider other)
-        {
-            if (other.CompareTag("Object") && !isQuestCompleted)
-            {
-                objectName = other.gameObject.name;
-                canvasObject = FindCanvasInParent(other.gameObject);
-                CheckQuestCompletion();
-            }
-        }
+        //private void OnTriggerEnter(Collider other)
+        //{
+        //    if (other.CompareTag("Object") && !isQuestCompleted)
+        //    {
+        //        objectName = other.gameObject.name;
+        //        canvasObject = FindCanvasInParent(other.gameObject);
+        //        CheckQuestCompletion();
+        //    }
+        //}
 
         private void OnTriggerExit(Collider other)
         {
