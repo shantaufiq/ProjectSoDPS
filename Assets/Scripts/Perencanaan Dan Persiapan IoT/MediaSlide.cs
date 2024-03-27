@@ -34,6 +34,14 @@ namespace PerencanaanPersiapanIoT
             }
         }
 
+        public void ResetSlide()
+            {
+                currentIndex = 0; // Reset indeks gambar ke 0
+                displayImage.sprite = images[currentIndex]; // Tampilkan gambar pertama dari list
+                UpdateIndicators(); // Memperbarui penanda bola-bola
+                UpdateButtonInteractability(); // Memperbarui keadaan interaktif tombol
+            }
+
         public void ShowNextImage()
         {
             // Mengecek apakah masih ada gambar berikutnya di dalam list
