@@ -1,5 +1,5 @@
 using Sandbox;
-using Seville;
+using System.Linq;
 using UnityEngine;
 using UnityEngine.XR.Interaction.Toolkit;
 namespace InstalasiIoT
@@ -7,7 +7,8 @@ namespace InstalasiIoT
     public class CableValidator : MonoBehaviour
     {
         private SocketInteractorTwoAttach socketComponent;
-        public SocketInteractorTwoAttach otherPairSocket;
+        public SocketInteractorTwoAttach[] otherPairSockets;
+        [SerializeField] private PinType pinSocketType;
         [SerializeField] private SocketScoreChecker socketScoreChecker;
         private BoneCableController boneCableController;
 
@@ -24,18 +25,28 @@ namespace InstalasiIoT
                 boneCableController = boneCable;
                 var cableController = boneCableController.CableController;
 
-                if (cableController.sockets.Contains(otherPairSocket))
+                if (cableController.sockets.Any(socket => otherPairSockets.Contains(socket)))
                 {
                     socketScoreChecker.isQuestFinish = true;
                     socketScoreChecker.ValidateQuest();
-                    socketScoreChecker.SetStatus(Status.Connected);
+                    if (cableController.socketsType.Contains(pinSocketType))
+                    {
+                        socketScoreChecker.SetStatus(Status.Connected);
+                    }
+                    else
+                    {
+                        socketScoreChecker.SetStatus(Status.Warning);
+                    }
+
                 }
-                else if (cableController.sockets.Count > 0 && !cableController.sockets.Contains(otherPairSocket))
+                else if (cableController.sockets.Count > 0 && 
+                    !cableController.sockets.Any(socket => otherPairSockets.Contains(socket)))
                 {
                     socketScoreChecker.SetStatus(Status.Error);
                     socketScoreChecker.isQuestFinish = false;
                 }
                 cableController.sockets.Add(socketComponent);
+                cableController.socketsType.Add(pinSocketType);
 
             }
         }
@@ -47,6 +58,7 @@ namespace InstalasiIoT
             if (cableController.sockets.Count > 0)
             {
                 cableController.sockets.Remove(socketComponent);
+                cableController.socketsType.Remove(pinSocketType);
                 socketScoreChecker.SetStatus(Status.Error);
                 if (socketScoreChecker.isQuestFinish)
                 {
@@ -55,5 +67,12 @@ namespace InstalasiIoT
                 }
             }
         }
+    }
+
+    public enum PinType
+    {
+        DataPin,
+        GroundPin,
+        PowerPin
     }
 }

@@ -40,6 +40,9 @@ namespace InstalasiIoT
                 case Status.Error:
                     connectionStatus.SetStatus(Status.Error);
                     break;
+                case Status.Warning:
+                    connectionStatus.SetStatus(Status.Warning);
+                    break;
             }
         }
 

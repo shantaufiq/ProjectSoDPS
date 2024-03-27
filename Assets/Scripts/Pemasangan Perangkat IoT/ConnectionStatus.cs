@@ -26,12 +26,17 @@ namespace InstalasiIoT
                     valueStatus.text = error;
                     panelImage.sprite = errorSprite;
                     break;
+                case Status.Warning:
+                    // TODO: Add warning status
+                    Debug.Log("Kabel warna tidak sesuai");
+                    break;
             }
         }
     }
 
     public enum Status
     {
+        Warning,
         Connected,
         Error
     }
