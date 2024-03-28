@@ -1,4 +1,5 @@
 using Sandbox;
+using System;
 using System.Linq;
 using UnityEngine;
 using UnityEngine.XR.Interaction.Toolkit;
@@ -9,7 +10,7 @@ namespace InstalasiIoT
         private SocketInteractorTwoAttach socketComponent;
         public SocketInteractorTwoAttach[] otherPairSockets;
         [SerializeField] private PinType pinSocketType;
-        [SerializeField] private SocketScoreChecker socketScoreChecker;
+        [SerializeField] private SocketScoreChecker[] socketScoreChecker;
         private BoneCableController boneCableController;
 
         private void Start()
@@ -24,31 +25,64 @@ namespace InstalasiIoT
             {
                 boneCableController = boneCable;
                 var cableController = boneCableController.CableController;
-
-                if (cableController.sockets.Any(socket => otherPairSockets.Contains(socket)))
-                {
-                    socketScoreChecker.isQuestFinish = true;
-                    socketScoreChecker.ValidateQuest();
-                    if (cableController.socketsType.Contains(pinSocketType))
-                    {
-                        socketScoreChecker.SetStatus(Status.Connected);
-                    }
-                    else
-                    {
-                        socketScoreChecker.SetStatus(Status.Warning);
-                    }
-
-                }
-                else if (cableController.sockets.Count > 0 && 
-                    !cableController.sockets.Any(socket => otherPairSockets.Contains(socket)))
-                {
-                    socketScoreChecker.SetStatus(Status.Error);
-                    socketScoreChecker.isQuestFinish = false;
-                }
                 cableController.sockets.Add(socketComponent);
                 cableController.socketsType.Add(pinSocketType);
 
+                if (cableController.sockets.Any(socket => otherPairSockets.Contains(socket)))
+                {
+                    var scoreChecker = GetScoreChecker(cableController);
+
+                    scoreChecker.isQuestFinish = true;
+                    scoreChecker.ValidateQuest();
+
+                    foreach (var type in cableController.socketsType)
+                    {
+                        if (type == cableController.supposedPinConnect)
+                        {
+                            scoreChecker.SetStatus(Status.Connected);
+                        }
+                        else
+                        {
+                            scoreChecker.SetStatus(Status.Warning);
+                            break;
+                        }
+                    }
+
+                   /* if (cableController.socketsType.Contains(pinSocketType))
+                    {
+                        scoreChecker.SetStatus(Status.Connected);
+                    }
+                    else
+                    {
+                        scoreChecker.SetStatus(Status.Warning);
+                    }*/
+
+                }
+                else if (/*cableController.sockets.Count > 0 &&*/
+                    !cableController.sockets.Any(socket => otherPairSockets.Contains(socket)))
+                {
+                    var scoreChecker = GetScoreChecker(cableController);
+
+                    scoreChecker.SetStatus(Status.Error);
+                    scoreChecker.isQuestFinish = false;
+                }
+
             }
+        }
+
+        private SocketScoreChecker GetScoreChecker(CableController cableController)
+        {
+            var scoreChecker = new SocketScoreChecker();
+            foreach (var socket in cableController.sockets)
+            {
+                var matchingSocket = socketScoreChecker.FirstOrDefault(scoreChecker => scoreChecker.identitySocket == socket);
+                if (matchingSocket != null)
+                {
+                    scoreChecker = matchingSocket;
+                    break;
+                }
+            }
+            return scoreChecker;
         }
 
         public void Detach()
@@ -57,13 +91,14 @@ namespace InstalasiIoT
             var cableController = boneCableController.CableController;
             if (cableController.sockets.Count > 0)
             {
+                var scoreChecker = GetScoreChecker(cableController);
                 cableController.sockets.Remove(socketComponent);
                 cableController.socketsType.Remove(pinSocketType);
-                socketScoreChecker.SetStatus(Status.Error);
-                if (socketScoreChecker.isQuestFinish)
+                scoreChecker.SetStatus(Status.Error);
+                if (scoreChecker.isQuestFinish)
                 {
-                    socketScoreChecker.isQuestFinish = false;
-                    socketScoreChecker.ValidateQuest();
+                    scoreChecker.isQuestFinish = false;
+                    scoreChecker.ValidateQuest();
                 }
             }
         }

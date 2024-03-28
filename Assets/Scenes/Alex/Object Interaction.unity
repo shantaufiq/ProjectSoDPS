@@ -332,6 +332,21 @@ PrefabInstance:
       propertyPath: socketScoreChecker
       value: 
       objectReference: {fileID: 509186691}
+    - target: {fileID: 689713473421437887, guid: 7955b698d10c2e149aa826481ab1138f,
+        type: 3}
+      propertyPath: otherPairSockets.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 689713473421437887, guid: 7955b698d10c2e149aa826481ab1138f,
+        type: 3}
+      propertyPath: otherPairSockets.Array.data[0]
+      value: 
+      objectReference: {fileID: 670961941}
+    - target: {fileID: 689713473421437887, guid: 7955b698d10c2e149aa826481ab1138f,
+        type: 3}
+      propertyPath: socketScoreChecker.Array.data[0]
+      value: 
+      objectReference: {fileID: 509186691}
     - target: {fileID: 3414966798959160300, guid: 7955b698d10c2e149aa826481ab1138f,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -2372,8 +2387,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9ce6f7100e4c21e448bf9578f0ad2f96, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  otherPairSocket: {fileID: 1018512654}
-  socketScoreChecker: {fileID: 1772576057}
+  otherPairSockets:
+  - {fileID: 1018512654}
+  pinSocketType: 2
+  socketScoreChecker:
+  - {fileID: 1772576057}
 --- !u!136 &156394830
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -2581,8 +2599,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9ce6f7100e4c21e448bf9578f0ad2f96, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  otherPairSocket: {fileID: 1089960997}
-  socketScoreChecker: {fileID: 172693089}
+  otherPairSockets:
+  - {fileID: 1089960997}
+  - {fileID: 2074078273}
+  pinSocketType: 1
+  socketScoreChecker:
+  - {fileID: 172693089}
 --- !u!136 &161716096
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -2754,6 +2776,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   connectionStatus: {fileID: 1871377578}
+  identitySocket: {fileID: 502298851}
   isQuestFinish: 0
 --- !u!1 &170596265
 GameObject:
@@ -3270,8 +3293,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9ce6f7100e4c21e448bf9578f0ad2f96, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  otherPairSocket: {fileID: 741022383}
-  socketScoreChecker: {fileID: 1501937516}
+  otherPairSockets:
+  - {fileID: 741022383}
+  pinSocketType: 0
+  socketScoreChecker:
+  - {fileID: 1501937516}
 --- !u!136 &171500249
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -3358,6 +3384,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   connectionStatus: {fileID: 1855688692}
+  identitySocket: {fileID: 161716094}
   isQuestFinish: 0
 --- !u!1 &196840332
 GameObject:
@@ -4367,6 +4394,21 @@ PrefabInstance:
     - target: {fileID: 689713473421437887, guid: 7955b698d10c2e149aa826481ab1138f,
         type: 3}
       propertyPath: socketScoreChecker
+      value: 
+      objectReference: {fileID: 1782701553}
+    - target: {fileID: 689713473421437887, guid: 7955b698d10c2e149aa826481ab1138f,
+        type: 3}
+      propertyPath: otherPairSockets.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 689713473421437887, guid: 7955b698d10c2e149aa826481ab1138f,
+        type: 3}
+      propertyPath: otherPairSockets.Array.data[0]
+      value: 
+      objectReference: {fileID: 1430687718}
+    - target: {fileID: 689713473421437887, guid: 7955b698d10c2e149aa826481ab1138f,
+        type: 3}
+      propertyPath: socketScoreChecker.Array.data[0]
       value: 
       objectReference: {fileID: 1782701553}
     - target: {fileID: 3414966798959160300, guid: 7955b698d10c2e149aa826481ab1138f,
@@ -7429,8 +7471,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9ce6f7100e4c21e448bf9578f0ad2f96, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  otherPairSocket: {fileID: 883368560}
-  socketScoreChecker: {fileID: 169746245}
+  otherPairSockets:
+  - {fileID: 883368560}
+  pinSocketType: 2
+  socketScoreChecker:
+  - {fileID: 169746245}
 --- !u!136 &502298853
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -7716,12 +7761,47 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 689713473421437887, guid: 7955b698d10c2e149aa826481ab1138f,
         type: 3}
+      propertyPath: pinSocketType
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 689713473421437887, guid: 7955b698d10c2e149aa826481ab1138f,
+        type: 3}
       propertyPath: otherPairSocket
       value: 
       objectReference: {fileID: 2049493439}
     - target: {fileID: 689713473421437887, guid: 7955b698d10c2e149aa826481ab1138f,
         type: 3}
       propertyPath: socketScoreChecker
+      value: 
+      objectReference: {fileID: 680043095}
+    - target: {fileID: 689713473421437887, guid: 7955b698d10c2e149aa826481ab1138f,
+        type: 3}
+      propertyPath: otherPairSockets.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 689713473421437887, guid: 7955b698d10c2e149aa826481ab1138f,
+        type: 3}
+      propertyPath: socketScoreChecker.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 689713473421437887, guid: 7955b698d10c2e149aa826481ab1138f,
+        type: 3}
+      propertyPath: otherPairSockets.Array.data[0]
+      value: 
+      objectReference: {fileID: 2049493439}
+    - target: {fileID: 689713473421437887, guid: 7955b698d10c2e149aa826481ab1138f,
+        type: 3}
+      propertyPath: otherPairSockets.Array.data[1]
+      value: 
+      objectReference: {fileID: 161716094}
+    - target: {fileID: 689713473421437887, guid: 7955b698d10c2e149aa826481ab1138f,
+        type: 3}
+      propertyPath: socketScoreChecker.Array.data[0]
+      value: 
+      objectReference: {fileID: 172693089}
+    - target: {fileID: 689713473421437887, guid: 7955b698d10c2e149aa826481ab1138f,
+        type: 3}
+      propertyPath: socketScoreChecker.Array.data[1]
       value: 
       objectReference: {fileID: 680043095}
     - target: {fileID: 3414966798959160300, guid: 7955b698d10c2e149aa826481ab1138f,
@@ -8012,6 +8092,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   connectionStatus: {fileID: 918396437}
+  identitySocket: {fileID: 670961941}
   isQuestFinish: 0
 --- !u!1 &514479545
 GameObject:
@@ -10625,8 +10706,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9ce6f7100e4c21e448bf9578f0ad2f96, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  otherPairSocket: {fileID: 1654661780}
-  socketScoreChecker: {fileID: 509186691}
+  otherPairSockets:
+  - {fileID: 1654661780}
+  pinSocketType: 0
+  socketScoreChecker:
+  - {fileID: 509186691}
 --- !u!136 &670961944
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -10759,6 +10843,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   connectionStatus: {fileID: 538273471}
+  identitySocket: {fileID: 2049493439}
   isQuestFinish: 0
 --- !u!4 &680043096
 Transform:
@@ -11246,8 +11331,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9ce6f7100e4c21e448bf9578f0ad2f96, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  otherPairSocket: {fileID: 171500247}
-  socketScoreChecker: {fileID: 1501937516}
+  otherPairSockets:
+  - {fileID: 171500247}
+  pinSocketType: 0
+  socketScoreChecker:
+  - {fileID: 1501937516}
 --- !u!136 &741022380
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -14074,8 +14162,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9ce6f7100e4c21e448bf9578f0ad2f96, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  otherPairSocket: {fileID: 883368560}
-  socketScoreChecker: {fileID: 169746245}
+  otherPairSockets: []
+  pinSocketType: 0
+  socketScoreChecker:
+  - {fileID: 0}
 --- !u!114 &818360903
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -16005,8 +16095,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9ce6f7100e4c21e448bf9578f0ad2f96, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  otherPairSocket: {fileID: 502298851}
-  socketScoreChecker: {fileID: 169746245}
+  otherPairSockets:
+  - {fileID: 502298851}
+  pinSocketType: 2
+  socketScoreChecker:
+  - {fileID: 169746245}
 --- !u!114 &883368560
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -18226,12 +18319,32 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 689713473421437887, guid: 7955b698d10c2e149aa826481ab1138f,
         type: 3}
+      propertyPath: pinSocketType
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 689713473421437887, guid: 7955b698d10c2e149aa826481ab1138f,
+        type: 3}
       propertyPath: otherPairSocket
       value: 
       objectReference: {fileID: 156394827}
     - target: {fileID: 689713473421437887, guid: 7955b698d10c2e149aa826481ab1138f,
         type: 3}
       propertyPath: socketScoreChecker
+      value: 
+      objectReference: {fileID: 1772576057}
+    - target: {fileID: 689713473421437887, guid: 7955b698d10c2e149aa826481ab1138f,
+        type: 3}
+      propertyPath: otherPairSockets.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 689713473421437887, guid: 7955b698d10c2e149aa826481ab1138f,
+        type: 3}
+      propertyPath: otherPairSockets.Array.data[0]
+      value: 
+      objectReference: {fileID: 156394827}
+    - target: {fileID: 689713473421437887, guid: 7955b698d10c2e149aa826481ab1138f,
+        type: 3}
+      propertyPath: socketScoreChecker.Array.data[0]
       value: 
       objectReference: {fileID: 1772576057}
     - target: {fileID: 3414966798959160300, guid: 7955b698d10c2e149aa826481ab1138f,
@@ -24259,8 +24372,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9ce6f7100e4c21e448bf9578f0ad2f96, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  otherPairSocket: {fileID: 741022383}
-  socketScoreChecker: {fileID: 1501937516}
+  otherPairSockets: []
+  pinSocketType: 0
+  socketScoreChecker:
+  - {fileID: 0}
 --- !u!136 &1356116570
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -26013,8 +26128,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9ce6f7100e4c21e448bf9578f0ad2f96, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  otherPairSocket: {fileID: 604156626}
-  socketScoreChecker: {fileID: 1782701553}
+  otherPairSockets:
+  - {fileID: 604156626}
+  pinSocketType: 0
+  socketScoreChecker:
+  - {fileID: 1782701553}
 --- !u!136 &1430687721
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -26971,6 +27089,11 @@ PrefabInstance:
       propertyPath: m_StaticEditorFlags
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7600924933964376627, guid: e1a7e215924e96540a253e8c91542409,
+        type: 3}
+      propertyPath: supposedPinConnect
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 7212174828687238099, guid: e1a7e215924e96540a253e8c91542409, type: 3}
     - {fileID: 2137252746995772880, guid: e1a7e215924e96540a253e8c91542409, type: 3}
@@ -27296,6 +27419,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   connectionStatus: {fileID: 2094200499}
+  identitySocket: {fileID: 171500247}
   isQuestFinish: 0
 --- !u!1001 &1514153994
 PrefabInstance:
@@ -30957,6 +31081,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   connectionStatus: {fileID: 1623757867}
+  identitySocket: {fileID: 156394827}
   isQuestFinish: 0
 --- !u!4 &1772576058
 Transform:
@@ -31008,8 +31133,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9ce6f7100e4c21e448bf9578f0ad2f96, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  otherPairSocket: {fileID: 1089960997}
-  socketScoreChecker: {fileID: 172693089}
+  otherPairSockets: []
+  pinSocketType: 0
+  socketScoreChecker:
+  - {fileID: 0}
 --- !u!114 &1779378309
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -31143,6 +31270,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   connectionStatus: {fileID: 1255780695}
+  identitySocket: {fileID: 1430687718}
   isQuestFinish: 0
 --- !u!4 &1782701554
 Transform:
@@ -34859,8 +34987,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9ce6f7100e4c21e448bf9578f0ad2f96, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  otherPairSocket: {fileID: 6637069775256437745}
-  socketScoreChecker: {fileID: 680043095}
+  otherPairSockets:
+  - {fileID: 2074078273}
+  - {fileID: 1089960997}
+  pinSocketType: 1
+  socketScoreChecker:
+  - {fileID: 680043095}
+  - {fileID: 172693089}
 --- !u!136 &2049493441
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -37468,8 +37601,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9ce6f7100e4c21e448bf9578f0ad2f96, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  otherPairSocket: {fileID: 604156626}
-  socketScoreChecker: {fileID: 1782701553}
+  otherPairSockets: []
+  pinSocketType: 0
+  socketScoreChecker:
+  - {fileID: 0}
 --- !u!114 &689713472363651614
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -37482,8 +37617,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9ce6f7100e4c21e448bf9578f0ad2f96, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  otherPairSocket: {fileID: 1018512654}
-  socketScoreChecker: {fileID: 1772576057}
+  otherPairSockets: []
+  pinSocketType: 0
+  socketScoreChecker:
+  - {fileID: 0}
 --- !u!114 &689713472509901836
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -37496,8 +37633,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9ce6f7100e4c21e448bf9578f0ad2f96, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  otherPairSocket: {fileID: 1654661780}
-  socketScoreChecker: {fileID: 509186691}
+  otherPairSockets: []
+  pinSocketType: 0
+  socketScoreChecker:
+  - {fileID: 0}
 --- !u!114 &689713473016787091
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -37510,8 +37649,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9ce6f7100e4c21e448bf9578f0ad2f96, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  otherPairSocket: {fileID: 6637069775256437745}
-  socketScoreChecker: {fileID: 680043095}
+  otherPairSockets: []
+  pinSocketType: 0
+  socketScoreChecker:
+  - {fileID: 0}
 --- !u!4 &744715880011040947
 Transform:
   m_ObjectHideFlags: 0
@@ -40647,6 +40788,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sockets: []
+  socketsType: 
+  supposedPinConnect: 2
 --- !u!224 &4248275200699518548
 RectTransform:
   m_ObjectHideFlags: 0
@@ -40771,6 +40914,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sockets: []
+  socketsType: 
+  supposedPinConnect: 1
 --- !u!1 &4433906748091444446
 GameObject:
   m_ObjectHideFlags: 0
@@ -43350,6 +43495,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sockets: []
+  socketsType: 
+  supposedPinConnect: 0
 --- !u!114 &7600924935070303287
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -43363,6 +43510,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sockets: []
+  socketsType: 
+  supposedPinConnect: 2
 --- !u!1 &7619937697914483319
 GameObject:
   m_ObjectHideFlags: 0
@@ -44007,6 +44156,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 689713473421437887, guid: 7955b698d10c2e149aa826481ab1138f,
         type: 3}
+      propertyPath: pinSocketType
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 689713473421437887, guid: 7955b698d10c2e149aa826481ab1138f,
+        type: 3}
       propertyPath: otherPairSocket
       value: 
       objectReference: {fileID: 161716094}
@@ -44015,6 +44169,36 @@ PrefabInstance:
       propertyPath: socketScoreChecker
       value: 
       objectReference: {fileID: 172693089}
+    - target: {fileID: 689713473421437887, guid: 7955b698d10c2e149aa826481ab1138f,
+        type: 3}
+      propertyPath: otherPairSockets.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 689713473421437887, guid: 7955b698d10c2e149aa826481ab1138f,
+        type: 3}
+      propertyPath: socketScoreChecker.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 689713473421437887, guid: 7955b698d10c2e149aa826481ab1138f,
+        type: 3}
+      propertyPath: otherPairSockets.Array.data[0]
+      value: 
+      objectReference: {fileID: 161716094}
+    - target: {fileID: 689713473421437887, guid: 7955b698d10c2e149aa826481ab1138f,
+        type: 3}
+      propertyPath: otherPairSockets.Array.data[1]
+      value: 
+      objectReference: {fileID: 2049493439}
+    - target: {fileID: 689713473421437887, guid: 7955b698d10c2e149aa826481ab1138f,
+        type: 3}
+      propertyPath: socketScoreChecker.Array.data[0]
+      value: 
+      objectReference: {fileID: 172693089}
+    - target: {fileID: 689713473421437887, guid: 7955b698d10c2e149aa826481ab1138f,
+        type: 3}
+      propertyPath: socketScoreChecker.Array.data[1]
+      value: 
+      objectReference: {fileID: 680043095}
     - target: {fileID: 3414966798959160300, guid: 7955b698d10c2e149aa826481ab1138f,
         type: 3}
       propertyPath: m_LocalPosition.x
