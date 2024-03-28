@@ -2389,9 +2389,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   otherPairSockets:
   - {fileID: 1018512654}
+  - {fileID: 883368560}
   pinSocketType: 2
   socketScoreChecker:
   - {fileID: 1772576057}
+  - {fileID: 169746245}
 --- !u!136 &156394830
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -7473,9 +7475,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   otherPairSockets:
   - {fileID: 883368560}
+  - {fileID: 1018512654}
   pinSocketType: 2
   socketScoreChecker:
   - {fileID: 169746245}
+  - {fileID: 1772576057}
 --- !u!136 &502298853
 CapsuleCollider:
   m_ObjectHideFlags: 0
