@@ -5741,6 +5741,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 567840733}
     m_Modifications:
+    - target: {fileID: 405283848994788936, guid: 7d4d16f09584a7449949b34ff4da9c4a,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 997925759655776502, guid: 7d4d16f09584a7449949b34ff4da9c4a,
         type: 3}
       propertyPath: m_VideoClip
@@ -5757,6 +5762,11 @@ PrefabInstance:
       propertyPath: m_TargetAudioSources.Array.data[0]
       value: 
       objectReference: {fileID: 1815580564}
+    - target: {fileID: 1284123560912215579, guid: 7d4d16f09584a7449949b34ff4da9c4a,
+        type: 3}
+      propertyPath: m_Color.a
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1866286100689221146, guid: 7d4d16f09584a7449949b34ff4da9c4a,
         type: 3}
       propertyPath: m_AnchorMax.y
@@ -5860,7 +5870,7 @@ PrefabInstance:
     - target: {fileID: 2904040861851418335, guid: 7d4d16f09584a7449949b34ff4da9c4a,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -4.025
+      value: -4.119
       objectReference: {fileID: 0}
     - target: {fileID: 2904040861851418335, guid: 7d4d16f09584a7449949b34ff4da9c4a,
         type: 3}
@@ -5880,12 +5890,27 @@ PrefabInstance:
     - target: {fileID: 4555037150927708282, guid: 7d4d16f09584a7449949b34ff4da9c4a,
         type: 3}
       propertyPath: m_Color.a
-      value: 1
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5354173717975008741, guid: 7d4d16f09584a7449949b34ff4da9c4a,
+        type: 3}
+      propertyPath: m_Color.a
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5695077414332137510, guid: 7d4d16f09584a7449949b34ff4da9c4a,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6539519555597454744, guid: 7d4d16f09584a7449949b34ff4da9c4a,
         type: 3}
       propertyPath: m_Color.a
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6539519555597454744, guid: 7d4d16f09584a7449949b34ff4da9c4a,
+        type: 3}
+      propertyPath: m_Color.r
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7155267004281225040, guid: 7d4d16f09584a7449949b34ff4da9c4a,
         type: 3}
@@ -12839,7 +12864,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 4e9cbb92cf48909468b6ebc7166f71f8, type: 3}
+  m_audioClip: {fileID: 0}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
@@ -12935,7 +12960,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 4e9cbb92cf48909468b6ebc7166f71f8, type: 3}
+  m_audioClip: {fileID: 0}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
@@ -13741,8 +13766,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 29, y: 161}
-  m_SizeDelta: {x: 560.7, y: 227.8}
+  m_AnchoredPosition: {x: -12.1, y: -70}
+  m_SizeDelta: {x: 619.1, y: 227.8}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1904196903
 MonoBehaviour:
@@ -13820,7 +13845,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: aecceac71612c4e4eab960bfeb495050, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 24b79a75cbc01074ca24c9e2a9495925, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
