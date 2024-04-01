@@ -2393,7 +2393,6 @@ MonoBehaviour:
   pinSocketType: 2
   socketScoreChecker:
   - {fileID: 1772576057}
-  - {fileID: 169746245}
 --- !u!136 &156394830
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -7479,7 +7478,6 @@ MonoBehaviour:
   pinSocketType: 2
   socketScoreChecker:
   - {fileID: 169746245}
-  - {fileID: 1772576057}
 --- !u!136 &502298853
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -16101,9 +16099,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   otherPairSockets:
   - {fileID: 502298851}
+  - {fileID: 156394827}
   pinSocketType: 2
   socketScoreChecker:
   - {fileID: 169746245}
+  - {fileID: 1772576057}
 --- !u!114 &883368560
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -18339,7 +18339,12 @@ PrefabInstance:
     - target: {fileID: 689713473421437887, guid: 7955b698d10c2e149aa826481ab1138f,
         type: 3}
       propertyPath: otherPairSockets.Array.size
-      value: 1
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 689713473421437887, guid: 7955b698d10c2e149aa826481ab1138f,
+        type: 3}
+      propertyPath: socketScoreChecker.Array.size
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 689713473421437887, guid: 7955b698d10c2e149aa826481ab1138f,
         type: 3}
@@ -18348,9 +18353,19 @@ PrefabInstance:
       objectReference: {fileID: 156394827}
     - target: {fileID: 689713473421437887, guid: 7955b698d10c2e149aa826481ab1138f,
         type: 3}
+      propertyPath: otherPairSockets.Array.data[1]
+      value: 
+      objectReference: {fileID: 502298851}
+    - target: {fileID: 689713473421437887, guid: 7955b698d10c2e149aa826481ab1138f,
+        type: 3}
       propertyPath: socketScoreChecker.Array.data[0]
       value: 
       objectReference: {fileID: 1772576057}
+    - target: {fileID: 689713473421437887, guid: 7955b698d10c2e149aa826481ab1138f,
+        type: 3}
+      propertyPath: socketScoreChecker.Array.data[1]
+      value: 
+      objectReference: {fileID: 169746245}
     - target: {fileID: 3414966798959160300, guid: 7955b698d10c2e149aa826481ab1138f,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -34997,7 +35012,6 @@ MonoBehaviour:
   pinSocketType: 1
   socketScoreChecker:
   - {fileID: 680043095}
-  - {fileID: 172693089}
 --- !u!136 &2049493441
 CapsuleCollider:
   m_ObjectHideFlags: 0

@@ -28,10 +28,10 @@ namespace InstalasiIoT
                 cableController.sockets.Add(socketComponent);
                 cableController.socketsType.Add(pinSocketType);
 
+                // Check if there are any sockets that are connected via cable that are also contained in the otherPairSockets array
                 if (cableController.sockets.Any(socket => otherPairSockets.Contains(socket)))
                 {
-                    var scoreChecker = GetScoreChecker(cableController);
-
+                    if (!TryGetScoreChecker(cableController, out var scoreChecker)) return;
                     scoreChecker.isQuestFinish = true;
                     scoreChecker.ValidateQuest();
 
@@ -48,42 +48,50 @@ namespace InstalasiIoT
                         }
                     }
 
-                   /* if (cableController.socketsType.Contains(pinSocketType))
-                    {
-                        scoreChecker.SetStatus(Status.Connected);
-                    }
-                    else
-                    {
-                        scoreChecker.SetStatus(Status.Warning);
-                    }*/
-
                 }
-                else if (/*cableController.sockets.Count > 0 &&*/
-                    !cableController.sockets.Any(socket => otherPairSockets.Contains(socket)))
+                else if (!cableController.sockets.Any(socket => otherPairSockets.Contains(socket)))
                 {
-                    var scoreChecker = GetScoreChecker(cableController);
-
-                    scoreChecker.SetStatus(Status.Error);
-                    scoreChecker.isQuestFinish = false;
+                    if (!TryGetScoreChecker(cableController, out var scoreChecker))
+                    {
+                        foreach (var quest in socketScoreChecker)
+                        {
+                            if (quest.isQuestFinish) continue;
+                            quest.SetStatus(Status.Error);
+                        }
+                    }
+                    else // this is for connecting the cable in other than ESP pins
+                    {
+                        scoreChecker.SetStatus(Status.Error);
+                        scoreChecker.isQuestFinish = false;
+                    }
                 }
 
             }
         }
 
-        private SocketScoreChecker GetScoreChecker(CableController cableController)
+        /// <summary>
+        /// This method will check and get if there is a score checker where its identitySocket is the same as the socket in the cable controller
+        /// </summary>
+        /// <param name="cableController"></param>
+        /// <param name="scoreChecker"></param>
+        /// <returns></returns>
+        private bool TryGetScoreChecker(CableController cableController, out SocketScoreChecker scoreChecker)
         {
-            var scoreChecker = new SocketScoreChecker();
+            scoreChecker = new SocketScoreChecker();
+            var valid = false;
             foreach (var socket in cableController.sockets)
             {
-                var matchingSocket = socketScoreChecker.FirstOrDefault(scoreChecker => scoreChecker.identitySocket == socket);
+                var matchingSocket = socketScoreChecker.FirstOrDefault(checker => checker.identitySocket == socket);
                 if (matchingSocket != null)
                 {
                     scoreChecker = matchingSocket;
+                    valid = true;
                     break;
                 }
             }
-            return scoreChecker;
+            return valid;
         }
+
 
         public void Detach()
         {
@@ -91,15 +99,29 @@ namespace InstalasiIoT
             var cableController = boneCableController.CableController;
             if (cableController.sockets.Count > 0)
             {
-                var scoreChecker = GetScoreChecker(cableController);
+                if (!TryGetScoreChecker(cableController, out var scoreChecker))
+                {
+                    if (socketScoreChecker.Length > 1)
+                    {
+                        foreach (var quest in socketScoreChecker)
+                        {
+                            if (quest.isQuestFinish) continue;
+                            quest.SetStatus(Status.Error);
+                            quest.isQuestFinish = false;
+                        }
+                    }
+                }
+                else
+                {
+                    scoreChecker.SetStatus(Status.Error);
+                    if (scoreChecker.isQuestFinish)
+                    {
+                        scoreChecker.isQuestFinish = false;
+                        scoreChecker.ValidateQuest();
+                    }
+                }
                 cableController.sockets.Remove(socketComponent);
                 cableController.socketsType.Remove(pinSocketType);
-                scoreChecker.SetStatus(Status.Error);
-                if (scoreChecker.isQuestFinish)
-                {
-                    scoreChecker.isQuestFinish = false;
-                    scoreChecker.ValidateQuest();
-                }
             }
         }
     }
