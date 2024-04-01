@@ -1,6 +1,6 @@
 using UnityEngine;
 using System.Collections.Generic;
-using Tproject.Quest;
+using Unity.VisualScripting;
 
 namespace PerencanaanPersiapanIoT
 {
@@ -13,15 +13,38 @@ namespace PerencanaanPersiapanIoT
         public ToDoController toDoController;
         private GameObject canvasObject; // Mengubah menjadi private karena akan diakses melalui transform parent
 
-        //private void OnTriggerEnter(Collider other)
-        //{
-        //    if (other.CompareTag("Object") && !isQuestCompleted)
-        //    {
-        //        objectName = other.gameObject.name;
-        //        canvasObject = FindCanvasInParent(other.gameObject);
-        //        CheckQuestCompletion();
-        //    }
-        //}
+        private Renderer objectRenderer;
+        private Color startColor;
+
+        public List<Material> objectMaterials = new List<Material>(); // List untuk menyimpan semua material pada objek dan anaknya
+
+
+        private void Start()
+        {
+            objectRenderer = GetComponent<Renderer>();
+            startColor = objectRenderer.material.color;
+
+            FindMaterialsRecursively(this.gameObject);
+        }
+
+        private void FindMaterialsRecursively(GameObject obj)
+        {
+            Renderer renderer = obj.GetComponent<Renderer>();
+            if (renderer != null)
+            {
+                // Jika objek memiliki komponen renderer, tambahkan semua materialnya ke dalam list
+                foreach (Material material in renderer.materials)
+                {
+                    objectMaterials.Add(material);
+                }
+            }
+
+            // Cek semua anak objek
+            foreach (Transform child in obj.transform)
+            {
+                FindMaterialsRecursively(child.gameObject);
+            }
+        }
 
         private void OnTriggerExit(Collider other)
         {
@@ -45,9 +68,16 @@ namespace PerencanaanPersiapanIoT
             }
         }
 
+        public void ChechNamaObject()
+        {
+            objectName = this.gameObject.name;
+            canvasObject = FindCanvasInParent(this.gameObject);
+            CheckQuestCompletion();
+        }
+
         private GameObject FindCanvasInParent(GameObject parentObject)
         {
-            // Mencari objek canvas dalam parent
+            
             Canvas canvas = parentObject.GetComponentInChildren<Canvas>();
             if (canvas != null)
             {
@@ -56,7 +86,7 @@ namespace PerencanaanPersiapanIoT
             return null;
         }
 
-        private void CheckQuestCompletion()
+        public void CheckQuestCompletion()
         {
             bool foundMatchingQuest = false;
             foreach (QuestPicker quest in questList)
@@ -71,11 +101,11 @@ namespace PerencanaanPersiapanIoT
                     // Menandai quest sebagai selesai
                     isQuestCompleted = true;
 
-                    // Menonaktifkan canvas
-                    if (canvasObject != null)
-                    {
-                        canvasObject.SetActive(false);
-                    }
+                    //// Menonaktifkan canvas
+                    //if (canvasObject != null)
+                    //{
+                    //    canvasObject.SetActive(false);
+                    //}
 
                     break;
                 }
@@ -87,6 +117,44 @@ namespace PerencanaanPersiapanIoT
             }
         }
 
+
+        public void ObjectDisappear()
+        {
+            TransparancyObject();
+            Debug.Log("disapear");
+
+            //if (this.gameObject != null)
+            //{
+            //    DestroyObject();
+            //}
+        }
+
+        private void DestroyObject()
+        {
+            GameObject thisObject = this.gameObject;
+            if (thisObject != null)
+            {
+                Destroy(thisObject);
+            }
+            else
+            {
+                Debug.Log("Object tidak tersedia");
+            }
+        }
+
+        private void TransparancyObject()
+        {
+            // Tentukan alpha yang diinginkan, misalnya 0.5 untuk separuh transparan
+            float targetAlpha = 0.0f; // 0.0f untuk membuat objek sepenuhnya transparan, 1.0f untuk opak
+
+            // Atur alpha pada semua material yang telah ditemukan
+            foreach (Material material in objectMaterials)
+            {
+                Color newColor = material.color;
+                newColor.a = targetAlpha;
+                material.color = newColor;
+            }
+        }
     }
 
     [System.Serializable]
