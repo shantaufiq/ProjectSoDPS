@@ -6082,6 +6082,10 @@ PrefabInstance:
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 382369741}
+    - targetCorrespondingSourceObject: {fileID: 6905609870639353253, guid: d5f22cb6979d48a4389f7794855602e6,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 382369745}
     - targetCorrespondingSourceObject: {fileID: -3540272279435206582, guid: d5f22cb6979d48a4389f7794855602e6,
         type: 3}
       insertIndex: -1
@@ -6094,6 +6098,10 @@ PrefabInstance:
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 382369738}
+    - targetCorrespondingSourceObject: {fileID: -3540272279435206582, guid: d5f22cb6979d48a4389f7794855602e6,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 382369744}
   m_SourcePrefab: {fileID: 100100000, guid: d5f22cb6979d48a4389f7794855602e6, type: 3}
 --- !u!4 &382369733 stripped
 Transform:
@@ -6523,6 +6531,32 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 126
   m_CollisionDetection: 0
+--- !u!114 &382369744
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 382369735}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 494054e38f16af84f9eaaeee0daf258e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cableController: {fileID: 552734580}
+--- !u!114 &382369745
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 382369737}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 494054e38f16af84f9eaaeee0daf258e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cableController: {fileID: 552734580}
 --- !u!1 &382424976
 GameObject:
   m_ObjectHideFlags: 0
@@ -47394,7 +47428,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: e4867c43e5e08f341826fed66e8a9f59, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 008ef3fa87be63f44bbf4e30179b2ea8, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
