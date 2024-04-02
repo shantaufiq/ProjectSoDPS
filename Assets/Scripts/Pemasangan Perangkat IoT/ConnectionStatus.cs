@@ -6,6 +6,7 @@ namespace InstalasiIoT
 {
     public class ConnectionStatus : MonoBehaviour
     {
+        [Header("Connection Status For Wiring")]
         [SerializeField] private TextMeshProUGUI valueStatus;
         [SerializeField] private string connected;
         [SerializeField] private Sprite connectedSprite;
@@ -15,8 +16,14 @@ namespace InstalasiIoT
         [SerializeField] private Sprite errorSprite;
         [SerializeField] private Image panelImage;
 
+        public Image PanelImage {set => panelImage = value;}
+        public Sprite ConnectedSprite { get => connectedSprite; }
+        public Sprite WarningSprite { get => warningSprite; }
+        public Sprite ErrorSprite { get => errorSprite; }
 
-        public void SetStatus(Status status)
+
+
+        public virtual void SetStatus(Status status)
         {
             switch (status)
             {
