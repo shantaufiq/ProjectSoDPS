@@ -16,7 +16,7 @@ namespace InstalasiIoT
         [SerializeField] private Sprite errorSprite;
         [SerializeField] private Image panelImage;
 
-        public Image PanelImage {set => panelImage = value;}
+        public Image PanelImage { get => panelImage;  set => panelImage = value; }
         public Sprite ConnectedSprite { get => connectedSprite; }
         public Sprite WarningSprite { get => warningSprite; }
         public Sprite ErrorSprite { get => errorSprite; }

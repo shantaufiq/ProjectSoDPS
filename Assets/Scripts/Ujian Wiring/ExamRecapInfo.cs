@@ -1,15 +1,25 @@
 using InstalasiIoT;
 using System.Collections;
 using System.Collections.Generic;
+using UnityEditor.PackageManager;
 using UnityEngine;
 
 public class ExamRecapInfo : ConnectionStatus
 {
-    [Tooltip("If all quest is complete and user want to see feedback, this object will go to this targetPosition")]
-    [SerializeField] private Transform targetPosition;
 
     public override void SetStatus(Status status)
     {
-      /*  test = true;*/
+        switch (status)
+        {
+            case Status.Connected:
+                PanelImage.sprite = ConnectedSprite;
+                break;
+            case Status.Error:
+                PanelImage.sprite = ErrorSprite;
+                break;
+            case Status.Warning:
+                PanelImage.sprite = WarningSprite;
+                break;
+        }
     }
 }

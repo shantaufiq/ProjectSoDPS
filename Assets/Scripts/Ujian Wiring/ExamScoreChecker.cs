@@ -16,7 +16,6 @@ namespace InstalasiIoT
         [SerializeField] private TextMeshProUGUI scoreInfo;
         [SerializeField] private int totalQuest;
 
-        [HideInInspector]
         public int totalScore = 0;
 
         [Header("Score Limit Threshold")]
@@ -37,6 +36,19 @@ namespace InstalasiIoT
         [SerializeField] private int totalStarB;
         [SerializeField] private int totalStarC;
         [SerializeField] private int totalStarD;
+
+        [Space(10)]
+        [Header("Recap Info For Exam")]
+        [SerializeField] private GameObject examRecapInfo;
+        [Tooltip("If all quest is complete and user want to see feedback, exam recap will go to this position")]
+        [SerializeField] private Transform positionToShow;
+        [Tooltip("This is the position where recap info will be hide (since feedback of each exam is realtime, we cannot deactivate the GameObject)")]
+        [SerializeField] private Transform hidePosition;
+
+        private void Start()
+        {
+            HideRecapInfo();
+        }
 
         public void AddScore()
         {
@@ -109,6 +121,16 @@ namespace InstalasiIoT
 
             // Reload the current scene
             SceneManager.LoadSceneAsync(currentSceneIndex,LoadSceneMode.Single);
+        }
+
+        public void ShowRecapInfo()
+        {
+            examRecapInfo.transform.position = positionToShow.position;
+        }
+
+        public void HideRecapInfo()
+        {
+            examRecapInfo.transform.position = hidePosition.position;
         }
     }
 }
