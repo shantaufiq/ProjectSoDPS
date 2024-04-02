@@ -120,13 +120,7 @@ namespace PerencanaanPersiapanIoT
 
         public void ObjectDisappear()
         {
-            TransparancyObject();
-            Debug.Log("disapear");
-
-            //if (this.gameObject != null)
-            //{
-            //    DestroyObject();
-            //}
+            DestroyObject();
         }
 
         private void DestroyObject()
@@ -144,16 +138,17 @@ namespace PerencanaanPersiapanIoT
 
         private void TransparancyObject()
         {
-            // Tentukan alpha yang diinginkan, misalnya 0.5 untuk separuh transparan
-            float targetAlpha = 0.0f; // 0.0f untuk membuat objek sepenuhnya transparan, 1.0f untuk opak
+            LeanTween.alpha(this.gameObject,0,2);
+            //// Tentukan alpha yang diinginkan, misalnya 0.5 untuk separuh transparan
+            //float targetAlpha = 0.0f; // 0.0f untuk membuat objek sepenuhnya transparan, 1.0f untuk opak
 
-            // Atur alpha pada semua material yang telah ditemukan
-            foreach (Material material in objectMaterials)
-            {
-                Color newColor = material.color;
-                newColor.a = targetAlpha;
-                material.color = newColor;
-            }
+            //// Atur alpha pada semua material yang telah ditemukan
+            //foreach (Material material in objectMaterials)
+            //{
+            //    Color newColor = material.color;
+            //    newColor.a = targetAlpha;
+            //    material.color = newColor;
+            //}
         }
     }
 
