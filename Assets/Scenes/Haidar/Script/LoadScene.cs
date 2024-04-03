@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class SceneLoader : MonoBehaviour
+public class LoadScene : MonoBehaviour
 {
     public string nextSceneName; // Nama scene berikutnya yang akan dimuat
     public float delayBeforeLoading = 5f; // Waktu tunda sebelum memuat scene berikutnya
