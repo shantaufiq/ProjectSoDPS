@@ -5762,11 +5762,6 @@ PrefabInstance:
       propertyPath: m_TargetAudioSources.Array.data[0]
       value: 
       objectReference: {fileID: 1815580564}
-    - target: {fileID: 1284123560912215579, guid: 7d4d16f09584a7449949b34ff4da9c4a,
-        type: 3}
-      propertyPath: m_Color.a
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 1866286100689221146, guid: 7d4d16f09584a7449949b34ff4da9c4a,
         type: 3}
       propertyPath: m_AnchorMax.y
@@ -13168,7 +13163,7 @@ Transform:
   m_GameObject: {fileID: 1815580561}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -11.15, y: 0.373, z: -13.331}
+  m_LocalPosition: {x: -11.43, y: 0.21, z: -13.177}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []

@@ -1,3 +1,4 @@
+using Sandbox;
 using Seville;
 using System;
 using System.Collections;
@@ -13,6 +14,7 @@ namespace InstalasiIoT
         [SerializeField] private UnityEvent OnQuestFinish;
         [SerializeField] private UnityEvent OnQuestFail;
         [SerializeField] private ConnectionStatus connectionStatus;
+        public SocketInteractorTwoAttach identitySocket; // The socket that will be the difiner for this quest
         public bool isQuestFinish;
         private Status status;
 
@@ -39,6 +41,9 @@ namespace InstalasiIoT
                     break;
                 case Status.Error:
                     connectionStatus.SetStatus(Status.Error);
+                    break;
+                case Status.Warning:
+                    connectionStatus.SetStatus(Status.Warning);
                     break;
             }
         }
