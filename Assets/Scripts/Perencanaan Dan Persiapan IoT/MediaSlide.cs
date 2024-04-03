@@ -1,5 +1,13 @@
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.Events;
+using System.Collections.Generic;
+
+namespace PerencanaanPersiapanIoT
+{
+  using UnityEngine;
+using UnityEngine.UI;
+using UnityEngine.Events;
 using System.Collections.Generic;
 
 namespace PerencanaanPersiapanIoT
@@ -12,6 +20,7 @@ namespace PerencanaanPersiapanIoT
         public Button prevButton; // Tombol prev
         public List<Image> carouselIndicators; // List indikator bola-bola carousel
         private int currentIndex = 0; // Indeks gambar saat ini
+        public UnityEvent slideComplete;
 
         void Start()
         {
@@ -25,6 +34,14 @@ namespace PerencanaanPersiapanIoT
             }
         }
 
+        public void ResetSlide()
+            {
+                currentIndex = 0; // Reset indeks gambar ke 0
+                displayImage.sprite = images[currentIndex]; // Tampilkan gambar pertama dari list
+                UpdateIndicators(); // Memperbarui penanda bola-bola
+                UpdateButtonInteractability(); // Memperbarui keadaan interaktif tombol
+            }
+
         public void ShowNextImage()
         {
             // Mengecek apakah masih ada gambar berikutnya di dalam list
@@ -35,8 +52,12 @@ namespace PerencanaanPersiapanIoT
                 UpdateIndicators(); // Memperbarui penanda bola-bola
             }
 
-            // Memperbarui keadaan interaktif tombol setelah menampilkan gambar yang baru
-            UpdateButtonInteractability();
+                if (currentIndex == images.Count -1)
+                {
+                    slideComplete.Invoke();
+                }
+                // Memperbarui keadaan interaktif tombol setelah menampilkan gambar yang baru
+                UpdateButtonInteractability();
         }
 
         public void ShowPreviousImage()
@@ -76,4 +97,6 @@ namespace PerencanaanPersiapanIoT
             }
         }
     }
+}
+
 }

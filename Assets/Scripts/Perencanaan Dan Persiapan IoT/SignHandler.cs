@@ -1,10 +1,14 @@
 using System.Collections;
 using System.Collections.Generic;
+using UnityEditor;
 using UnityEngine;
 using UnityEngine.UI;
 
+
+
 public class SignHandler : MonoBehaviour
 {
+
     public Image signRectTransform; // Gunakan RectTransform untuk UI
 
     private LTDescr tween;
@@ -58,4 +62,7 @@ public class SignHandler : MonoBehaviour
             isTweening = false; // Set tweener telah dibatalkan
         }
     }
+
+
 }
+
