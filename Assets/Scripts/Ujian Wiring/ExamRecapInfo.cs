@@ -7,9 +7,11 @@ namespace InstalasiIoT
 {
     public class ExamRecapInfo : ConnectionStatus
     {
+        [SerializeField] private ExamScoreChecker examScoreChecker;
 
         public override void SetStatus(Status status)
         {
+            if (examScoreChecker.examSubmitted) return;
             switch (status)
             {
                 case Status.Connected:

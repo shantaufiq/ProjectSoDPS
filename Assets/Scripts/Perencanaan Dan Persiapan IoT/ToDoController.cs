@@ -48,6 +48,25 @@ namespace PerencanaanPersiapanIoT
             }
         }
 
+        public void UnFinishItem(int index)
+        {
+            if (questFinishedEventFired) return;
+
+            var questData = itemLists;
+
+            if (index > questData.Count - 1) return;
+
+            if (questData[index].isCompleted)
+            {
+                var temp = questData[index];
+                temp.isCompleted = false;
+
+                questData[index] = temp;
+            }
+
+            DisplayItemList();
+        }
+
         public void FinishItem(int index)
         {
             var questData = itemLists;

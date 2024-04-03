@@ -3787,6 +3787,7 @@ MonoBehaviour:
   error: 
   errorSprite: {fileID: 21300000, guid: e23ce6854a3bfc74e8c743e3e12c8326, type: 3}
   panelImage: {fileID: 150625728}
+  examScoreChecker: {fileID: 1924385996}
 --- !u!114 &150625726
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -16186,6 +16187,7 @@ MonoBehaviour:
   error: 
   errorSprite: {fileID: 21300000, guid: e23ce6854a3bfc74e8c743e3e12c8326, type: 3}
   panelImage: {fileID: 736085156}
+  examScoreChecker: {fileID: 1924385996}
 --- !u!114 &736085154
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -22852,6 +22854,74 @@ Transform:
   m_Children: []
   m_Father: {fileID: 441898372}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &999155974
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 8425991631142998213, guid: e49ac36a177b0384fb23f562d8d353d3,
+        type: 3}
+      propertyPath: m_Name
+      value: Character Male Variant
+      objectReference: {fileID: 0}
+    - target: {fileID: 9197742500201171583, guid: e49ac36a177b0384fb23f562d8d353d3,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 9.251857
+      objectReference: {fileID: 0}
+    - target: {fileID: 9197742500201171583, guid: e49ac36a177b0384fb23f562d8d353d3,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.10254395
+      objectReference: {fileID: 0}
+    - target: {fileID: 9197742500201171583, guid: e49ac36a177b0384fb23f562d8d353d3,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -3.2989013
+      objectReference: {fileID: 0}
+    - target: {fileID: 9197742500201171583, guid: e49ac36a177b0384fb23f562d8d353d3,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9197742500201171583, guid: e49ac36a177b0384fb23f562d8d353d3,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9197742500201171583, guid: e49ac36a177b0384fb23f562d8d353d3,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9197742500201171583, guid: e49ac36a177b0384fb23f562d8d353d3,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9197742500201171583, guid: e49ac36a177b0384fb23f562d8d353d3,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9197742500201171583, guid: e49ac36a177b0384fb23f562d8d353d3,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9197742500201171583, guid: e49ac36a177b0384fb23f562d8d353d3,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: e49ac36a177b0384fb23f562d8d353d3, type: 3}
 --- !u!1 &1011868149
 GameObject:
   m_ObjectHideFlags: 0
@@ -23450,6 +23520,7 @@ MonoBehaviour:
   error: 
   errorSprite: {fileID: 21300000, guid: e23ce6854a3bfc74e8c743e3e12c8326, type: 3}
   panelImage: {fileID: 1030123318}
+  examScoreChecker: {fileID: 1924385996}
 --- !u!114 &1030123316
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -23632,6 +23703,7 @@ MonoBehaviour:
   error: 
   errorSprite: {fileID: 21300000, guid: e23ce6854a3bfc74e8c743e3e12c8326, type: 3}
   panelImage: {fileID: 1043520054}
+  examScoreChecker: {fileID: 1924385996}
 --- !u!114 &1043520052
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -41186,6 +41258,7 @@ MonoBehaviour:
   error: 
   errorSprite: {fileID: 21300000, guid: e23ce6854a3bfc74e8c743e3e12c8326, type: 3}
   panelImage: {fileID: 1804037570}
+  examScoreChecker: {fileID: 1924385996}
 --- !u!114 &1804037568
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -44059,6 +44132,7 @@ MonoBehaviour:
   examRecapInfo: {fileID: 56258067}
   positionToShow: {fileID: 779792083}
   hidePosition: {fileID: 1824405734}
+  examSubmitted: 0
 --- !u!114 &1924385997
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -46617,7 +46691,7 @@ PrefabInstance:
         type: 3}
       propertyPath: sfxClips.Array.data[1].clip
       value: 
-      objectReference: {fileID: 8300000, guid: b430cdd9a17ce5b4d95aac30bad68ac7, type: 3}
+      objectReference: {fileID: 8300000, guid: b66f8531fc462e541a8b77f992affbdc, type: 3}
     - target: {fileID: 8822182829556550988, guid: 65c4694569e443f4796d9daf950e9aa0,
         type: 3}
       propertyPath: sfxClips.Array.data[1].name
@@ -49515,6 +49589,7 @@ MonoBehaviour:
   error: 
   errorSprite: {fileID: 21300000, guid: e23ce6854a3bfc74e8c743e3e12c8326, type: 3}
   panelImage: {fileID: 2092755657}
+  examScoreChecker: {fileID: 1924385996}
 --- !u!114 &2092755655
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -50257,6 +50332,7 @@ MonoBehaviour:
   error: 
   errorSprite: {fileID: 21300000, guid: e23ce6854a3bfc74e8c743e3e12c8326, type: 3}
   panelImage: {fileID: 2107344716}
+  examScoreChecker: {fileID: 1924385996}
 --- !u!114 &2107344714
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -51037,6 +51113,7 @@ MonoBehaviour:
   error: 
   errorSprite: {fileID: 21300000, guid: e23ce6854a3bfc74e8c743e3e12c8326, type: 3}
   panelImage: {fileID: 2140301552}
+  examScoreChecker: {fileID: 1924385996}
 --- !u!114 &2140301550
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -51574,3 +51651,4 @@ SceneRoots:
   - {fileID: 183457233}
   - {fileID: 5598639}
   - {fileID: 2022306918}
+  - {fileID: 999155974}
