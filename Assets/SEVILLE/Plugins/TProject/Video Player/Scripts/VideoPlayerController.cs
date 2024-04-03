@@ -45,7 +45,10 @@ namespace TProject
 
             videoPlayer.clip = videoClip;
 
+            if (videoPlayer.playOnAwake) IsMuteMusic(true);
+
             Invoke("GetAudioSource", .5f);
+            
         }
 
         void GetAudioSource()
@@ -170,6 +173,7 @@ namespace TProject
         private void CheckEnd(VideoPlayer vp)
         {
             OnVideoFinished?.Invoke();
+            IsMuteMusic(false);
             // Debug.Log($"video finished");
         }
 
@@ -178,5 +182,9 @@ namespace TProject
 
         public void OnClickReverseTime() =>
             videoPlayer.frame -= 450;
+
+            public void IsMuteMusic(bool state) =>
+            audioManager.musicSource.mute = state;
+            
     }
 }

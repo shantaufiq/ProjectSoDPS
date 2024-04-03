@@ -1296,7 +1296,7 @@ MonoBehaviour:
   m_LineWidth: 0.005
   m_OverrideInteractorLineLength: 1
   m_LineLength: 10
-  m_AutoAdjustLineLength: 1
+  m_AutoAdjustLineLength: 0
   m_MinLineLength: 0.5
   m_UseDistanceToHitAsMaxLineLength: 1
   m_LineRetractionDelay: 0.5
@@ -1328,8 +1328,8 @@ MonoBehaviour:
   m_SetLineColorGradient: 1
   m_ValidColorGradient:
     serializedVersion: 2
-    key0: {r: 0.06170082, g: 1, b: 0, a: 1}
-    key1: {r: 1, g: 1, b: 1, a: 0}
+    key0: {r: 0.15860271, g: 1, b: 0, a: 1}
+    key1: {r: 1, g: 1, b: 1, a: 1}
     key2: {r: 0, g: 0, b: 0, a: 0}
     key3: {r: 0, g: 0, b: 0, a: 0}
     key4: {r: 0, g: 0, b: 0, a: 0}
@@ -1358,8 +1358,8 @@ MonoBehaviour:
     m_NumAlphaKeys: 2
   m_InvalidColorGradient:
     serializedVersion: 2
-    key0: {r: 0.035294294, g: 1, b: 0, a: 1}
-    key1: {r: 1, g: 1, b: 1, a: 0}
+    key0: {r: 1, g: 1, b: 1, a: 1}
+    key1: {r: 1, g: 1, b: 1, a: 1}
     key2: {r: 0, g: 0, b: 0, a: 0}
     key3: {r: 0, g: 0, b: 0, a: 0}
     key4: {r: 0, g: 0, b: 0, a: 0}
@@ -1416,18 +1416,18 @@ MonoBehaviour:
     m_ColorSpace: -1
     m_NumColorKeys: 2
     m_NumAlphaKeys: 2
-  m_TreatSelectionAsValidState: 1
+  m_TreatSelectionAsValidState: 0
   m_SmoothMovement: 0
   m_FollowTightness: 10
   m_SnapThresholdDistance: 10
   m_Reticle: {fileID: 0}
   m_BlockedReticle: {fileID: 0}
   m_StopLineAtFirstRaycastHit: 1
-  m_StopLineAtSelection: 1
+  m_StopLineAtSelection: 0
   m_SnapEndpointIfAvailable: 1
   m_LineBendRatio: 0.5
   m_OverrideInteractorLineOrigin: 1
-  m_LineOriginTransform: {fileID: 313699810}
+  m_LineOriginTransform: {fileID: 0}
   m_LineOriginOffset: 0
 --- !u!120 &85623203
 LineRenderer:
@@ -5845,7 +5845,7 @@ MonoBehaviour:
   m_LineWidth: 0.005
   m_OverrideInteractorLineLength: 1
   m_LineLength: 10
-  m_AutoAdjustLineLength: 1
+  m_AutoAdjustLineLength: 0
   m_MinLineLength: 0.5
   m_UseDistanceToHitAsMaxLineLength: 1
   m_LineRetractionDelay: 0.5
@@ -5877,8 +5877,8 @@ MonoBehaviour:
   m_SetLineColorGradient: 1
   m_ValidColorGradient:
     serializedVersion: 2
-    key0: {r: 0.06170082, g: 1, b: 0, a: 1}
-    key1: {r: 1, g: 1, b: 1, a: 0}
+    key0: {r: 0.15860271, g: 1, b: 0, a: 1}
+    key1: {r: 1, g: 1, b: 1, a: 1}
     key2: {r: 0, g: 0, b: 0, a: 0}
     key3: {r: 0, g: 0, b: 0, a: 0}
     key4: {r: 0, g: 0, b: 0, a: 0}
@@ -5907,8 +5907,8 @@ MonoBehaviour:
     m_NumAlphaKeys: 2
   m_InvalidColorGradient:
     serializedVersion: 2
-    key0: {r: 0.035294294, g: 1, b: 0, a: 1}
-    key1: {r: 1, g: 1, b: 1, a: 0}
+    key0: {r: 1, g: 1, b: 1, a: 1}
+    key1: {r: 1, g: 1, b: 1, a: 1}
     key2: {r: 0, g: 0, b: 0, a: 0}
     key3: {r: 0, g: 0, b: 0, a: 0}
     key4: {r: 0, g: 0, b: 0, a: 0}
@@ -5965,18 +5965,18 @@ MonoBehaviour:
     m_ColorSpace: -1
     m_NumColorKeys: 2
     m_NumAlphaKeys: 2
-  m_TreatSelectionAsValidState: 1
+  m_TreatSelectionAsValidState: 0
   m_SmoothMovement: 0
   m_FollowTightness: 10
   m_SnapThresholdDistance: 10
   m_Reticle: {fileID: 0}
   m_BlockedReticle: {fileID: 0}
   m_StopLineAtFirstRaycastHit: 1
-  m_StopLineAtSelection: 1
+  m_StopLineAtSelection: 0
   m_SnapEndpointIfAvailable: 1
   m_LineBendRatio: 0.5
   m_OverrideInteractorLineOrigin: 1
-  m_LineOriginTransform: {fileID: 1112281848}
+  m_LineOriginTransform: {fileID: 0}
   m_LineOriginOffset: 0
 --- !u!120 &286896216
 LineRenderer:
@@ -6629,7 +6629,7 @@ PrefabInstance:
         type: 3}
       propertyPath: sfxClips.Array.data[0].clip
       value: 
-      objectReference: {fileID: 8300000, guid: cfc0e0425df853345b7b50d8c7bbf55a, type: 3}
+      objectReference: {fileID: 8300000, guid: 86a587ca5ab82b641a8c104191746df9, type: 3}
     - target: {fileID: 8822182829556550988, guid: 65c4694569e443f4796d9daf950e9aa0,
         type: 3}
       propertyPath: sfxClips.Array.data[0].name
@@ -6639,7 +6639,7 @@ PrefabInstance:
         type: 3}
       propertyPath: sfxClips.Array.data[1].clip
       value: 
-      objectReference: {fileID: 8300000, guid: 8c686fd92735a0a4590743fac5ace378, type: 3}
+      objectReference: {fileID: 8300000, guid: 1af06492db907e646a7024c6c9ef352b, type: 3}
     - target: {fileID: 8822182829556550988, guid: 65c4694569e443f4796d9daf950e9aa0,
         type: 3}
       propertyPath: sfxClips.Array.data[1].name
@@ -6649,7 +6649,7 @@ PrefabInstance:
         type: 3}
       propertyPath: sfxClips.Array.data[2].clip
       value: 
-      objectReference: {fileID: 8300000, guid: 1a07ffc264d787a4f8c1331d707c2d16, type: 3}
+      objectReference: {fileID: 8300000, guid: e213aeed088c234438f9879d784c67ee, type: 3}
     - target: {fileID: 8822182829556550988, guid: 65c4694569e443f4796d9daf950e9aa0,
         type: 3}
       propertyPath: sfxClips.Array.data[2].name
@@ -6659,7 +6659,7 @@ PrefabInstance:
         type: 3}
       propertyPath: sfxClips.Array.data[3].clip
       value: 
-      objectReference: {fileID: 8300000, guid: a304152903cd6fa4ea13a960ede8d34a, type: 3}
+      objectReference: {fileID: 8300000, guid: 7f0505e27e3ddd54f8e9aa786037142f, type: 3}
     - target: {fileID: 8822182829556550988, guid: 65c4694569e443f4796d9daf950e9aa0,
         type: 3}
       propertyPath: sfxClips.Array.data[3].name
@@ -13417,7 +13417,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &756501649
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -17049,7 +17049,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!82 &951652576
 AudioSource:
   m_ObjectHideFlags: 0
