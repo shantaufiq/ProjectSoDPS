@@ -2122,6 +2122,16 @@ PrefabInstance:
       propertyPath: sfxClips.Array.data[6].name
       value: Finish
       objectReference: {fileID: 0}
+    - target: {fileID: 8822182829556550988, guid: 65c4694569e443f4796d9daf950e9aa0,
+        type: 3}
+      propertyPath: sfxClips.Array.data[7].clip
+      value: 
+      objectReference: {fileID: 8300000, guid: 800f97c5573d32b4f880c6329475fc2a, type: 3}
+    - target: {fileID: 8822182829556550988, guid: 65c4694569e443f4796d9daf950e9aa0,
+        type: 3}
+      propertyPath: sfxClips.Array.data[7].name
+      value: Finish
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -9107,7 +9117,7 @@ PrefabInstance:
     - target: {fileID: 4570414432760033986, guid: 4b67e760fe108b6459ec1fa889d2712f,
         type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4596580252584898538, guid: 4b67e760fe108b6459ec1fa889d2712f,
         type: 3}
@@ -10413,7 +10423,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &584069050
 RectTransform:
   m_ObjectHideFlags: 0
@@ -10424,13 +10434,13 @@ RectTransform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
+  m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 1047779419}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 375, y: 191}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 512, y: 512}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &584069051
@@ -19244,7 +19254,7 @@ PrefabInstance:
     - target: {fileID: 3377108377699609893, guid: 2f7c9a91335112145a2742cb9b8763a2,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5762482678291324377, guid: 2f7c9a91335112145a2742cb9b8763a2,
         type: 3}
@@ -19294,17 +19304,17 @@ PrefabInstance:
     - target: {fileID: 5884297240543469719, guid: 2f7c9a91335112145a2742cb9b8763a2,
         type: 3}
       propertyPath: m_SizeDelta.x
-      value: 769.465
+      value: 512
       objectReference: {fileID: 0}
     - target: {fileID: 5884297240543469719, guid: 2f7c9a91335112145a2742cb9b8763a2,
         type: 3}
       propertyPath: m_SizeDelta.y
-      value: 432.824
+      value: 512
       objectReference: {fileID: 0}
     - target: {fileID: 5884297240543469719, guid: 2f7c9a91335112145a2742cb9b8763a2,
         type: 3}
       propertyPath: m_LocalScale.x
-      value: 0.00095210643
+      value: 0.001145384
       objectReference: {fileID: 0}
     - target: {fileID: 5884297240543469719, guid: 2f7c9a91335112145a2742cb9b8763a2,
         type: 3}
@@ -19329,7 +19339,7 @@ PrefabInstance:
     - target: {fileID: 5884297240543469719, guid: 2f7c9a91335112145a2742cb9b8763a2,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -0.125
+      value: -0.12474
       objectReference: {fileID: 0}
     - target: {fileID: 5884297240543469719, guid: 2f7c9a91335112145a2742cb9b8763a2,
         type: 3}
@@ -19354,12 +19364,12 @@ PrefabInstance:
     - target: {fileID: 5884297240543469719, guid: 2f7c9a91335112145a2742cb9b8763a2,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -0.048
+      value: -0.047995
       objectReference: {fileID: 0}
     - target: {fileID: 5884297240543469719, guid: 2f7c9a91335112145a2742cb9b8763a2,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 0.036
+      value: 0.035996
       objectReference: {fileID: 0}
     - target: {fileID: 5884297240543469719, guid: 2f7c9a91335112145a2742cb9b8763a2,
         type: 3}
@@ -19673,6 +19683,18 @@ MonoBehaviour:
       - m_Target: {fileID: 1911411306}
         m_TargetAssemblyTypeName: Navigation, Assembly-CSharp
         m_MethodName: OnClickChangeScene
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 82946972}
+        m_TargetAssemblyTypeName: Tproject.AudioManager.SfxHandler, Assembly-CSharp
+        m_MethodName: StopSfx
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -25053,7 +25075,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!82 &1280776307
 AudioSource:
   m_ObjectHideFlags: 0
@@ -25256,7 +25278,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 8230f8ec3b458a74b90d488640f4390a, type: 3}
+  m_audioClip: {fileID: 0}
   m_PlayOnAwake: 1
   m_Volume: 0.198
   m_Pitch: 1
@@ -32679,6 +32701,7 @@ GameObject:
   - component: {fileID: 1905991231}
   - component: {fileID: 1905991235}
   - component: {fileID: 1905991237}
+  - component: {fileID: 1905991238}
   m_Layer: 7
   m_Name: Info Grab ESP32
   m_TagString: Untagged
@@ -32693,16 +32716,16 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1905991229}
-  m_LocalRotation: {x: 0.020583954, y: 0.17197557, z: -0.024928708, w: 0.9845707}
-  m_LocalPosition: {x: 0, y: 0, z: -0.282}
-  m_LocalScale: {x: 0.0003289302, y: 0.00032893012, z: 0.00032893015}
+  m_LocalRotation: {x: 0.020583957, y: 0.17197558, z: -0.024928708, w: 0.9845706}
+  m_LocalPosition: {x: 0, y: 0, z: -0.2820002}
+  m_LocalScale: {x: 0.0003289302, y: 0.0003289302, z: 0.00032893015}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1584256171}
   m_LocalEulerAnglesHint: {x: 177.185, y: -160.243, z: -182.411}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0.113, y: 0.402}
+  m_AnchoredPosition: {x: 0.11300085, y: 0.40199995}
   m_SizeDelta: {x: 2048, y: 512}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1905991231
@@ -32806,6 +32829,18 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!114 &1905991238
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1905991229}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0f9e80f16515b3a43b3ad6213ebe57a1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1911411305
 GameObject:
   m_ObjectHideFlags: 0

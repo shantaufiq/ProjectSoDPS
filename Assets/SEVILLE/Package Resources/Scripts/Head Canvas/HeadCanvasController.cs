@@ -112,11 +112,28 @@ namespace Seville
             Invoke("DisactiveInfoCanvas", showNotificationTime);
         }
 
-        private void InfoCanvasPos()
-        {
-            UI_popupPanel.transform.LookAt(new Vector3(playerHead.position.x, UI_popupPanel.transform.position.y, playerHead.position.z));
-            UI_popupPanel.transform.forward *= -1;
-        }
+       private void InfoCanvasPos()
+{
+    if (playerHead != null)
+    {
+        Vector3 playerForward = playerHead.forward;
+        playerForward.y = 0f; 
+
+        UI_popupPanel.transform.rotation = Quaternion.LookRotation(-playerForward);
+
+        Vector3 newEulerAngles = UI_popupPanel.transform.rotation.eulerAngles;
+        newEulerAngles.x = 0f;
+        newEulerAngles.z = 0f;
+        UI_popupPanel.transform.rotation = Quaternion.Euler(newEulerAngles);
+
+        UI_popupPanel.transform.position = playerHead.position + playerForward.normalized * spawnDistance;
+    }
+    else
+    {
+        Debug.LogWarning("HeadCanvas has not been assigned");
+    }
+}
+
 
         private void DisactiveInfoCanvas()
         {

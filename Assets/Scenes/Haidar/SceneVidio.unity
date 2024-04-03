@@ -7832,6 +7832,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Timeout: 10
   m_XROrigin: {fileID: 1804448824}
+--- !u!114 &1080991436 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7155267004281225040, guid: 7d4d16f09584a7449949b34ff4da9c4a,
+    type: 3}
+  m_PrefabInstance: {fileID: 742067100}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cad612ef80b6fe143aa22e67d0b58546, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1090666279
 GameObject:
   m_ObjectHideFlags: 0
@@ -13083,7 +13095,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 1
-  m_Volume: 1
+  m_Volume: 0.398
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -13179,7 +13191,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 21d7345dcc24ba645acd35689df59019, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  musicSounds: []
+  musicSounds:
+  - name: Theme
+    clip: {fileID: 8300000, guid: 8230f8ec3b458a74b90d488640f4390a, type: 3}
   sfxSounds: []
   musicSource: {fileID: 1815580564}
   sfxSource: {fileID: 1815580563}
@@ -13791,7 +13805,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -12.1, y: -70}
+  m_AnchoredPosition: {x: -12.1, y: -111}
   m_SizeDelta: {x: 619.1, y: 227.8}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1904196903
@@ -13842,6 +13856,18 @@ MonoBehaviour:
         m_TargetAssemblyTypeName: Navigation, Assembly-CSharp
         m_MethodName: OnClickChangeScene
         m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1080991436}
+        m_TargetAssemblyTypeName: TProject.VideoPlayerController, Assembly-CSharp
+        m_MethodName: IsMuteMusic
+        m_Mode: 6
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
