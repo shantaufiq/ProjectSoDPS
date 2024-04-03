@@ -1,6 +1,9 @@
 using UnityEngine;
 using System.Collections.Generic;
-using Tproject.Quest;
+using Unity.VisualScripting;
+using UnityEngine.EventSystems;
+using UnityEngine.Events;
+using System.Collections;
 
 namespace PerencanaanPersiapanIoT
 {
@@ -13,13 +16,38 @@ namespace PerencanaanPersiapanIoT
         public ToDoController toDoController;
         private GameObject canvasObject; // Mengubah menjadi private karena akan diakses melalui transform parent
 
-        private void OnTriggerEnter(Collider other)
+        private Renderer objectRenderer;
+        private Color startColor;
+
+        public List<Material> objectMaterials = new List<Material>();
+
+        public UnityEvent FadeObject;
+
+
+        private void Start()
         {
-            if (other.CompareTag("Object") && !isQuestCompleted)
+            objectRenderer = GetComponent<Renderer>();
+            startColor = objectRenderer.material.color;
+
+            FindMaterialsRecursively(this.gameObject);
+        }
+
+        private void FindMaterialsRecursively(GameObject obj)
+        {
+            Renderer renderer = obj.GetComponent<Renderer>();
+            if (renderer != null)
             {
-                objectName = other.gameObject.name;
-                canvasObject = FindCanvasInParent(other.gameObject);
-                CheckQuestCompletion();
+                // Jika objek memiliki komponen renderer, tambahkan semua materialnya ke dalam list
+                foreach (Material material in renderer.materials)
+                {
+                    objectMaterials.Add(material);
+                }
+            }
+
+            // Cek semua anak objek
+            foreach (Transform child in obj.transform)
+            {
+                FindMaterialsRecursively(child.gameObject);
             }
         }
 
@@ -45,9 +73,16 @@ namespace PerencanaanPersiapanIoT
             }
         }
 
+        public void ChechNamaObject()
+        {
+            objectName = this.gameObject.name;
+            canvasObject = FindCanvasInParent(this.gameObject);
+            CheckQuestCompletion();
+        }
+
         private GameObject FindCanvasInParent(GameObject parentObject)
         {
-            // Mencari objek canvas dalam parent
+            
             Canvas canvas = parentObject.GetComponentInChildren<Canvas>();
             if (canvas != null)
             {
@@ -56,7 +91,7 @@ namespace PerencanaanPersiapanIoT
             return null;
         }
 
-        private void CheckQuestCompletion()
+        public void CheckQuestCompletion()
         {
             bool foundMatchingQuest = false;
             foreach (QuestPicker quest in questList)
@@ -71,11 +106,11 @@ namespace PerencanaanPersiapanIoT
                     // Menandai quest sebagai selesai
                     isQuestCompleted = true;
 
-                    // Menonaktifkan canvas
-                    if (canvasObject != null)
-                    {
-                        canvasObject.SetActive(false);
-                    }
+                    //// Menonaktifkan canvas
+                    //if (canvasObject != null)
+                    //{
+                    //    canvasObject.SetActive(false);
+                    //}
 
                     break;
                 }
@@ -85,6 +120,32 @@ namespace PerencanaanPersiapanIoT
             {
                 Debug.Log("Barang dengan nama " + objectName + " tidak cocok dengan quest yang telah selesai.");
             }
+        }
+
+
+        public void ObjectDisappear()
+        {
+            StartCoroutine(ExecuteAndDestroy());
+        }
+
+        private void DestroyObject()
+        {
+            GameObject thisObject = this.gameObject;
+            if (thisObject != null)
+            {
+                Destroy(thisObject);
+            }
+            else
+            {
+                Debug.Log("Object tidak tersedia");
+            }
+        }
+
+        IEnumerator ExecuteAndDestroy()
+        {
+            FadeObject.Invoke();
+            yield return new WaitForSeconds(1);
+            DestroyObject();
         }
 
     }

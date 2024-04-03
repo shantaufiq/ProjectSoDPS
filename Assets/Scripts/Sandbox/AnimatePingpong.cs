@@ -8,7 +8,7 @@ namespace Sandbox
 
         public enum MovementType
         {
-            LeftToRight, RightToLeft, UpToDown, DownToUp
+            LeftToRight, RightToLeft, UpToDown, DownToUp, none
         }
 
         public MovementType defaultMovement;

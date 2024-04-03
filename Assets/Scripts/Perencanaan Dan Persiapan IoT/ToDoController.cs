@@ -15,16 +15,19 @@ namespace PerencanaanPersiapanIoT
             public string itemName;
             public bool isCompleted; // Menyimpan status quest
         }
-        
+
         public List<ItemList> itemLists;
         public ToDoHandler prefabQuest;
         public Transform itemListParent;
         public UnityEvent OnQuestFinished;
 
+        private bool questFinishedEventFired = false;
+
         void Start()
         {
             DisplayItemList();
         }
+
 
         void DisplayItemList()
         {
@@ -34,6 +37,7 @@ namespace PerencanaanPersiapanIoT
                 ToDoHandler questItem = Instantiate(prefabQuest, itemListParent);
                 questItem.SetToDoHandler(item.isCompleted, item.itemName);
             }
+
         }
 
         public void EraseCanvas()
@@ -61,10 +65,12 @@ namespace PerencanaanPersiapanIoT
                 questData[index] = temp;
             }
 
-            if (itemLists.All(item => item.isCompleted))
+            if (!questFinishedEventFired && itemLists.All(item => item.isCompleted))
             {
+                questFinishedEventFired = true;
                 OnQuestFinished.Invoke();
             }
+
 
             DisplayItemList();
         }
