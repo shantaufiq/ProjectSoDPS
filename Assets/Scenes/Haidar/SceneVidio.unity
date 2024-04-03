@@ -4601,7 +4601,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &579404206
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5754,8 +5754,28 @@ PrefabInstance:
         type: 3}
     - target: {fileID: 997925759655776502, guid: 7d4d16f09584a7449949b34ff4da9c4a,
         type: 3}
+      propertyPath: m_DataSource
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 997925759655776502, guid: 7d4d16f09584a7449949b34ff4da9c4a,
+        type: 3}
       propertyPath: m_PlayOnAwake
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 997925759655776502, guid: 7d4d16f09584a7449949b34ff4da9c4a,
+        type: 3}
+      propertyPath: m_PlaybackSpeed
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 997925759655776502, guid: 7d4d16f09584a7449949b34ff4da9c4a,
+        type: 3}
+      propertyPath: m_TimeUpdateMode
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 997925759655776502, guid: 7d4d16f09584a7449949b34ff4da9c4a,
+        type: 3}
+      propertyPath: m_AudioOutputMode
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 997925759655776502, guid: 7d4d16f09584a7449949b34ff4da9c4a,
         type: 3}
@@ -13061,7 +13081,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 4e9cbb92cf48909468b6ebc7166f71f8, type: 3}
+  m_audioClip: {fileID: 0}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
