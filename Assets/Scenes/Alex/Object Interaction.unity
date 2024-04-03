@@ -13908,6 +13908,7 @@ MonoBehaviour:
     GND</b> dengan <b>pin GND ESP32</b>.\r\n"
   headerTMP: {fileID: 3165672255218933551}
   headerText: PERCOBAAN WIRING
+  sfxHandler: {fileID: 915505824}
 --- !u!1 &757966996
 GameObject:
   m_ObjectHideFlags: 0
@@ -45156,8 +45157,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 755483000}
-        m_TargetAssemblyTypeName: Seville.PopUpController, Assembly-CSharp
-        m_MethodName: OnClickClosePopup
+        m_TargetAssemblyTypeName: InstalasiIoT.WiringPopUp, Assembly-CSharp
+        m_MethodName: ClosePopup
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
