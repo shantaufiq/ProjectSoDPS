@@ -5762,6 +5762,11 @@ PrefabInstance:
       propertyPath: m_TargetAudioSources.Array.data[0]
       value: 
       objectReference: {fileID: 1815580564}
+    - target: {fileID: 1284123560912215579, guid: 7d4d16f09584a7449949b34ff4da9c4a,
+        type: 3}
+      propertyPath: m_Color.a
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1866286100689221146, guid: 7d4d16f09584a7449949b34ff4da9c4a,
         type: 3}
       propertyPath: m_AnchorMax.y
@@ -5895,6 +5900,11 @@ PrefabInstance:
     - target: {fileID: 5695077414332137510, guid: 7d4d16f09584a7449949b34ff4da9c4a,
         type: 3}
       propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5996203342804520605, guid: 7d4d16f09584a7449949b34ff4da9c4a,
+        type: 3}
+      propertyPath: m_Color.a
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6539519555597454744, guid: 7d4d16f09584a7449949b34ff4da9c4a,

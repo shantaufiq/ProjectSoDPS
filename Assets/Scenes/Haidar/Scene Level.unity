@@ -5851,7 +5851,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!82 &610191502
 AudioSource:
   m_ObjectHideFlags: 0
@@ -8298,8 +8298,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa118a24503650749bbc271184a745ed, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  propsList:
-  - {fileID: 0}
+  propsList: []
 --- !u!4 &926259899
 Transform:
   m_ObjectHideFlags: 0
