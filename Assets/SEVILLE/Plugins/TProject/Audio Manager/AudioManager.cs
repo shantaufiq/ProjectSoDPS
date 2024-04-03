@@ -76,7 +76,7 @@ namespace Tproject.AudioManager
         public void SetSfxVolume(float volume) =>
             sfxSource.volume = volume;
 
-        private Sound FindSound(string name, Sound[] sounds)
+        public Sound FindSound(string name, Sound[] sounds)
         {
             foreach (var sound in sounds)
             {
@@ -164,7 +164,7 @@ namespace Tproject.AudioManager
 
             yield return StartCoroutine(FadeOutSourceVolume(sfxSource, _time));
             sfxSource.PlayOneShot(newClip);
-            yield return StartCoroutine(FadeInSourceVolume(sfxSource, _time));
+            // yield return StartCoroutine(FadeInSourceVolume(sfxSource, _time));
         }
 
         private IEnumerator FadeOutSourceVolume(AudioSource _source, float time)
