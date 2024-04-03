@@ -65,6 +65,14 @@ namespace Tproject.AudioManager
             }
         }
 
+        public void PlayMandatorySFX(AudioClip clip)
+        {
+            if (clip != null && !sfxSource.mute)
+            {
+                StartCoroutine(TransitionMandatorySfx(clip, .6f));
+            }
+        }
+
         public void SetSfxVolume(float volume) =>
             sfxSource.volume = volume;
 
@@ -146,6 +154,45 @@ namespace Tproject.AudioManager
             while (musicSource.volume < targetVolume)
             {
                 musicSource.volume += targetVolume * Time.deltaTime / time;
+                yield return null;
+            }
+        }
+
+        private IEnumerator TransitionMandatorySfx(AudioClip newClip, float transitionTime)
+        {
+            float _time = transitionTime / 2;
+
+            yield return StartCoroutine(FadeOutSourceVolume(sfxSource, _time));
+            sfxSource.PlayOneShot(newClip);
+            yield return StartCoroutine(FadeInSourceVolume(sfxSource, _time));
+        }
+
+        private IEnumerator FadeOutSourceVolume(AudioSource _source, float time)
+        {
+            float startVolume = _source.volume;
+
+            while (_source.volume > 0)
+            {
+                _source.volume -= startVolume * Time.deltaTime / time;
+                yield return null;
+            }
+
+            _source.Stop();
+
+            _source.volume = startVolume;
+        }
+
+        private IEnumerator FadeInSourceVolume(AudioSource _source, float time)
+        {
+            float targetVolume = _source.volume;
+            _source.volume = 0;
+            _source.mute = false;
+            if (!_source.isPlaying)
+                _source.Play();
+
+            while (_source.volume < targetVolume)
+            {
+                _source.volume += targetVolume * Time.deltaTime / time;
                 yield return null;
             }
         }
