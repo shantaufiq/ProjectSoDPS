@@ -3787,6 +3787,7 @@ MonoBehaviour:
   error: 
   errorSprite: {fileID: 21300000, guid: e23ce6854a3bfc74e8c743e3e12c8326, type: 3}
   panelImage: {fileID: 150625728}
+  examScoreChecker: {fileID: 1924385996}
 --- !u!114 &150625726
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -16186,6 +16187,7 @@ MonoBehaviour:
   error: 
   errorSprite: {fileID: 21300000, guid: e23ce6854a3bfc74e8c743e3e12c8326, type: 3}
   panelImage: {fileID: 736085156}
+  examScoreChecker: {fileID: 1924385996}
 --- !u!114 &736085154
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -23450,6 +23452,7 @@ MonoBehaviour:
   error: 
   errorSprite: {fileID: 21300000, guid: e23ce6854a3bfc74e8c743e3e12c8326, type: 3}
   panelImage: {fileID: 1030123318}
+  examScoreChecker: {fileID: 1924385996}
 --- !u!114 &1030123316
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -23632,6 +23635,7 @@ MonoBehaviour:
   error: 
   errorSprite: {fileID: 21300000, guid: e23ce6854a3bfc74e8c743e3e12c8326, type: 3}
   panelImage: {fileID: 1043520054}
+  examScoreChecker: {fileID: 1924385996}
 --- !u!114 &1043520052
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -41186,6 +41190,7 @@ MonoBehaviour:
   error: 
   errorSprite: {fileID: 21300000, guid: e23ce6854a3bfc74e8c743e3e12c8326, type: 3}
   panelImage: {fileID: 1804037570}
+  examScoreChecker: {fileID: 1924385996}
 --- !u!114 &1804037568
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -44059,6 +44064,7 @@ MonoBehaviour:
   examRecapInfo: {fileID: 56258067}
   positionToShow: {fileID: 779792083}
   hidePosition: {fileID: 1824405734}
+  examSubmitted: 0
 --- !u!114 &1924385997
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -49515,6 +49521,7 @@ MonoBehaviour:
   error: 
   errorSprite: {fileID: 21300000, guid: e23ce6854a3bfc74e8c743e3e12c8326, type: 3}
   panelImage: {fileID: 2092755657}
+  examScoreChecker: {fileID: 1924385996}
 --- !u!114 &2092755655
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -50257,6 +50264,7 @@ MonoBehaviour:
   error: 
   errorSprite: {fileID: 21300000, guid: e23ce6854a3bfc74e8c743e3e12c8326, type: 3}
   panelImage: {fileID: 2107344716}
+  examScoreChecker: {fileID: 1924385996}
 --- !u!114 &2107344714
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -51037,6 +51045,7 @@ MonoBehaviour:
   error: 
   errorSprite: {fileID: 21300000, guid: e23ce6854a3bfc74e8c743e3e12c8326, type: 3}
   panelImage: {fileID: 2140301552}
+  examScoreChecker: {fileID: 1924385996}
 --- !u!114 &2140301550
 MonoBehaviour:
   m_ObjectHideFlags: 0

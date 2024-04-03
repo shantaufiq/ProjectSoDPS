@@ -45,6 +45,9 @@ namespace InstalasiIoT
         [Tooltip("This is the position where recap info will be hide (since feedback of each exam is realtime, we cannot deactivate the GameObject)")]
         [SerializeField] private Transform hidePosition;
 
+        [HideInInspector]
+        public bool examSubmitted = false;
+
         private void Start()
         {
             HideRecapInfo();
@@ -52,11 +55,13 @@ namespace InstalasiIoT
 
         public void AddScore()
         {
+            if (examSubmitted) return;
             totalScore++;
         }
 
         public void RemoveScore()
         {
+            if (examSubmitted) return;
             totalScore--;
             if (totalScore < 0)
             {
@@ -111,6 +116,8 @@ namespace InstalasiIoT
             {
                 starUIImage[i].sprite = starFill;
             }
+
+            examSubmitted = true;
         
         }
 
