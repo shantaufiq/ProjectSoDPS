@@ -2787,7 +2787,19 @@ MonoBehaviour:
         m_CallState: 2
   OnQuestFail:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 8569078044635182979}
+        m_TargetAssemblyTypeName: PerencanaanPersiapanIoT.ToDoController, Assembly-CSharp
+        m_MethodName: UnFinishItem
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   connectionStatus: {fileID: 1871377578}
   identitySocket: {fileID: 502298851}
   isQuestFinish: 0
@@ -3395,7 +3407,19 @@ MonoBehaviour:
         m_CallState: 2
   OnQuestFail:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 8569078044635182979}
+        m_TargetAssemblyTypeName: PerencanaanPersiapanIoT.ToDoController, Assembly-CSharp
+        m_MethodName: UnFinishItem
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 1
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   connectionStatus: {fileID: 1855688692}
   identitySocket: {fileID: 161716094}
   isQuestFinish: 0
@@ -9346,7 +9370,19 @@ MonoBehaviour:
         m_CallState: 2
   OnQuestFail:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 8569078044635182979}
+        m_TargetAssemblyTypeName: PerencanaanPersiapanIoT.ToDoController, Assembly-CSharp
+        m_MethodName: UnFinishItem
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 4
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   connectionStatus: {fileID: 918396437}
   identitySocket: {fileID: 670961941}
   isQuestFinish: 0
@@ -9411,7 +9447,19 @@ MonoBehaviour:
         m_CallState: 2
   OnQuestFail:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 8569078044635182979}
+        m_TargetAssemblyTypeName: PerencanaanPersiapanIoT.ToDoController, Assembly-CSharp
+        m_MethodName: UnFinishItem
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 7
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   connectionStatus: {fileID: 2074347477}
   identitySocket: {fileID: 366415148}
   isQuestFinish: 0
@@ -12321,7 +12369,19 @@ MonoBehaviour:
         m_CallState: 2
   OnQuestFail:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 8569078044635182979}
+        m_TargetAssemblyTypeName: PerencanaanPersiapanIoT.ToDoController, Assembly-CSharp
+        m_MethodName: UnFinishItem
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 6
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   connectionStatus: {fileID: 538273471}
   identitySocket: {fileID: 2049493439}
   isQuestFinish: 0
@@ -30079,7 +30139,19 @@ MonoBehaviour:
         m_CallState: 2
   OnQuestFail:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 8569078044635182979}
+        m_TargetAssemblyTypeName: PerencanaanPersiapanIoT.ToDoController, Assembly-CSharp
+        m_MethodName: UnFinishItem
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 2
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   connectionStatus: {fileID: 2094200499}
   identitySocket: {fileID: 171500247}
   isQuestFinish: 0
@@ -34089,7 +34161,19 @@ MonoBehaviour:
         m_CallState: 2
   OnQuestFail:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 8569078044635182979}
+        m_TargetAssemblyTypeName: PerencanaanPersiapanIoT.ToDoController, Assembly-CSharp
+        m_MethodName: UnFinishItem
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 5
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   connectionStatus: {fileID: 1623757867}
   identitySocket: {fileID: 156394827}
   isQuestFinish: 0
@@ -34278,7 +34362,19 @@ MonoBehaviour:
         m_CallState: 2
   OnQuestFail:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 8569078044635182979}
+        m_TargetAssemblyTypeName: PerencanaanPersiapanIoT.ToDoController, Assembly-CSharp
+        m_MethodName: UnFinishItem
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 3
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   connectionStatus: {fileID: 1255780695}
   identitySocket: {fileID: 1430687718}
   isQuestFinish: 0
@@ -39856,6 +39952,18 @@ MonoBehaviour:
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: Info Tugas
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1456535542}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
   m_SelectExited:
