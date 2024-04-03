@@ -18443,7 +18443,7 @@ PrefabInstance:
         type: 3}
       propertyPath: sfxClips.Array.data[0].clip
       value: 
-      objectReference: {fileID: 8300000, guid: 3a39c7313e739a543b698a1ef99e6702, type: 3}
+      objectReference: {fileID: 8300000, guid: 5eccd899a1cc1bb49912146b0bb018f4, type: 3}
     - target: {fileID: 8822182829556550988, guid: 65c4694569e443f4796d9daf950e9aa0,
         type: 3}
       propertyPath: sfxClips.Array.data[0].name
@@ -18453,7 +18453,7 @@ PrefabInstance:
         type: 3}
       propertyPath: sfxClips.Array.data[1].clip
       value: 
-      objectReference: {fileID: 8300000, guid: b88ab8380429c6d4cbe550d85b3a9560, type: 3}
+      objectReference: {fileID: 8300000, guid: 050f8d759f84d7a4bb09638f3b94cebf, type: 3}
     - target: {fileID: 8822182829556550988, guid: 65c4694569e443f4796d9daf950e9aa0,
         type: 3}
       propertyPath: sfxClips.Array.data[1].name
@@ -18463,7 +18463,7 @@ PrefabInstance:
         type: 3}
       propertyPath: sfxClips.Array.data[2].clip
       value: 
-      objectReference: {fileID: 8300000, guid: 84367ebedbad13c43ac0041cb2e3cb43, type: 3}
+      objectReference: {fileID: 8300000, guid: 08b162c7157162c4d9805032dc607753, type: 3}
     - target: {fileID: 8822182829556550988, guid: 65c4694569e443f4796d9daf950e9aa0,
         type: 3}
       propertyPath: sfxClips.Array.data[2].name
@@ -18473,7 +18473,7 @@ PrefabInstance:
         type: 3}
       propertyPath: sfxClips.Array.data[3].clip
       value: 
-      objectReference: {fileID: 8300000, guid: cae28111829736c4181af2dacd42fa4c, type: 3}
+      objectReference: {fileID: 8300000, guid: 33c0794456952f644836df9c0fe75440, type: 3}
     - target: {fileID: 8822182829556550988, guid: 65c4694569e443f4796d9daf950e9aa0,
         type: 3}
       propertyPath: sfxClips.Array.data[3].name
@@ -18483,7 +18483,7 @@ PrefabInstance:
         type: 3}
       propertyPath: sfxClips.Array.data[4].clip
       value: 
-      objectReference: {fileID: 8300000, guid: 0cd002ef9b83a484fb3064753a1fe9ad, type: 3}
+      objectReference: {fileID: 8300000, guid: fce6d1c0c8780cd42a9c65616242608e, type: 3}
     - target: {fileID: 8822182829556550988, guid: 65c4694569e443f4796d9daf950e9aa0,
         type: 3}
       propertyPath: sfxClips.Array.data[4].name

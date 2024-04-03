@@ -46617,7 +46617,7 @@ PrefabInstance:
         type: 3}
       propertyPath: sfxClips.Array.data[1].clip
       value: 
-      objectReference: {fileID: 8300000, guid: b430cdd9a17ce5b4d95aac30bad68ac7, type: 3}
+      objectReference: {fileID: 8300000, guid: b66f8531fc462e541a8b77f992affbdc, type: 3}
     - target: {fileID: 8822182829556550988, guid: 65c4694569e443f4796d9daf950e9aa0,
         type: 3}
       propertyPath: sfxClips.Array.data[1].name
