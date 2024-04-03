@@ -5851,7 +5851,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!82 &610191502
 AudioSource:
   m_ObjectHideFlags: 0
@@ -6152,7 +6152,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 21d7345dcc24ba645acd35689df59019, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  musicSounds: []
+  musicSounds:
+  - name: BGM
+    clip: {fileID: 8300000, guid: 8230f8ec3b458a74b90d488640f4390a, type: 3}
   sfxSounds: []
   musicSource: {fileID: 610191504}
   sfxSource: {fileID: 610191503}
@@ -8296,8 +8298,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa118a24503650749bbc271184a745ed, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  propsList:
-  - {fileID: 0}
+  propsList: []
 --- !u!4 &926259899
 Transform:
   m_ObjectHideFlags: 0
@@ -11571,7 +11572,7 @@ MonoBehaviour:
   m_SetLineColorGradient: 1
   m_ValidColorGradient:
     serializedVersion: 2
-    key0: {r: 0, g: 0.627451, b: 1, a: 1}
+    key0: {r: 0, g: 1, b: 0.05490196, a: 1}
     key1: {r: 1, g: 1, b: 1, a: 0}
     key2: {r: 0, g: 0, b: 0, a: 0}
     key3: {r: 0, g: 0, b: 0, a: 0}
@@ -11596,7 +11597,7 @@ MonoBehaviour:
     atime6: 0
     atime7: 0
     m_Mode: 0
-    m_ColorSpace: -1
+    m_ColorSpace: 0
     m_NumColorKeys: 2
     m_NumAlphaKeys: 2
   m_InvalidColorGradient:
@@ -14884,7 +14885,7 @@ MonoBehaviour:
   m_SetLineColorGradient: 1
   m_ValidColorGradient:
     serializedVersion: 2
-    key0: {r: 0, g: 0.627451, b: 1, a: 1}
+    key0: {r: 0, g: 1, b: 0.05490196, a: 1}
     key1: {r: 1, g: 1, b: 1, a: 0}
     key2: {r: 0, g: 0, b: 0, a: 0}
     key3: {r: 0, g: 0, b: 0, a: 0}
@@ -14909,7 +14910,7 @@ MonoBehaviour:
     atime6: 0
     atime7: 0
     m_Mode: 0
-    m_ColorSpace: -1
+    m_ColorSpace: 0
     m_NumColorKeys: 2
     m_NumAlphaKeys: 2
   m_InvalidColorGradient:
