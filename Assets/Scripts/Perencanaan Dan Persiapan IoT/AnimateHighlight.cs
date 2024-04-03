@@ -49,6 +49,8 @@ namespace PerencanaanPersiapanIoT
         [Header("Check Data")]
         public bool isArduinoIoT;
 
+        public UnityEvent SlideComplete;
+
         private void Awake()
         {
             instance = this;
@@ -113,6 +115,7 @@ namespace PerencanaanPersiapanIoT
                 stagingData.Clear();
                 currentIndex = 0;
                 ObjectToSetActiveState(false);
+                SlideComplete.Invoke();
                 return;
             }
 
