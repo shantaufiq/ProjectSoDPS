@@ -1,6 +1,9 @@
 using UnityEngine;
 using System.Collections.Generic;
 using Unity.VisualScripting;
+using UnityEngine.EventSystems;
+using UnityEngine.Events;
+using System.Collections;
 
 namespace PerencanaanPersiapanIoT
 {
@@ -16,7 +19,9 @@ namespace PerencanaanPersiapanIoT
         private Renderer objectRenderer;
         private Color startColor;
 
-        public List<Material> objectMaterials = new List<Material>(); // List untuk menyimpan semua material pada objek dan anaknya
+        public List<Material> objectMaterials = new List<Material>();
+
+        public UnityEvent FadeObject;
 
 
         private void Start()
@@ -120,7 +125,7 @@ namespace PerencanaanPersiapanIoT
 
         public void ObjectDisappear()
         {
-            DestroyObject();
+            StartCoroutine(ExecuteAndDestroy());
         }
 
         private void DestroyObject()
@@ -136,20 +141,13 @@ namespace PerencanaanPersiapanIoT
             }
         }
 
-        private void TransparancyObject()
+        IEnumerator ExecuteAndDestroy()
         {
-            LeanTween.alpha(this.gameObject,0,2);
-            //// Tentukan alpha yang diinginkan, misalnya 0.5 untuk separuh transparan
-            //float targetAlpha = 0.0f; // 0.0f untuk membuat objek sepenuhnya transparan, 1.0f untuk opak
-
-            //// Atur alpha pada semua material yang telah ditemukan
-            //foreach (Material material in objectMaterials)
-            //{
-            //    Color newColor = material.color;
-            //    newColor.a = targetAlpha;
-            //    material.color = newColor;
-            //}
+            FadeObject.Invoke();
+            yield return new WaitForSeconds(1);
+            DestroyObject();
         }
+
     }
 
     [System.Serializable]
