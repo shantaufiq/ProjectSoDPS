@@ -12,6 +12,7 @@ namespace InstalasiIoT
     {
         [SerializeField] private TextMeshProUGUI headerTMP;
         [SerializeField] private string headerText;
+        private bool showFirstTime = false;
 
         public void Enabled(bool value)
         {
@@ -20,8 +21,10 @@ namespace InstalasiIoT
 
         public void OpenPopup()
         {
+            if (showFirstTime) return;
             headerTMP.text = headerText;
             OnClickOpenPopup();
+            showFirstTime = true;
         }
 
         public void ChangeScene(string scene)

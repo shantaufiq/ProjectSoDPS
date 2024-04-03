@@ -1,25 +1,29 @@
 using InstalasiIoT;
 using System.Collections;
 using System.Collections.Generic;
-using UnityEditor.PackageManager;
 using UnityEngine;
 
-public class ExamRecapInfo : ConnectionStatus
+namespace InstalasiIoT
 {
-
-    public override void SetStatus(Status status)
+    public class ExamRecapInfo : ConnectionStatus
     {
-        switch (status)
+        [SerializeField] private ExamScoreChecker examScoreChecker;
+
+        public override void SetStatus(Status status)
         {
-            case Status.Connected:
-                PanelImage.sprite = ConnectedSprite;
-                break;
-            case Status.Error:
-                PanelImage.sprite = ErrorSprite;
-                break;
-            case Status.Warning:
-                PanelImage.sprite = WarningSprite;
-                break;
+            if (examScoreChecker.examSubmitted) return;
+            switch (status)
+            {
+                case Status.Connected:
+                    PanelImage.sprite = ConnectedSprite;
+                    break;
+                case Status.Error:
+                    PanelImage.sprite = ErrorSprite;
+                    break;
+                case Status.Warning:
+                    PanelImage.sprite = WarningSprite;
+                    break;
+            }
         }
     }
 }
