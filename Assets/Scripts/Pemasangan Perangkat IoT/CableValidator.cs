@@ -77,7 +77,7 @@ namespace InstalasiIoT
         /// <returns></returns>
         private bool TryGetScoreChecker(CableController cableController, out SocketScoreChecker scoreChecker)
         {
-            scoreChecker = new SocketScoreChecker();
+            scoreChecker = null;
             var valid = false;
             foreach (var socket in cableController.sockets)
             {
