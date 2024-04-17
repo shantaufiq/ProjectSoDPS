@@ -7493,7 +7493,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 21d7345dcc24ba645acd35689df59019, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  musicSounds: []
+  musicSounds:
+  - name: Theme
+    clip: {fileID: 8300000, guid: 8230f8ec3b458a74b90d488640f4390a, type: 3}
   sfxSounds: []
   musicSource: {fileID: 611500194}
   sfxSource: {fileID: 611500193}
@@ -16240,7 +16242,7 @@ PrefabInstance:
         type: 3}
       propertyPath: sfxClips.Array.data[0].clip
       value: 
-      objectReference: {fileID: 8300000, guid: a188df4b764ba9c40a768913f4e52921, type: 3}
+      objectReference: {fileID: 8300000, guid: 1af06492db907e646a7024c6c9ef352b, type: 3}
     - target: {fileID: 8822182829556550988, guid: 65c4694569e443f4796d9daf950e9aa0,
         type: 3}
       propertyPath: sfxClips.Array.data[0].name
@@ -16250,7 +16252,7 @@ PrefabInstance:
         type: 3}
       propertyPath: sfxClips.Array.data[1].clip
       value: 
-      objectReference: {fileID: 8300000, guid: a188df4b764ba9c40a768913f4e52921, type: 3}
+      objectReference: {fileID: 8300000, guid: e213aeed088c234438f9879d784c67ee, type: 3}
     - target: {fileID: 8822182829556550988, guid: 65c4694569e443f4796d9daf950e9aa0,
         type: 3}
       propertyPath: sfxClips.Array.data[1].name
