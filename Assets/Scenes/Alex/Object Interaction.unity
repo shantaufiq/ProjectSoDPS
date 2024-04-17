@@ -31139,6 +31139,42 @@ MonoBehaviour:
           m_StringArgument: Papan Clip
           m_BoolArgument: 1
         m_CallState: 2
+      - m_Target: {fileID: 2109772232}
+        m_TargetAssemblyTypeName: UnityEngine.Behaviour, UnityEngine
+        m_MethodName: set_enabled
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Papan Clip
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 8569078044635182979}
+        m_TargetAssemblyTypeName: PerencanaanPersiapanIoT.ToDoController, Assembly-CSharp
+        m_MethodName: set_UseConstraint
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Papan Clip
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1466919257}
+        m_TargetAssemblyTypeName: InstalasiIoT.SocketQuestContainer, Assembly-CSharp
+        m_MethodName: CheckConstraintActivation
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Papan Clip
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &1462285291
 GameObject:
   m_ObjectHideFlags: 0
@@ -31270,6 +31306,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1466919256}
+  - component: {fileID: 1466919257}
   m_Layer: 0
   m_Name: ESP 32 Sockets Quest
   m_TagString: Untagged
@@ -31300,6 +31337,28 @@ Transform:
   - {fileID: 511968052}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1466919257
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1466919255}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 34a8c19b1eca04d438213f27bee7de06, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  socketScoreCheckers:
+  - {fileID: 169746245}
+  - {fileID: 172693089}
+  - {fileID: 1501937516}
+  - {fileID: 1782701553}
+  - {fileID: 509186691}
+  - {fileID: 1772576057}
+  - {fileID: 680043095}
+  - {fileID: 511968053}
+  useConstraint: 1
 --- !u!1001 &1473955387
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -41575,7 +41634,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2109772230}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5577441c71f88d74ea9bc20ef7cd5696, type: 3}
   m_Name: 

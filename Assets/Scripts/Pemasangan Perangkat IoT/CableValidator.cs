@@ -16,11 +16,18 @@ namespace InstalasiIoT
         private void Start()
         {
             socketComponent = GetComponent<SocketInteractorTwoAttach>();
+            SocketQuestContainer.onConstraintDeactivate += CheckCable;
+        }
+
+        private void OnDestroy()
+        {
+            SocketQuestContainer.onConstraintDeactivate -= CheckCable;
         }
 
         public void CheckCable()
         {
             var obj = socketComponent.GetOldestInteractableSelected();
+            if (obj == null) return;
             if (obj.transform.gameObject.TryGetComponent<BoneCableController>(out var boneCable))
             {
                 boneCableController = boneCable;

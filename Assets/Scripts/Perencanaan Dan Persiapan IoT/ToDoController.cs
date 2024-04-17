@@ -23,6 +23,8 @@ namespace PerencanaanPersiapanIoT
 
         private bool questFinishedEventFired = false;
 
+        
+
         void Start()
         {
             DisplayItemList();
@@ -51,7 +53,6 @@ namespace PerencanaanPersiapanIoT
         public void UnFinishItem(int index)
         {
             if (questFinishedEventFired) return;
-
             var questData = itemLists;
 
             if (index > questData.Count - 1) return;
