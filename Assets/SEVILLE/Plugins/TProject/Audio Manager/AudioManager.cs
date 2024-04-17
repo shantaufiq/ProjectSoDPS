@@ -12,6 +12,8 @@ namespace Tproject.AudioManager
 
         private Coroutine fadeCoroutine;
 
+        private float M_LastMusicVolume;
+
         private void Awake()
         {
             if (Instance != null && Instance != this)
@@ -69,6 +71,7 @@ namespace Tproject.AudioManager
         {
             if (clip != null && !sfxSource.mute)
             {
+                M_LastMusicVolume = musicSource.volume;
                 StartCoroutine(TransitionMandatorySfx(clip, .6f));
             }
         }
@@ -163,9 +166,11 @@ namespace Tproject.AudioManager
         {
             float _time = transitionTime / 2;
 
+            musicSource.volume -= .4f;
             yield return StartCoroutine(FadeOutSourceVolume(sfxSource, _time));
             sfxSource.PlayOneShot(newClip);
-            // yield return StartCoroutine(FadeInSourceVolume(sfxSource, _time));
+            yield return new WaitForSeconds(newClip.length);
+            musicSource.volume = M_LastMusicVolume;
         }
 
         private IEnumerator FadeOutSourceVolume(AudioSource _source, float time)
