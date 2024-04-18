@@ -31,6 +31,7 @@ namespace InstalasiIoT
             if (obj.transform.gameObject.TryGetComponent<BoneCableController>(out var boneCable))
             {
                 boneCableController = boneCable;
+                if (boneCableController.CableController == null) return;
                 var cableController = boneCableController.CableController;
                 cableController.sockets.Add(socketComponent);
                 cableController.socketsType.Add(pinSocketType);
@@ -102,7 +103,7 @@ namespace InstalasiIoT
 
         public void Detach()
         {
-            if (boneCableController == null) return;
+            if (boneCableController == null || boneCableController.CableController == null) return;
             var cableController = boneCableController.CableController;
             if (cableController.sockets.Count > 0)
             {
