@@ -5804,6 +5804,7 @@ MonoBehaviour:
   pinSocketType: 0
   socketScoreChecker:
   - {fileID: 0}
+  detectionCube: {fileID: 0}
 --- !u!136 &194171961
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -8390,6 +8391,7 @@ MonoBehaviour:
   pinSocketType: 0
   socketScoreChecker:
   - {fileID: 0}
+  detectionCube: {fileID: 0}
 --- !u!136 &274973571
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -9826,7 +9828,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 359570014}
         m_TargetAssemblyTypeName: InstalasiIoT.BoneCableController, Assembly-CSharp
-        m_MethodName: HideTag
+        m_MethodName: TagSelected
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -9838,7 +9840,19 @@ MonoBehaviour:
         m_CallState: 2
   m_SelectExited:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 359570014}
+        m_TargetAssemblyTypeName: InstalasiIoT.BoneCableController, Assembly-CSharp
+        m_MethodName: TagSelected
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   m_FirstFocusEntered:
     m_PersistentCalls:
       m_Calls: []
@@ -10381,6 +10395,7 @@ MonoBehaviour:
   pinSocketType: 0
   socketScoreChecker:
   - {fileID: 16094310}
+  detectionCube: {fileID: 0}
 --- !u!136 &370690023
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -10994,7 +11009,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 396587134}
         m_TargetAssemblyTypeName: InstalasiIoT.BoneCableController, Assembly-CSharp
-        m_MethodName: HideTag
+        m_MethodName: TagSelected
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -11006,7 +11021,19 @@ MonoBehaviour:
         m_CallState: 2
   m_SelectExited:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 396587134}
+        m_TargetAssemblyTypeName: InstalasiIoT.BoneCableController, Assembly-CSharp
+        m_MethodName: TagSelected
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   m_FirstFocusEntered:
     m_PersistentCalls:
       m_Calls: []
@@ -11229,7 +11256,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 396587135}
         m_TargetAssemblyTypeName: InstalasiIoT.BoneCableController, Assembly-CSharp
-        m_MethodName: HideTag
+        m_MethodName: TagSelected
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -11241,7 +11268,19 @@ MonoBehaviour:
         m_CallState: 2
   m_SelectExited:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 396587135}
+        m_TargetAssemblyTypeName: InstalasiIoT.BoneCableController, Assembly-CSharp
+        m_MethodName: TagSelected
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   m_FirstFocusEntered:
     m_PersistentCalls:
       m_Calls: []
@@ -12424,7 +12463,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 441898373}
         m_TargetAssemblyTypeName: InstalasiIoT.BoneCableController, Assembly-CSharp
-        m_MethodName: HideTag
+        m_MethodName: TagSelected
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -12436,7 +12475,19 @@ MonoBehaviour:
         m_CallState: 2
   m_SelectExited:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 441898373}
+        m_TargetAssemblyTypeName: InstalasiIoT.BoneCableController, Assembly-CSharp
+        m_MethodName: TagSelected
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   m_FirstFocusEntered:
     m_PersistentCalls:
       m_Calls: []
@@ -13008,6 +13059,7 @@ MonoBehaviour:
   pinSocketType: 2
   socketScoreChecker:
   - {fileID: 1576059883}
+  detectionCube: {fileID: 0}
 --- !u!1001 &460356517
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -15529,6 +15581,7 @@ MonoBehaviour:
   socketScoreChecker:
   - {fileID: 1576059883}
   - {fileID: 976159212}
+  detectionCube: {fileID: 0}
 --- !u!1001 &558965798
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -16126,7 +16179,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 580978365}
         m_TargetAssemblyTypeName: InstalasiIoT.BoneCableController, Assembly-CSharp
-        m_MethodName: HideTag
+        m_MethodName: TagSelected
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -16138,7 +16191,19 @@ MonoBehaviour:
         m_CallState: 2
   m_SelectExited:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 580978365}
+        m_TargetAssemblyTypeName: InstalasiIoT.BoneCableController, Assembly-CSharp
+        m_MethodName: TagSelected
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   m_FirstFocusEntered:
     m_PersistentCalls:
       m_Calls: []
@@ -16361,7 +16426,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 580978366}
         m_TargetAssemblyTypeName: InstalasiIoT.BoneCableController, Assembly-CSharp
-        m_MethodName: HideTag
+        m_MethodName: TagSelected
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -16373,7 +16438,19 @@ MonoBehaviour:
         m_CallState: 2
   m_SelectExited:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 580978366}
+        m_TargetAssemblyTypeName: InstalasiIoT.BoneCableController, Assembly-CSharp
+        m_MethodName: TagSelected
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   m_FirstFocusEntered:
     m_PersistentCalls:
       m_Calls: []
@@ -17090,6 +17167,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 583868430009862462, guid: e1a7e215924e96540a253e8c91542409,
         type: 3}
+      propertyPath: m_SelectExited.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 583868430009862462, guid: e1a7e215924e96540a253e8c91542409,
+        type: 3}
       propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.size
       value: 1
       objectReference: {fileID: 0}
@@ -17105,6 +17187,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 583868430009862462, guid: e1a7e215924e96540a253e8c91542409,
         type: 3}
+      propertyPath: m_SelectExited.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 583868430009862462, guid: e1a7e215924e96540a253e8c91542409,
+        type: 3}
       propertyPath: m_HoverExited.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 609483412}
@@ -17116,6 +17203,11 @@ PrefabInstance:
     - target: {fileID: 583868430009862462, guid: e1a7e215924e96540a253e8c91542409,
         type: 3}
       propertyPath: m_HoverEntered.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 609483412}
+    - target: {fileID: 583868430009862462, guid: e1a7e215924e96540a253e8c91542409,
+        type: 3}
+      propertyPath: m_SelectExited.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 609483412}
     - target: {fileID: 583868430009862462, guid: e1a7e215924e96540a253e8c91542409,
@@ -17140,6 +17232,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 583868430009862462, guid: e1a7e215924e96540a253e8c91542409,
         type: 3}
+      propertyPath: m_SelectExited.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 583868430009862462, guid: e1a7e215924e96540a253e8c91542409,
+        type: 3}
       propertyPath: m_HoverEntered.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: ShowTag
       objectReference: {fileID: 0}
@@ -17150,8 +17247,13 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 583868430009862462, guid: e1a7e215924e96540a253e8c91542409,
         type: 3}
+      propertyPath: m_SelectExited.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: TagSelected
+      objectReference: {fileID: 0}
+    - target: {fileID: 583868430009862462, guid: e1a7e215924e96540a253e8c91542409,
+        type: 3}
       propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: HideTag
+      value: TagSelected
       objectReference: {fileID: 0}
     - target: {fileID: 583868430009862462, guid: e1a7e215924e96540a253e8c91542409,
         type: 3}
@@ -17161,6 +17263,11 @@ PrefabInstance:
     - target: {fileID: 583868430009862462, guid: e1a7e215924e96540a253e8c91542409,
         type: 3}
       propertyPath: m_HoverEntered.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: InstalasiIoT.BoneCableController, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 583868430009862462, guid: e1a7e215924e96540a253e8c91542409,
+        type: 3}
+      propertyPath: m_SelectExited.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
       value: InstalasiIoT.BoneCableController, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 583868430009862462, guid: e1a7e215924e96540a253e8c91542409,
@@ -17176,6 +17283,11 @@ PrefabInstance:
     - target: {fileID: 583868430009862462, guid: e1a7e215924e96540a253e8c91542409,
         type: 3}
       propertyPath: m_HoverEntered.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 583868430009862462, guid: e1a7e215924e96540a253e8c91542409,
+        type: 3}
+      propertyPath: m_SelectExited.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 583868430009862462, guid: e1a7e215924e96540a253e8c91542409,
@@ -17220,6 +17332,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1030221329150377727, guid: e1a7e215924e96540a253e8c91542409,
         type: 3}
+      propertyPath: m_SelectExited.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030221329150377727, guid: e1a7e215924e96540a253e8c91542409,
+        type: 3}
       propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.size
       value: 1
       objectReference: {fileID: 0}
@@ -17235,6 +17352,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1030221329150377727, guid: e1a7e215924e96540a253e8c91542409,
         type: 3}
+      propertyPath: m_SelectExited.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030221329150377727, guid: e1a7e215924e96540a253e8c91542409,
+        type: 3}
       propertyPath: m_HoverExited.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 609483413}
@@ -17246,6 +17368,11 @@ PrefabInstance:
     - target: {fileID: 1030221329150377727, guid: e1a7e215924e96540a253e8c91542409,
         type: 3}
       propertyPath: m_HoverEntered.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 609483413}
+    - target: {fileID: 1030221329150377727, guid: e1a7e215924e96540a253e8c91542409,
+        type: 3}
+      propertyPath: m_SelectExited.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 609483413}
     - target: {fileID: 1030221329150377727, guid: e1a7e215924e96540a253e8c91542409,
@@ -17270,6 +17397,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1030221329150377727, guid: e1a7e215924e96540a253e8c91542409,
         type: 3}
+      propertyPath: m_SelectExited.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030221329150377727, guid: e1a7e215924e96540a253e8c91542409,
+        type: 3}
       propertyPath: m_HoverEntered.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: ShowTag
       objectReference: {fileID: 0}
@@ -17280,8 +17412,13 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1030221329150377727, guid: e1a7e215924e96540a253e8c91542409,
         type: 3}
+      propertyPath: m_SelectExited.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: TagSelected
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030221329150377727, guid: e1a7e215924e96540a253e8c91542409,
+        type: 3}
       propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: HideTag
+      value: TagSelected
       objectReference: {fileID: 0}
     - target: {fileID: 1030221329150377727, guid: e1a7e215924e96540a253e8c91542409,
         type: 3}
@@ -17291,6 +17428,11 @@ PrefabInstance:
     - target: {fileID: 1030221329150377727, guid: e1a7e215924e96540a253e8c91542409,
         type: 3}
       propertyPath: m_HoverEntered.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: InstalasiIoT.BoneCableController, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030221329150377727, guid: e1a7e215924e96540a253e8c91542409,
+        type: 3}
+      propertyPath: m_SelectExited.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
       value: InstalasiIoT.BoneCableController, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 1030221329150377727, guid: e1a7e215924e96540a253e8c91542409,
@@ -17306,6 +17448,11 @@ PrefabInstance:
     - target: {fileID: 1030221329150377727, guid: e1a7e215924e96540a253e8c91542409,
         type: 3}
       propertyPath: m_HoverEntered.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030221329150377727, guid: e1a7e215924e96540a253e8c91542409,
+        type: 3}
+      propertyPath: m_SelectExited.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 1030221329150377727, guid: e1a7e215924e96540a253e8c91542409,
@@ -17611,6 +17758,7 @@ MonoBehaviour:
   pinSocketType: 2
   socketScoreChecker:
   - {fileID: 1422943403}
+  detectionCube: {fileID: 0}
 --- !u!114 &609793156
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -18339,7 +18487,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 637185910}
         m_TargetAssemblyTypeName: InstalasiIoT.BoneCableController, Assembly-CSharp
-        m_MethodName: HideTag
+        m_MethodName: TagSelected
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -18351,7 +18499,19 @@ MonoBehaviour:
         m_CallState: 2
   m_SelectExited:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 637185910}
+        m_TargetAssemblyTypeName: InstalasiIoT.BoneCableController, Assembly-CSharp
+        m_MethodName: TagSelected
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   m_FirstFocusEntered:
     m_PersistentCalls:
       m_Calls: []
@@ -18574,7 +18734,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 637185911}
         m_TargetAssemblyTypeName: InstalasiIoT.BoneCableController, Assembly-CSharp
-        m_MethodName: HideTag
+        m_MethodName: TagSelected
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -18586,7 +18746,19 @@ MonoBehaviour:
         m_CallState: 2
   m_SelectExited:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 637185911}
+        m_TargetAssemblyTypeName: InstalasiIoT.BoneCableController, Assembly-CSharp
+        m_MethodName: TagSelected
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   m_FirstFocusEntered:
     m_PersistentCalls:
       m_Calls: []
@@ -19887,6 +20059,7 @@ MonoBehaviour:
   pinSocketType: 0
   socketScoreChecker:
   - {fileID: 12318882}
+  detectionCube: {fileID: 0}
 --- !u!136 &723799139
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -22845,7 +23018,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 810404555}
         m_TargetAssemblyTypeName: InstalasiIoT.BoneCableController, Assembly-CSharp
-        m_MethodName: HideTag
+        m_MethodName: TagSelected
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -22857,7 +23030,19 @@ MonoBehaviour:
         m_CallState: 2
   m_SelectExited:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 810404555}
+        m_TargetAssemblyTypeName: InstalasiIoT.BoneCableController, Assembly-CSharp
+        m_MethodName: TagSelected
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   m_FirstFocusEntered:
     m_PersistentCalls:
       m_Calls: []
@@ -23080,7 +23265,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 810404556}
         m_TargetAssemblyTypeName: InstalasiIoT.BoneCableController, Assembly-CSharp
-        m_MethodName: HideTag
+        m_MethodName: TagSelected
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -23092,7 +23277,19 @@ MonoBehaviour:
         m_CallState: 2
   m_SelectExited:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 810404556}
+        m_TargetAssemblyTypeName: InstalasiIoT.BoneCableController, Assembly-CSharp
+        m_MethodName: TagSelected
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   m_FirstFocusEntered:
     m_PersistentCalls:
       m_Calls: []
@@ -23704,7 +23901,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 828494182}
         m_TargetAssemblyTypeName: InstalasiIoT.BoneCableController, Assembly-CSharp
-        m_MethodName: HideTag
+        m_MethodName: TagSelected
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -23716,7 +23913,19 @@ MonoBehaviour:
         m_CallState: 2
   m_SelectExited:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 828494182}
+        m_TargetAssemblyTypeName: InstalasiIoT.BoneCableController, Assembly-CSharp
+        m_MethodName: TagSelected
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   m_FirstFocusEntered:
     m_PersistentCalls:
       m_Calls: []
@@ -23939,7 +24148,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 828494183}
         m_TargetAssemblyTypeName: InstalasiIoT.BoneCableController, Assembly-CSharp
-        m_MethodName: HideTag
+        m_MethodName: TagSelected
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -23951,7 +24160,19 @@ MonoBehaviour:
         m_CallState: 2
   m_SelectExited:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 828494183}
+        m_TargetAssemblyTypeName: InstalasiIoT.BoneCableController, Assembly-CSharp
+        m_MethodName: TagSelected
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   m_FirstFocusEntered:
     m_PersistentCalls:
       m_Calls: []
@@ -25510,6 +25731,7 @@ MonoBehaviour:
   pinSocketType: 2
   socketScoreChecker:
   - {fileID: 1422943403}
+  detectionCube: {fileID: 0}
 --- !u!65 &929370539
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -28477,6 +28699,7 @@ MonoBehaviour:
   pinSocketType: 0
   socketScoreChecker:
   - {fileID: 0}
+  detectionCube: {fileID: 0}
 --- !u!136 &1029038590
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -29661,7 +29884,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1109388804}
         m_TargetAssemblyTypeName: InstalasiIoT.BoneCableController, Assembly-CSharp
-        m_MethodName: HideTag
+        m_MethodName: TagSelected
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -29673,7 +29896,19 @@ MonoBehaviour:
         m_CallState: 2
   m_SelectExited:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1109388804}
+        m_TargetAssemblyTypeName: InstalasiIoT.BoneCableController, Assembly-CSharp
+        m_MethodName: TagSelected
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   m_FirstFocusEntered:
     m_PersistentCalls:
       m_Calls: []
@@ -30938,7 +31173,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1164890747}
         m_TargetAssemblyTypeName: InstalasiIoT.BoneCableController, Assembly-CSharp
-        m_MethodName: HideTag
+        m_MethodName: TagSelected
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -30950,7 +31185,19 @@ MonoBehaviour:
         m_CallState: 2
   m_SelectExited:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1164890747}
+        m_TargetAssemblyTypeName: InstalasiIoT.BoneCableController, Assembly-CSharp
+        m_MethodName: TagSelected
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   m_FirstFocusEntered:
     m_PersistentCalls:
       m_Calls: []
@@ -31304,6 +31551,7 @@ MonoBehaviour:
   pinSocketType: 0
   socketScoreChecker:
   - {fileID: 0}
+  detectionCube: {fileID: 0}
 --- !u!136 &1183039051
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -32101,6 +32349,7 @@ MonoBehaviour:
   pinSocketType: 0
   socketScoreChecker:
   - {fileID: 0}
+  detectionCube: {fileID: 0}
 --- !u!136 &1203198721
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -32477,6 +32726,7 @@ MonoBehaviour:
   pinSocketType: 0
   socketScoreChecker:
   - {fileID: 0}
+  detectionCube: {fileID: 0}
 --- !u!136 &1211389770
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -32678,7 +32928,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1213122923}
         m_TargetAssemblyTypeName: InstalasiIoT.BoneCableController, Assembly-CSharp
-        m_MethodName: HideTag
+        m_MethodName: TagSelected
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -32690,7 +32940,19 @@ MonoBehaviour:
         m_CallState: 2
   m_SelectExited:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1213122923}
+        m_TargetAssemblyTypeName: InstalasiIoT.BoneCableController, Assembly-CSharp
+        m_MethodName: TagSelected
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   m_FirstFocusEntered:
     m_PersistentCalls:
       m_Calls: []
@@ -32996,7 +33258,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1233860006}
         m_TargetAssemblyTypeName: InstalasiIoT.BoneCableController, Assembly-CSharp
-        m_MethodName: HideTag
+        m_MethodName: TagSelected
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -33008,7 +33270,19 @@ MonoBehaviour:
         m_CallState: 2
   m_SelectExited:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1233860006}
+        m_TargetAssemblyTypeName: InstalasiIoT.BoneCableController, Assembly-CSharp
+        m_MethodName: TagSelected
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   m_FirstFocusEntered:
     m_PersistentCalls:
       m_Calls: []
@@ -33483,7 +33757,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1247539254}
         m_TargetAssemblyTypeName: InstalasiIoT.BoneCableController, Assembly-CSharp
-        m_MethodName: HideTag
+        m_MethodName: TagSelected
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -33495,7 +33769,19 @@ MonoBehaviour:
         m_CallState: 2
   m_SelectExited:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1247539254}
+        m_TargetAssemblyTypeName: InstalasiIoT.BoneCableController, Assembly-CSharp
+        m_MethodName: TagSelected
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   m_FirstFocusEntered:
     m_PersistentCalls:
       m_Calls: []
@@ -36045,7 +36331,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1352201465}
         m_TargetAssemblyTypeName: InstalasiIoT.BoneCableController, Assembly-CSharp
-        m_MethodName: HideTag
+        m_MethodName: TagSelected
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -36057,7 +36343,19 @@ MonoBehaviour:
         m_CallState: 2
   m_SelectExited:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1352201465}
+        m_TargetAssemblyTypeName: InstalasiIoT.BoneCableController, Assembly-CSharp
+        m_MethodName: TagSelected
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   m_FirstFocusEntered:
     m_PersistentCalls:
       m_Calls: []
@@ -36694,7 +36992,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1375544543}
         m_TargetAssemblyTypeName: InstalasiIoT.BoneCableController, Assembly-CSharp
-        m_MethodName: HideTag
+        m_MethodName: TagSelected
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -36706,7 +37004,19 @@ MonoBehaviour:
         m_CallState: 2
   m_SelectExited:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1375544543}
+        m_TargetAssemblyTypeName: InstalasiIoT.BoneCableController, Assembly-CSharp
+        m_MethodName: TagSelected
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   m_FirstFocusEntered:
     m_PersistentCalls:
       m_Calls: []
@@ -36929,7 +37239,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1375544544}
         m_TargetAssemblyTypeName: InstalasiIoT.BoneCableController, Assembly-CSharp
-        m_MethodName: HideTag
+        m_MethodName: TagSelected
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -36941,7 +37251,19 @@ MonoBehaviour:
         m_CallState: 2
   m_SelectExited:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1375544544}
+        m_TargetAssemblyTypeName: InstalasiIoT.BoneCableController, Assembly-CSharp
+        m_MethodName: TagSelected
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   m_FirstFocusEntered:
     m_PersistentCalls:
       m_Calls: []
@@ -39765,7 +40087,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1519128087}
         m_TargetAssemblyTypeName: InstalasiIoT.BoneCableController, Assembly-CSharp
-        m_MethodName: HideTag
+        m_MethodName: TagSelected
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -39777,7 +40099,19 @@ MonoBehaviour:
         m_CallState: 2
   m_SelectExited:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1519128087}
+        m_TargetAssemblyTypeName: InstalasiIoT.BoneCableController, Assembly-CSharp
+        m_MethodName: TagSelected
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   m_FirstFocusEntered:
     m_PersistentCalls:
       m_Calls: []
@@ -40000,7 +40334,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1519128088}
         m_TargetAssemblyTypeName: InstalasiIoT.BoneCableController, Assembly-CSharp
-        m_MethodName: HideTag
+        m_MethodName: TagSelected
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -40012,7 +40346,19 @@ MonoBehaviour:
         m_CallState: 2
   m_SelectExited:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1519128088}
+        m_TargetAssemblyTypeName: InstalasiIoT.BoneCableController, Assembly-CSharp
+        m_MethodName: TagSelected
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   m_FirstFocusEntered:
     m_PersistentCalls:
       m_Calls: []
@@ -40458,7 +40804,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1538000700}
         m_TargetAssemblyTypeName: InstalasiIoT.BoneCableController, Assembly-CSharp
-        m_MethodName: HideTag
+        m_MethodName: TagSelected
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -40470,7 +40816,19 @@ MonoBehaviour:
         m_CallState: 2
   m_SelectExited:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1538000700}
+        m_TargetAssemblyTypeName: InstalasiIoT.BoneCableController, Assembly-CSharp
+        m_MethodName: TagSelected
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   m_FirstFocusEntered:
     m_PersistentCalls:
       m_Calls: []
@@ -40741,6 +41099,7 @@ MonoBehaviour:
   pinSocketType: 2
   socketScoreChecker:
   - {fileID: 976159212}
+  detectionCube: {fileID: 0}
 --- !u!136 &1539437416
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -40953,6 +41312,7 @@ MonoBehaviour:
   pinSocketType: 2
   socketScoreChecker:
   - {fileID: 1422943403}
+  detectionCube: {fileID: 0}
 --- !u!65 &1544310341
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -42105,7 +42465,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1571497954}
         m_TargetAssemblyTypeName: InstalasiIoT.BoneCableController, Assembly-CSharp
-        m_MethodName: HideTag
+        m_MethodName: TagSelected
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -42117,7 +42477,19 @@ MonoBehaviour:
         m_CallState: 2
   m_SelectExited:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1571497954}
+        m_TargetAssemblyTypeName: InstalasiIoT.BoneCableController, Assembly-CSharp
+        m_MethodName: TagSelected
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   m_FirstFocusEntered:
     m_PersistentCalls:
       m_Calls: []
@@ -42828,7 +43200,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1604861718}
         m_TargetAssemblyTypeName: InstalasiIoT.BoneCableController, Assembly-CSharp
-        m_MethodName: HideTag
+        m_MethodName: TagSelected
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -42840,7 +43212,19 @@ MonoBehaviour:
         m_CallState: 2
   m_SelectExited:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1604861718}
+        m_TargetAssemblyTypeName: InstalasiIoT.BoneCableController, Assembly-CSharp
+        m_MethodName: TagSelected
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   m_FirstFocusEntered:
     m_PersistentCalls:
       m_Calls: []
@@ -43063,7 +43447,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1604861719}
         m_TargetAssemblyTypeName: InstalasiIoT.BoneCableController, Assembly-CSharp
-        m_MethodName: HideTag
+        m_MethodName: TagSelected
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -43075,7 +43459,19 @@ MonoBehaviour:
         m_CallState: 2
   m_SelectExited:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1604861719}
+        m_TargetAssemblyTypeName: InstalasiIoT.BoneCableController, Assembly-CSharp
+        m_MethodName: TagSelected
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   m_FirstFocusEntered:
     m_PersistentCalls:
       m_Calls: []
@@ -44675,6 +45071,7 @@ MonoBehaviour:
   pinSocketType: 1
   socketScoreChecker:
   - {fileID: 662881862}
+  detectionCube: {fileID: 0}
 --- !u!136 &1639322585
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -46803,6 +47200,7 @@ MonoBehaviour:
   pinSocketType: 2
   socketScoreChecker:
   - {fileID: 1422943403}
+  detectionCube: {fileID: 0}
 --- !u!65 &1761668787
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -47871,7 +48269,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1780265109}
         m_TargetAssemblyTypeName: InstalasiIoT.BoneCableController, Assembly-CSharp
-        m_MethodName: HideTag
+        m_MethodName: TagSelected
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -47883,7 +48281,19 @@ MonoBehaviour:
         m_CallState: 2
   m_SelectExited:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1780265109}
+        m_TargetAssemblyTypeName: InstalasiIoT.BoneCableController, Assembly-CSharp
+        m_MethodName: TagSelected
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   m_FirstFocusEntered:
     m_PersistentCalls:
       m_Calls: []
@@ -48106,7 +48516,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1780265110}
         m_TargetAssemblyTypeName: InstalasiIoT.BoneCableController, Assembly-CSharp
-        m_MethodName: HideTag
+        m_MethodName: TagSelected
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -48118,7 +48528,19 @@ MonoBehaviour:
         m_CallState: 2
   m_SelectExited:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1780265110}
+        m_TargetAssemblyTypeName: InstalasiIoT.BoneCableController, Assembly-CSharp
+        m_MethodName: TagSelected
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   m_FirstFocusEntered:
     m_PersistentCalls:
       m_Calls: []
@@ -48995,7 +49417,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1807010479}
         m_TargetAssemblyTypeName: InstalasiIoT.BoneCableController, Assembly-CSharp
-        m_MethodName: HideTag
+        m_MethodName: TagSelected
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -49007,7 +49429,19 @@ MonoBehaviour:
         m_CallState: 2
   m_SelectExited:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1807010479}
+        m_TargetAssemblyTypeName: InstalasiIoT.BoneCableController, Assembly-CSharp
+        m_MethodName: TagSelected
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   m_FirstFocusEntered:
     m_PersistentCalls:
       m_Calls: []
@@ -49230,7 +49664,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1807010480}
         m_TargetAssemblyTypeName: InstalasiIoT.BoneCableController, Assembly-CSharp
-        m_MethodName: HideTag
+        m_MethodName: TagSelected
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -49242,7 +49676,19 @@ MonoBehaviour:
         m_CallState: 2
   m_SelectExited:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1807010480}
+        m_TargetAssemblyTypeName: InstalasiIoT.BoneCableController, Assembly-CSharp
+        m_MethodName: TagSelected
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   m_FirstFocusEntered:
     m_PersistentCalls:
       m_Calls: []
@@ -49689,6 +50135,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 583868430009862462, guid: e1a7e215924e96540a253e8c91542409,
         type: 3}
+      propertyPath: m_SelectExited.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 583868430009862462, guid: e1a7e215924e96540a253e8c91542409,
+        type: 3}
       propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.size
       value: 1
       objectReference: {fileID: 0}
@@ -49704,6 +50155,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 583868430009862462, guid: e1a7e215924e96540a253e8c91542409,
         type: 3}
+      propertyPath: m_SelectExited.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 583868430009862462, guid: e1a7e215924e96540a253e8c91542409,
+        type: 3}
       propertyPath: m_HoverExited.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1851090891}
@@ -49715,6 +50171,11 @@ PrefabInstance:
     - target: {fileID: 583868430009862462, guid: e1a7e215924e96540a253e8c91542409,
         type: 3}
       propertyPath: m_HoverEntered.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1851090891}
+    - target: {fileID: 583868430009862462, guid: e1a7e215924e96540a253e8c91542409,
+        type: 3}
+      propertyPath: m_SelectExited.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1851090891}
     - target: {fileID: 583868430009862462, guid: e1a7e215924e96540a253e8c91542409,
@@ -49739,6 +50200,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 583868430009862462, guid: e1a7e215924e96540a253e8c91542409,
         type: 3}
+      propertyPath: m_SelectExited.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 583868430009862462, guid: e1a7e215924e96540a253e8c91542409,
+        type: 3}
       propertyPath: m_HoverEntered.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: ShowTag
       objectReference: {fileID: 0}
@@ -49749,8 +50215,13 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 583868430009862462, guid: e1a7e215924e96540a253e8c91542409,
         type: 3}
+      propertyPath: m_SelectExited.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: TagSelected
+      objectReference: {fileID: 0}
+    - target: {fileID: 583868430009862462, guid: e1a7e215924e96540a253e8c91542409,
+        type: 3}
       propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: HideTag
+      value: TagSelected
       objectReference: {fileID: 0}
     - target: {fileID: 583868430009862462, guid: e1a7e215924e96540a253e8c91542409,
         type: 3}
@@ -49760,6 +50231,11 @@ PrefabInstance:
     - target: {fileID: 583868430009862462, guid: e1a7e215924e96540a253e8c91542409,
         type: 3}
       propertyPath: m_HoverEntered.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: InstalasiIoT.BoneCableController, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 583868430009862462, guid: e1a7e215924e96540a253e8c91542409,
+        type: 3}
+      propertyPath: m_SelectExited.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
       value: InstalasiIoT.BoneCableController, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 583868430009862462, guid: e1a7e215924e96540a253e8c91542409,
@@ -49775,6 +50251,11 @@ PrefabInstance:
     - target: {fileID: 583868430009862462, guid: e1a7e215924e96540a253e8c91542409,
         type: 3}
       propertyPath: m_HoverEntered.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 583868430009862462, guid: e1a7e215924e96540a253e8c91542409,
+        type: 3}
+      propertyPath: m_SelectExited.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 583868430009862462, guid: e1a7e215924e96540a253e8c91542409,
@@ -49819,6 +50300,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1030221329150377727, guid: e1a7e215924e96540a253e8c91542409,
         type: 3}
+      propertyPath: m_SelectExited.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030221329150377727, guid: e1a7e215924e96540a253e8c91542409,
+        type: 3}
       propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.size
       value: 1
       objectReference: {fileID: 0}
@@ -49834,6 +50320,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1030221329150377727, guid: e1a7e215924e96540a253e8c91542409,
         type: 3}
+      propertyPath: m_SelectExited.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030221329150377727, guid: e1a7e215924e96540a253e8c91542409,
+        type: 3}
       propertyPath: m_HoverExited.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1851090892}
@@ -49845,6 +50336,11 @@ PrefabInstance:
     - target: {fileID: 1030221329150377727, guid: e1a7e215924e96540a253e8c91542409,
         type: 3}
       propertyPath: m_HoverEntered.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1851090892}
+    - target: {fileID: 1030221329150377727, guid: e1a7e215924e96540a253e8c91542409,
+        type: 3}
+      propertyPath: m_SelectExited.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1851090892}
     - target: {fileID: 1030221329150377727, guid: e1a7e215924e96540a253e8c91542409,
@@ -49869,6 +50365,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1030221329150377727, guid: e1a7e215924e96540a253e8c91542409,
         type: 3}
+      propertyPath: m_SelectExited.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030221329150377727, guid: e1a7e215924e96540a253e8c91542409,
+        type: 3}
       propertyPath: m_HoverEntered.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: ShowTag
       objectReference: {fileID: 0}
@@ -49879,8 +50380,13 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1030221329150377727, guid: e1a7e215924e96540a253e8c91542409,
         type: 3}
+      propertyPath: m_SelectExited.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: TagSelected
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030221329150377727, guid: e1a7e215924e96540a253e8c91542409,
+        type: 3}
       propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: HideTag
+      value: TagSelected
       objectReference: {fileID: 0}
     - target: {fileID: 1030221329150377727, guid: e1a7e215924e96540a253e8c91542409,
         type: 3}
@@ -49890,6 +50396,11 @@ PrefabInstance:
     - target: {fileID: 1030221329150377727, guid: e1a7e215924e96540a253e8c91542409,
         type: 3}
       propertyPath: m_HoverEntered.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: InstalasiIoT.BoneCableController, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030221329150377727, guid: e1a7e215924e96540a253e8c91542409,
+        type: 3}
+      propertyPath: m_SelectExited.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
       value: InstalasiIoT.BoneCableController, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 1030221329150377727, guid: e1a7e215924e96540a253e8c91542409,
@@ -49905,6 +50416,11 @@ PrefabInstance:
     - target: {fileID: 1030221329150377727, guid: e1a7e215924e96540a253e8c91542409,
         type: 3}
       propertyPath: m_HoverEntered.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030221329150377727, guid: e1a7e215924e96540a253e8c91542409,
+        type: 3}
+      propertyPath: m_SelectExited.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 1030221329150377727, guid: e1a7e215924e96540a253e8c91542409,
@@ -52193,6 +52709,7 @@ MonoBehaviour:
   pinSocketType: 0
   socketScoreChecker:
   - {fileID: 1616228750}
+  detectionCube: {fileID: 0}
 --- !u!1 &1921563625
 GameObject:
   m_ObjectHideFlags: 0
@@ -52715,6 +53232,7 @@ MonoBehaviour:
   pinSocketType: 0
   socketScoreChecker:
   - {fileID: 0}
+  detectionCube: {fileID: 0}
 --- !u!136 &1936996307
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -54135,6 +54653,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 583868430009862462, guid: e1a7e215924e96540a253e8c91542409,
         type: 3}
+      propertyPath: m_SelectExited.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 583868430009862462, guid: e1a7e215924e96540a253e8c91542409,
+        type: 3}
       propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.size
       value: 1
       objectReference: {fileID: 0}
@@ -54150,6 +54673,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 583868430009862462, guid: e1a7e215924e96540a253e8c91542409,
         type: 3}
+      propertyPath: m_SelectExited.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 583868430009862462, guid: e1a7e215924e96540a253e8c91542409,
+        type: 3}
       propertyPath: m_HoverExited.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1969411047}
@@ -54161,6 +54689,11 @@ PrefabInstance:
     - target: {fileID: 583868430009862462, guid: e1a7e215924e96540a253e8c91542409,
         type: 3}
       propertyPath: m_HoverEntered.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1969411047}
+    - target: {fileID: 583868430009862462, guid: e1a7e215924e96540a253e8c91542409,
+        type: 3}
+      propertyPath: m_SelectExited.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1969411047}
     - target: {fileID: 583868430009862462, guid: e1a7e215924e96540a253e8c91542409,
@@ -54185,6 +54718,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 583868430009862462, guid: e1a7e215924e96540a253e8c91542409,
         type: 3}
+      propertyPath: m_SelectExited.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 583868430009862462, guid: e1a7e215924e96540a253e8c91542409,
+        type: 3}
       propertyPath: m_HoverEntered.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: ShowTag
       objectReference: {fileID: 0}
@@ -54195,8 +54733,13 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 583868430009862462, guid: e1a7e215924e96540a253e8c91542409,
         type: 3}
+      propertyPath: m_SelectExited.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: TagSelected
+      objectReference: {fileID: 0}
+    - target: {fileID: 583868430009862462, guid: e1a7e215924e96540a253e8c91542409,
+        type: 3}
       propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: HideTag
+      value: TagSelected
       objectReference: {fileID: 0}
     - target: {fileID: 583868430009862462, guid: e1a7e215924e96540a253e8c91542409,
         type: 3}
@@ -54206,6 +54749,11 @@ PrefabInstance:
     - target: {fileID: 583868430009862462, guid: e1a7e215924e96540a253e8c91542409,
         type: 3}
       propertyPath: m_HoverEntered.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: InstalasiIoT.BoneCableController, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 583868430009862462, guid: e1a7e215924e96540a253e8c91542409,
+        type: 3}
+      propertyPath: m_SelectExited.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
       value: InstalasiIoT.BoneCableController, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 583868430009862462, guid: e1a7e215924e96540a253e8c91542409,
@@ -54221,6 +54769,11 @@ PrefabInstance:
     - target: {fileID: 583868430009862462, guid: e1a7e215924e96540a253e8c91542409,
         type: 3}
       propertyPath: m_HoverEntered.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 583868430009862462, guid: e1a7e215924e96540a253e8c91542409,
+        type: 3}
+      propertyPath: m_SelectExited.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 583868430009862462, guid: e1a7e215924e96540a253e8c91542409,
@@ -54265,6 +54818,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1030221329150377727, guid: e1a7e215924e96540a253e8c91542409,
         type: 3}
+      propertyPath: m_SelectExited.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030221329150377727, guid: e1a7e215924e96540a253e8c91542409,
+        type: 3}
       propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.size
       value: 1
       objectReference: {fileID: 0}
@@ -54280,6 +54838,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1030221329150377727, guid: e1a7e215924e96540a253e8c91542409,
         type: 3}
+      propertyPath: m_SelectExited.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030221329150377727, guid: e1a7e215924e96540a253e8c91542409,
+        type: 3}
       propertyPath: m_HoverExited.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1969411048}
@@ -54291,6 +54854,11 @@ PrefabInstance:
     - target: {fileID: 1030221329150377727, guid: e1a7e215924e96540a253e8c91542409,
         type: 3}
       propertyPath: m_HoverEntered.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1969411048}
+    - target: {fileID: 1030221329150377727, guid: e1a7e215924e96540a253e8c91542409,
+        type: 3}
+      propertyPath: m_SelectExited.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1969411048}
     - target: {fileID: 1030221329150377727, guid: e1a7e215924e96540a253e8c91542409,
@@ -54315,6 +54883,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1030221329150377727, guid: e1a7e215924e96540a253e8c91542409,
         type: 3}
+      propertyPath: m_SelectExited.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030221329150377727, guid: e1a7e215924e96540a253e8c91542409,
+        type: 3}
       propertyPath: m_HoverEntered.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: ShowTag
       objectReference: {fileID: 0}
@@ -54325,8 +54898,13 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1030221329150377727, guid: e1a7e215924e96540a253e8c91542409,
         type: 3}
+      propertyPath: m_SelectExited.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: TagSelected
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030221329150377727, guid: e1a7e215924e96540a253e8c91542409,
+        type: 3}
       propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: HideTag
+      value: TagSelected
       objectReference: {fileID: 0}
     - target: {fileID: 1030221329150377727, guid: e1a7e215924e96540a253e8c91542409,
         type: 3}
@@ -54336,6 +54914,11 @@ PrefabInstance:
     - target: {fileID: 1030221329150377727, guid: e1a7e215924e96540a253e8c91542409,
         type: 3}
       propertyPath: m_HoverEntered.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: InstalasiIoT.BoneCableController, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030221329150377727, guid: e1a7e215924e96540a253e8c91542409,
+        type: 3}
+      propertyPath: m_SelectExited.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
       value: InstalasiIoT.BoneCableController, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 1030221329150377727, guid: e1a7e215924e96540a253e8c91542409,
@@ -54351,6 +54934,11 @@ PrefabInstance:
     - target: {fileID: 1030221329150377727, guid: e1a7e215924e96540a253e8c91542409,
         type: 3}
       propertyPath: m_HoverEntered.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030221329150377727, guid: e1a7e215924e96540a253e8c91542409,
+        type: 3}
+      propertyPath: m_SelectExited.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 1030221329150377727, guid: e1a7e215924e96540a253e8c91542409,
@@ -54919,6 +55507,7 @@ MonoBehaviour:
   pinSocketType: 1
   socketScoreChecker:
   - {fileID: 748941608}
+  detectionCube: {fileID: 0}
 --- !u!136 &2005469211
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -55669,7 +56258,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 2041142404}
         m_TargetAssemblyTypeName: InstalasiIoT.BoneCableController, Assembly-CSharp
-        m_MethodName: HideTag
+        m_MethodName: TagSelected
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -55681,7 +56270,19 @@ MonoBehaviour:
         m_CallState: 2
   m_SelectExited:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 2041142404}
+        m_TargetAssemblyTypeName: InstalasiIoT.BoneCableController, Assembly-CSharp
+        m_MethodName: TagSelected
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   m_FirstFocusEntered:
     m_PersistentCalls:
       m_Calls: []
@@ -55904,7 +56505,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 2041142405}
         m_TargetAssemblyTypeName: InstalasiIoT.BoneCableController, Assembly-CSharp
-        m_MethodName: HideTag
+        m_MethodName: TagSelected
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -55916,7 +56517,19 @@ MonoBehaviour:
         m_CallState: 2
   m_SelectExited:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 2041142405}
+        m_TargetAssemblyTypeName: InstalasiIoT.BoneCableController, Assembly-CSharp
+        m_MethodName: TagSelected
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   m_FirstFocusEntered:
     m_PersistentCalls:
       m_Calls: []
@@ -56904,7 +57517,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 2062869902}
         m_TargetAssemblyTypeName: InstalasiIoT.BoneCableController, Assembly-CSharp
-        m_MethodName: HideTag
+        m_MethodName: TagSelected
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -56916,7 +57529,19 @@ MonoBehaviour:
         m_CallState: 2
   m_SelectExited:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 2062869902}
+        m_TargetAssemblyTypeName: InstalasiIoT.BoneCableController, Assembly-CSharp
+        m_MethodName: TagSelected
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   m_FirstFocusEntered:
     m_PersistentCalls:
       m_Calls: []
@@ -57139,7 +57764,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 2062869903}
         m_TargetAssemblyTypeName: InstalasiIoT.BoneCableController, Assembly-CSharp
-        m_MethodName: HideTag
+        m_MethodName: TagSelected
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -57151,7 +57776,19 @@ MonoBehaviour:
         m_CallState: 2
   m_SelectExited:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 2062869903}
+        m_TargetAssemblyTypeName: InstalasiIoT.BoneCableController, Assembly-CSharp
+        m_MethodName: TagSelected
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   m_FirstFocusEntered:
     m_PersistentCalls:
       m_Calls: []
@@ -58252,6 +58889,7 @@ MonoBehaviour:
   pinSocketType: 0
   socketScoreChecker:
   - {fileID: 1616228750}
+  detectionCube: {fileID: 0}
 --- !u!1 &2091608890
 GameObject:
   m_ObjectHideFlags: 0
@@ -58726,7 +59364,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 2103777719}
         m_TargetAssemblyTypeName: InstalasiIoT.BoneCableController, Assembly-CSharp
-        m_MethodName: HideTag
+        m_MethodName: TagSelected
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -58738,7 +59376,19 @@ MonoBehaviour:
         m_CallState: 2
   m_SelectExited:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 2103777719}
+        m_TargetAssemblyTypeName: InstalasiIoT.BoneCableController, Assembly-CSharp
+        m_MethodName: TagSelected
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   m_FirstFocusEntered:
     m_PersistentCalls:
       m_Calls: []
@@ -58961,7 +59611,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 2103777720}
         m_TargetAssemblyTypeName: InstalasiIoT.BoneCableController, Assembly-CSharp
-        m_MethodName: HideTag
+        m_MethodName: TagSelected
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -58973,7 +59623,19 @@ MonoBehaviour:
         m_CallState: 2
   m_SelectExited:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 2103777720}
+        m_TargetAssemblyTypeName: InstalasiIoT.BoneCableController, Assembly-CSharp
+        m_MethodName: TagSelected
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   m_FirstFocusEntered:
     m_PersistentCalls:
       m_Calls: []

@@ -17,6 +17,7 @@ TagManager:
   - Object
   - SocketAttach1
   - SocketAttach2
+  - Pin Socket
   layers:
   - Default
   - TransparentFX

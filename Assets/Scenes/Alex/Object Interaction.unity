@@ -2009,6 +2009,89 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 111087497}
   m_CullTransparentMesh: 1
+--- !u!1 &119373750
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 119373751}
+  - component: {fileID: 119373753}
+  - component: {fileID: 119373752}
+  m_Layer: 0
+  m_Name: Deteciion Feedback (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &119373751
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 119373750}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: -0.012840033, z: 0}
+  m_LocalScale: {x: -0.0033636, y: -0.02744452, z: -0.0047227996}
+  m_ConstrainProportionsScale: 1
+  m_Children: []
+  m_Father: {fileID: 171500244}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!23 &119373752
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 119373750}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 3c5eff94917ce4e4a867e8d632dbe7a0, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!33 &119373753
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 119373750}
+  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1 &126380868
 GameObject:
   m_ObjectHideFlags: 0
@@ -3222,6 +3305,7 @@ MonoBehaviour:
   pinSocketType: 2
   socketScoreChecker:
   - {fileID: 1772576057}
+  detectionCube: {fileID: 0}
 --- !u!136 &156394830
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -3310,7 +3394,7 @@ GameObject:
   - component: {fileID: 161716094}
   m_Layer: 0
   m_Name: GND (1)
-  m_TagString: Untagged
+  m_TagString: Pin Socket
   m_Icon: {fileID: 4162164826716764455, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3330,6 +3414,7 @@ Transform:
   m_Children:
   - {fileID: 2146732645}
   - {fileID: 1633427473}
+  - {fileID: 1555681470}
   m_Father: {fileID: 779819862}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &161716094
@@ -3435,6 +3520,7 @@ MonoBehaviour:
   pinSocketType: 1
   socketScoreChecker:
   - {fileID: 172693089}
+  detectionCube: {fileID: 1555681469}
 --- !u!136 &161716096
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -3954,6 +4040,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5789180567590612364, guid: 7323f790a3f8a344cafb9a4f0e299797,
         type: 3}
+      propertyPath: m_TagString
+      value: Pin Socket
+      objectReference: {fileID: 0}
+    - target: {fileID: 5789180567590612364, guid: 7323f790a3f8a344cafb9a4f0e299797,
+        type: 3}
       propertyPath: m_StaticEditorFlags
       value: 0
       objectReference: {fileID: 0}
@@ -4006,6 +4097,10 @@ PrefabInstance:
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 750743855}
+    - targetCorrespondingSourceObject: {fileID: 5212901023958341418, guid: 7323f790a3f8a344cafb9a4f0e299797,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 119373751}
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 5789180567590612364, guid: 7323f790a3f8a344cafb9a4f0e299797,
         type: 3}
@@ -4140,6 +4235,7 @@ MonoBehaviour:
   pinSocketType: 0
   socketScoreChecker:
   - {fileID: 1501937516}
+  detectionCube: {fileID: 119373750}
 --- !u!136 &171500249
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -5200,6 +5296,89 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 225938211}
   m_CullTransparentMesh: 1
+--- !u!1 &226241101
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 226241102}
+  - component: {fileID: 226241104}
+  - component: {fileID: 226241103}
+  m_Layer: 0
+  m_Name: Deteciion Feedback
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &226241102
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 226241101}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: -0.01284, z: 0}
+  m_LocalScale: {x: -0.0033636, y: -0.02744452, z: -0.0047227996}
+  m_ConstrainProportionsScale: 1
+  m_Children: []
+  m_Father: {fileID: 502298848}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!23 &226241103
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 226241101}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 3c5eff94917ce4e4a867e8d632dbe7a0, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!33 &226241104
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 226241101}
+  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!4 &227262496 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 744715879249613727, guid: 7955b698d10c2e149aa826481ab1138f,
@@ -7118,6 +7297,7 @@ MonoBehaviour:
   pinSocketType: 2
   socketScoreChecker:
   - {fileID: 511968053}
+  detectionCube: {fileID: 0}
 --- !u!1 &376282801
 GameObject:
   m_ObjectHideFlags: 0
@@ -9259,6 +9439,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5789180567590612364, guid: 7323f790a3f8a344cafb9a4f0e299797,
         type: 3}
+      propertyPath: m_TagString
+      value: Pin Socket
+      objectReference: {fileID: 0}
+    - target: {fileID: 5789180567590612364, guid: 7323f790a3f8a344cafb9a4f0e299797,
+        type: 3}
       propertyPath: m_StaticEditorFlags
       value: 0
       objectReference: {fileID: 0}
@@ -9311,6 +9496,10 @@ PrefabInstance:
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 1581429096}
+    - targetCorrespondingSourceObject: {fileID: 5212901023958341418, guid: 7323f790a3f8a344cafb9a4f0e299797,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 226241102}
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 5789180567590612364, guid: 7323f790a3f8a344cafb9a4f0e299797,
         type: 3}
@@ -9446,6 +9635,7 @@ MonoBehaviour:
   pinSocketType: 2
   socketScoreChecker:
   - {fileID: 169746245}
+  detectionCube: {fileID: 226241101}
 --- !u!136 &502298853
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -13425,6 +13615,7 @@ MonoBehaviour:
   pinSocketType: 0
   socketScoreChecker:
   - {fileID: 509186691}
+  detectionCube: {fileID: 0}
 --- !u!136 &670961944
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -14152,6 +14343,7 @@ MonoBehaviour:
   pinSocketType: 0
   socketScoreChecker:
   - {fileID: 1501937516}
+  detectionCube: {fileID: 0}
 --- !u!136 &741022380
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -17208,6 +17400,7 @@ MonoBehaviour:
   pinSocketType: 0
   socketScoreChecker:
   - {fileID: 0}
+  detectionCube: {fileID: 0}
 --- !u!114 &818360903
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -19445,6 +19638,7 @@ MonoBehaviour:
   socketScoreChecker:
   - {fileID: 169746245}
   - {fileID: 1772576057}
+  detectionCube: {fileID: 0}
 --- !u!114 &883368560
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -19570,6 +19764,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 583868430009862462, guid: e1a7e215924e96540a253e8c91542409,
         type: 3}
+      propertyPath: m_SelectExited.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 583868430009862462, guid: e1a7e215924e96540a253e8c91542409,
+        type: 3}
       propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.size
       value: 1
       objectReference: {fileID: 0}
@@ -19585,6 +19784,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 583868430009862462, guid: e1a7e215924e96540a253e8c91542409,
         type: 3}
+      propertyPath: m_SelectExited.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 583868430009862462, guid: e1a7e215924e96540a253e8c91542409,
+        type: 3}
       propertyPath: m_HoverExited.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 889692012}
@@ -19596,6 +19800,11 @@ PrefabInstance:
     - target: {fileID: 583868430009862462, guid: e1a7e215924e96540a253e8c91542409,
         type: 3}
       propertyPath: m_HoverEntered.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 889692012}
+    - target: {fileID: 583868430009862462, guid: e1a7e215924e96540a253e8c91542409,
+        type: 3}
+      propertyPath: m_SelectExited.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 889692012}
     - target: {fileID: 583868430009862462, guid: e1a7e215924e96540a253e8c91542409,
@@ -19620,6 +19829,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 583868430009862462, guid: e1a7e215924e96540a253e8c91542409,
         type: 3}
+      propertyPath: m_SelectExited.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 583868430009862462, guid: e1a7e215924e96540a253e8c91542409,
+        type: 3}
       propertyPath: m_HoverEntered.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: ShowTag
       objectReference: {fileID: 0}
@@ -19630,8 +19844,13 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 583868430009862462, guid: e1a7e215924e96540a253e8c91542409,
         type: 3}
+      propertyPath: m_SelectExited.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: TagSelected
+      objectReference: {fileID: 0}
+    - target: {fileID: 583868430009862462, guid: e1a7e215924e96540a253e8c91542409,
+        type: 3}
       propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: HideTag
+      value: TagSelected
       objectReference: {fileID: 0}
     - target: {fileID: 583868430009862462, guid: e1a7e215924e96540a253e8c91542409,
         type: 3}
@@ -19641,6 +19860,11 @@ PrefabInstance:
     - target: {fileID: 583868430009862462, guid: e1a7e215924e96540a253e8c91542409,
         type: 3}
       propertyPath: m_HoverEntered.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: InstalasiIoT.BoneCableController, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 583868430009862462, guid: e1a7e215924e96540a253e8c91542409,
+        type: 3}
+      propertyPath: m_SelectExited.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
       value: InstalasiIoT.BoneCableController, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 583868430009862462, guid: e1a7e215924e96540a253e8c91542409,
@@ -19656,6 +19880,11 @@ PrefabInstance:
     - target: {fileID: 583868430009862462, guid: e1a7e215924e96540a253e8c91542409,
         type: 3}
       propertyPath: m_HoverEntered.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 583868430009862462, guid: e1a7e215924e96540a253e8c91542409,
+        type: 3}
+      propertyPath: m_SelectExited.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 583868430009862462, guid: e1a7e215924e96540a253e8c91542409,
@@ -19700,6 +19929,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1030221329150377727, guid: e1a7e215924e96540a253e8c91542409,
         type: 3}
+      propertyPath: m_SelectExited.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030221329150377727, guid: e1a7e215924e96540a253e8c91542409,
+        type: 3}
       propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.size
       value: 1
       objectReference: {fileID: 0}
@@ -19715,6 +19949,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1030221329150377727, guid: e1a7e215924e96540a253e8c91542409,
         type: 3}
+      propertyPath: m_SelectExited.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030221329150377727, guid: e1a7e215924e96540a253e8c91542409,
+        type: 3}
       propertyPath: m_HoverExited.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 889692014}
@@ -19726,6 +19965,11 @@ PrefabInstance:
     - target: {fileID: 1030221329150377727, guid: e1a7e215924e96540a253e8c91542409,
         type: 3}
       propertyPath: m_HoverEntered.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 889692014}
+    - target: {fileID: 1030221329150377727, guid: e1a7e215924e96540a253e8c91542409,
+        type: 3}
+      propertyPath: m_SelectExited.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 889692014}
     - target: {fileID: 1030221329150377727, guid: e1a7e215924e96540a253e8c91542409,
@@ -19750,6 +19994,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1030221329150377727, guid: e1a7e215924e96540a253e8c91542409,
         type: 3}
+      propertyPath: m_SelectExited.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030221329150377727, guid: e1a7e215924e96540a253e8c91542409,
+        type: 3}
       propertyPath: m_HoverEntered.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: ShowTag
       objectReference: {fileID: 0}
@@ -19760,8 +20009,13 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1030221329150377727, guid: e1a7e215924e96540a253e8c91542409,
         type: 3}
+      propertyPath: m_SelectExited.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: TagSelected
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030221329150377727, guid: e1a7e215924e96540a253e8c91542409,
+        type: 3}
       propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: HideTag
+      value: TagSelected
       objectReference: {fileID: 0}
     - target: {fileID: 1030221329150377727, guid: e1a7e215924e96540a253e8c91542409,
         type: 3}
@@ -19771,6 +20025,11 @@ PrefabInstance:
     - target: {fileID: 1030221329150377727, guid: e1a7e215924e96540a253e8c91542409,
         type: 3}
       propertyPath: m_HoverEntered.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: InstalasiIoT.BoneCableController, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030221329150377727, guid: e1a7e215924e96540a253e8c91542409,
+        type: 3}
+      propertyPath: m_SelectExited.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
       value: InstalasiIoT.BoneCableController, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 1030221329150377727, guid: e1a7e215924e96540a253e8c91542409,
@@ -19786,6 +20045,11 @@ PrefabInstance:
     - target: {fileID: 1030221329150377727, guid: e1a7e215924e96540a253e8c91542409,
         type: 3}
       propertyPath: m_HoverEntered.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030221329150377727, guid: e1a7e215924e96540a253e8c91542409,
+        type: 3}
+      propertyPath: m_SelectExited.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 1030221329150377727, guid: e1a7e215924e96540a253e8c91542409,
@@ -27095,6 +27359,7 @@ MonoBehaviour:
   pinSocketType: 2
   socketScoreChecker:
   - {fileID: 511968053}
+  detectionCube: {fileID: 0}
 --- !u!1 &1254804272
 GameObject:
   m_ObjectHideFlags: 0
@@ -29301,6 +29566,7 @@ MonoBehaviour:
   pinSocketType: 0
   socketScoreChecker:
   - {fileID: 0}
+  detectionCube: {fileID: 0}
 --- !u!136 &1356116570
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -31126,6 +31392,7 @@ MonoBehaviour:
   pinSocketType: 0
   socketScoreChecker:
   - {fileID: 1782701553}
+  detectionCube: {fileID: 0}
 --- !u!136 &1430687721
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -32078,6 +32345,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 583868430009862462, guid: e1a7e215924e96540a253e8c91542409,
         type: 3}
+      propertyPath: m_SelectExited.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 583868430009862462, guid: e1a7e215924e96540a253e8c91542409,
+        type: 3}
       propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.size
       value: 1
       objectReference: {fileID: 0}
@@ -32093,6 +32365,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 583868430009862462, guid: e1a7e215924e96540a253e8c91542409,
         type: 3}
+      propertyPath: m_SelectExited.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 583868430009862462, guid: e1a7e215924e96540a253e8c91542409,
+        type: 3}
       propertyPath: m_HoverExited.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1473955390}
@@ -32104,6 +32381,11 @@ PrefabInstance:
     - target: {fileID: 583868430009862462, guid: e1a7e215924e96540a253e8c91542409,
         type: 3}
       propertyPath: m_HoverEntered.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1473955390}
+    - target: {fileID: 583868430009862462, guid: e1a7e215924e96540a253e8c91542409,
+        type: 3}
+      propertyPath: m_SelectExited.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1473955390}
     - target: {fileID: 583868430009862462, guid: e1a7e215924e96540a253e8c91542409,
@@ -32128,6 +32410,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 583868430009862462, guid: e1a7e215924e96540a253e8c91542409,
         type: 3}
+      propertyPath: m_SelectExited.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 583868430009862462, guid: e1a7e215924e96540a253e8c91542409,
+        type: 3}
       propertyPath: m_HoverEntered.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: ShowTag
       objectReference: {fileID: 0}
@@ -32138,8 +32425,13 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 583868430009862462, guid: e1a7e215924e96540a253e8c91542409,
         type: 3}
+      propertyPath: m_SelectExited.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: TagSelected
+      objectReference: {fileID: 0}
+    - target: {fileID: 583868430009862462, guid: e1a7e215924e96540a253e8c91542409,
+        type: 3}
       propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: HideTag
+      value: TagSelected
       objectReference: {fileID: 0}
     - target: {fileID: 583868430009862462, guid: e1a7e215924e96540a253e8c91542409,
         type: 3}
@@ -32149,6 +32441,11 @@ PrefabInstance:
     - target: {fileID: 583868430009862462, guid: e1a7e215924e96540a253e8c91542409,
         type: 3}
       propertyPath: m_HoverEntered.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: InstalasiIoT.BoneCableController, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 583868430009862462, guid: e1a7e215924e96540a253e8c91542409,
+        type: 3}
+      propertyPath: m_SelectExited.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
       value: InstalasiIoT.BoneCableController, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 583868430009862462, guid: e1a7e215924e96540a253e8c91542409,
@@ -32164,6 +32461,11 @@ PrefabInstance:
     - target: {fileID: 583868430009862462, guid: e1a7e215924e96540a253e8c91542409,
         type: 3}
       propertyPath: m_HoverEntered.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 583868430009862462, guid: e1a7e215924e96540a253e8c91542409,
+        type: 3}
+      propertyPath: m_SelectExited.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 583868430009862462, guid: e1a7e215924e96540a253e8c91542409,
@@ -32208,6 +32510,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1030221329150377727, guid: e1a7e215924e96540a253e8c91542409,
         type: 3}
+      propertyPath: m_SelectExited.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030221329150377727, guid: e1a7e215924e96540a253e8c91542409,
+        type: 3}
       propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.size
       value: 1
       objectReference: {fileID: 0}
@@ -32223,6 +32530,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1030221329150377727, guid: e1a7e215924e96540a253e8c91542409,
         type: 3}
+      propertyPath: m_SelectExited.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030221329150377727, guid: e1a7e215924e96540a253e8c91542409,
+        type: 3}
       propertyPath: m_HoverExited.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1473955392}
@@ -32234,6 +32546,11 @@ PrefabInstance:
     - target: {fileID: 1030221329150377727, guid: e1a7e215924e96540a253e8c91542409,
         type: 3}
       propertyPath: m_HoverEntered.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1473955392}
+    - target: {fileID: 1030221329150377727, guid: e1a7e215924e96540a253e8c91542409,
+        type: 3}
+      propertyPath: m_SelectExited.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1473955392}
     - target: {fileID: 1030221329150377727, guid: e1a7e215924e96540a253e8c91542409,
@@ -32258,6 +32575,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1030221329150377727, guid: e1a7e215924e96540a253e8c91542409,
         type: 3}
+      propertyPath: m_SelectExited.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030221329150377727, guid: e1a7e215924e96540a253e8c91542409,
+        type: 3}
       propertyPath: m_HoverEntered.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: ShowTag
       objectReference: {fileID: 0}
@@ -32268,8 +32590,13 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1030221329150377727, guid: e1a7e215924e96540a253e8c91542409,
         type: 3}
+      propertyPath: m_SelectExited.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: TagSelected
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030221329150377727, guid: e1a7e215924e96540a253e8c91542409,
+        type: 3}
       propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: HideTag
+      value: TagSelected
       objectReference: {fileID: 0}
     - target: {fileID: 1030221329150377727, guid: e1a7e215924e96540a253e8c91542409,
         type: 3}
@@ -32279,6 +32606,11 @@ PrefabInstance:
     - target: {fileID: 1030221329150377727, guid: e1a7e215924e96540a253e8c91542409,
         type: 3}
       propertyPath: m_HoverEntered.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: InstalasiIoT.BoneCableController, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030221329150377727, guid: e1a7e215924e96540a253e8c91542409,
+        type: 3}
+      propertyPath: m_SelectExited.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
       value: InstalasiIoT.BoneCableController, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 1030221329150377727, guid: e1a7e215924e96540a253e8c91542409,
@@ -32294,6 +32626,11 @@ PrefabInstance:
     - target: {fileID: 1030221329150377727, guid: e1a7e215924e96540a253e8c91542409,
         type: 3}
       propertyPath: m_HoverEntered.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030221329150377727, guid: e1a7e215924e96540a253e8c91542409,
+        type: 3}
+      propertyPath: m_SelectExited.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 1030221329150377727, guid: e1a7e215924e96540a253e8c91542409,
@@ -32834,6 +33171,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 583868430009862462, guid: e1a7e215924e96540a253e8c91542409,
         type: 3}
+      propertyPath: m_SelectExited.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 583868430009862462, guid: e1a7e215924e96540a253e8c91542409,
+        type: 3}
       propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.size
       value: 1
       objectReference: {fileID: 0}
@@ -32849,6 +33191,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 583868430009862462, guid: e1a7e215924e96540a253e8c91542409,
         type: 3}
+      propertyPath: m_SelectExited.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 583868430009862462, guid: e1a7e215924e96540a253e8c91542409,
+        type: 3}
       propertyPath: m_HoverExited.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1514153997}
@@ -32860,6 +33207,11 @@ PrefabInstance:
     - target: {fileID: 583868430009862462, guid: e1a7e215924e96540a253e8c91542409,
         type: 3}
       propertyPath: m_HoverEntered.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1514153997}
+    - target: {fileID: 583868430009862462, guid: e1a7e215924e96540a253e8c91542409,
+        type: 3}
+      propertyPath: m_SelectExited.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1514153997}
     - target: {fileID: 583868430009862462, guid: e1a7e215924e96540a253e8c91542409,
@@ -32884,6 +33236,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 583868430009862462, guid: e1a7e215924e96540a253e8c91542409,
         type: 3}
+      propertyPath: m_SelectExited.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 583868430009862462, guid: e1a7e215924e96540a253e8c91542409,
+        type: 3}
       propertyPath: m_HoverEntered.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: ShowTag
       objectReference: {fileID: 0}
@@ -32894,8 +33251,13 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 583868430009862462, guid: e1a7e215924e96540a253e8c91542409,
         type: 3}
+      propertyPath: m_SelectExited.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: TagSelected
+      objectReference: {fileID: 0}
+    - target: {fileID: 583868430009862462, guid: e1a7e215924e96540a253e8c91542409,
+        type: 3}
       propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: HideTag
+      value: TagSelected
       objectReference: {fileID: 0}
     - target: {fileID: 583868430009862462, guid: e1a7e215924e96540a253e8c91542409,
         type: 3}
@@ -32905,6 +33267,11 @@ PrefabInstance:
     - target: {fileID: 583868430009862462, guid: e1a7e215924e96540a253e8c91542409,
         type: 3}
       propertyPath: m_HoverEntered.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: InstalasiIoT.BoneCableController, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 583868430009862462, guid: e1a7e215924e96540a253e8c91542409,
+        type: 3}
+      propertyPath: m_SelectExited.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
       value: InstalasiIoT.BoneCableController, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 583868430009862462, guid: e1a7e215924e96540a253e8c91542409,
@@ -32920,6 +33287,11 @@ PrefabInstance:
     - target: {fileID: 583868430009862462, guid: e1a7e215924e96540a253e8c91542409,
         type: 3}
       propertyPath: m_HoverEntered.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 583868430009862462, guid: e1a7e215924e96540a253e8c91542409,
+        type: 3}
+      propertyPath: m_SelectExited.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 583868430009862462, guid: e1a7e215924e96540a253e8c91542409,
@@ -32964,6 +33336,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1030221329150377727, guid: e1a7e215924e96540a253e8c91542409,
         type: 3}
+      propertyPath: m_SelectExited.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030221329150377727, guid: e1a7e215924e96540a253e8c91542409,
+        type: 3}
       propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.size
       value: 1
       objectReference: {fileID: 0}
@@ -32979,6 +33356,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1030221329150377727, guid: e1a7e215924e96540a253e8c91542409,
         type: 3}
+      propertyPath: m_SelectExited.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030221329150377727, guid: e1a7e215924e96540a253e8c91542409,
+        type: 3}
       propertyPath: m_HoverExited.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1514153999}
@@ -32990,6 +33372,11 @@ PrefabInstance:
     - target: {fileID: 1030221329150377727, guid: e1a7e215924e96540a253e8c91542409,
         type: 3}
       propertyPath: m_HoverEntered.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1514153999}
+    - target: {fileID: 1030221329150377727, guid: e1a7e215924e96540a253e8c91542409,
+        type: 3}
+      propertyPath: m_SelectExited.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1514153999}
     - target: {fileID: 1030221329150377727, guid: e1a7e215924e96540a253e8c91542409,
@@ -33014,6 +33401,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1030221329150377727, guid: e1a7e215924e96540a253e8c91542409,
         type: 3}
+      propertyPath: m_SelectExited.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030221329150377727, guid: e1a7e215924e96540a253e8c91542409,
+        type: 3}
       propertyPath: m_HoverEntered.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: ShowTag
       objectReference: {fileID: 0}
@@ -33024,8 +33416,13 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1030221329150377727, guid: e1a7e215924e96540a253e8c91542409,
         type: 3}
+      propertyPath: m_SelectExited.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: TagSelected
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030221329150377727, guid: e1a7e215924e96540a253e8c91542409,
+        type: 3}
       propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: HideTag
+      value: TagSelected
       objectReference: {fileID: 0}
     - target: {fileID: 1030221329150377727, guid: e1a7e215924e96540a253e8c91542409,
         type: 3}
@@ -33035,6 +33432,11 @@ PrefabInstance:
     - target: {fileID: 1030221329150377727, guid: e1a7e215924e96540a253e8c91542409,
         type: 3}
       propertyPath: m_HoverEntered.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: InstalasiIoT.BoneCableController, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030221329150377727, guid: e1a7e215924e96540a253e8c91542409,
+        type: 3}
+      propertyPath: m_SelectExited.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
       value: InstalasiIoT.BoneCableController, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 1030221329150377727, guid: e1a7e215924e96540a253e8c91542409,
@@ -33050,6 +33452,11 @@ PrefabInstance:
     - target: {fileID: 1030221329150377727, guid: e1a7e215924e96540a253e8c91542409,
         type: 3}
       propertyPath: m_HoverEntered.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030221329150377727, guid: e1a7e215924e96540a253e8c91542409,
+        type: 3}
+      propertyPath: m_SelectExited.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 1030221329150377727, guid: e1a7e215924e96540a253e8c91542409,
@@ -33807,6 +34214,89 @@ Transform:
   - {fileID: 1462285292}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1555681469
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1555681470}
+  - component: {fileID: 1555681472}
+  - component: {fileID: 1555681471}
+  m_Layer: 0
+  m_Name: Deteciion Feedback (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &1555681470
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1555681469}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: -0.012840033, z: 0}
+  m_LocalScale: {x: -0.0033636, y: -0.02744452, z: -0.0047227996}
+  m_ConstrainProportionsScale: 1
+  m_Children: []
+  m_Father: {fileID: 161716093}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!23 &1555681471
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1555681469}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 3c5eff94917ce4e4a867e8d632dbe7a0, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!33 &1555681472
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1555681469}
+  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1001 &1561767589
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -36671,6 +37161,7 @@ MonoBehaviour:
   pinSocketType: 2
   socketScoreChecker:
   - {fileID: 511968053}
+  detectionCube: {fileID: 0}
 --- !u!1 &1716196445
 GameObject:
   m_ObjectHideFlags: 0
@@ -37487,6 +37978,7 @@ MonoBehaviour:
   pinSocketType: 0
   socketScoreChecker:
   - {fileID: 0}
+  detectionCube: {fileID: 0}
 --- !u!114 &1779378309
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -38174,6 +38666,7 @@ MonoBehaviour:
   pinSocketType: 2
   socketScoreChecker:
   - {fileID: 511968053}
+  detectionCube: {fileID: 0}
 --- !u!1 &1801848341
 GameObject:
   m_ObjectHideFlags: 0
@@ -42268,6 +42761,7 @@ MonoBehaviour:
   pinSocketType: 1
   socketScoreChecker:
   - {fileID: 680043095}
+  detectionCube: {fileID: 0}
 --- !u!136 &2049493441
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -44868,7 +45362,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1006200772699772944}
         m_TargetAssemblyTypeName: InstalasiIoT.BoneCableController, Assembly-CSharp
-        m_MethodName: HideTag
+        m_MethodName: TagSelected
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -44880,7 +45374,19 @@ MonoBehaviour:
         m_CallState: 2
   m_SelectExited:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1006200772699772944}
+        m_TargetAssemblyTypeName: InstalasiIoT.BoneCableController, Assembly-CSharp
+        m_MethodName: TagSelected
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   m_FirstFocusEntered:
     m_PersistentCalls:
       m_Calls: []
@@ -45055,7 +45561,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1006200772779359985}
         m_TargetAssemblyTypeName: InstalasiIoT.BoneCableController, Assembly-CSharp
-        m_MethodName: HideTag
+        m_MethodName: TagSelected
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -45067,7 +45573,19 @@ MonoBehaviour:
         m_CallState: 2
   m_SelectExited:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1006200772779359985}
+        m_TargetAssemblyTypeName: InstalasiIoT.BoneCableController, Assembly-CSharp
+        m_MethodName: TagSelected
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   m_FirstFocusEntered:
     m_PersistentCalls:
       m_Calls: []
@@ -45262,6 +45780,7 @@ MonoBehaviour:
   pinSocketType: 0
   socketScoreChecker:
   - {fileID: 0}
+  detectionCube: {fileID: 0}
 --- !u!114 &689713472363651614
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -45278,6 +45797,7 @@ MonoBehaviour:
   pinSocketType: 0
   socketScoreChecker:
   - {fileID: 0}
+  detectionCube: {fileID: 0}
 --- !u!114 &689713472509901836
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -45294,6 +45814,7 @@ MonoBehaviour:
   pinSocketType: 0
   socketScoreChecker:
   - {fileID: 0}
+  detectionCube: {fileID: 0}
 --- !u!114 &689713473016787091
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -45310,6 +45831,7 @@ MonoBehaviour:
   pinSocketType: 0
   socketScoreChecker:
   - {fileID: 0}
+  detectionCube: {fileID: 0}
 --- !u!4 &744715880011040947
 Transform:
   m_ObjectHideFlags: 0
@@ -45651,7 +46173,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 5475466443664724654}
         m_TargetAssemblyTypeName: InstalasiIoT.BoneCableController, Assembly-CSharp
-        m_MethodName: HideTag
+        m_MethodName: TagSelected
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -45663,7 +46185,19 @@ MonoBehaviour:
         m_CallState: 2
   m_SelectExited:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 5475466443664724654}
+        m_TargetAssemblyTypeName: InstalasiIoT.BoneCableController, Assembly-CSharp
+        m_MethodName: TagSelected
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   m_FirstFocusEntered:
     m_PersistentCalls:
       m_Calls: []
@@ -45838,7 +46372,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 5475466444122092623}
         m_TargetAssemblyTypeName: InstalasiIoT.BoneCableController, Assembly-CSharp
-        m_MethodName: HideTag
+        m_MethodName: TagSelected
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -45850,7 +46384,19 @@ MonoBehaviour:
         m_CallState: 2
   m_SelectExited:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 5475466444122092623}
+        m_TargetAssemblyTypeName: InstalasiIoT.BoneCableController, Assembly-CSharp
+        m_MethodName: TagSelected
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   m_FirstFocusEntered:
     m_PersistentCalls:
       m_Calls: []
@@ -50329,7 +50875,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 2291155718873131750}
         m_TargetAssemblyTypeName: InstalasiIoT.BoneCableController, Assembly-CSharp
-        m_MethodName: HideTag
+        m_MethodName: TagSelected
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -50341,7 +50887,19 @@ MonoBehaviour:
         m_CallState: 2
   m_SelectExited:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 2291155718873131750}
+        m_TargetAssemblyTypeName: InstalasiIoT.BoneCableController, Assembly-CSharp
+        m_MethodName: TagSelected
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   m_FirstFocusEntered:
     m_PersistentCalls:
       m_Calls: []
@@ -50559,7 +51117,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 6800157110368609653}
         m_TargetAssemblyTypeName: InstalasiIoT.BoneCableController, Assembly-CSharp
-        m_MethodName: HideTag
+        m_MethodName: TagSelected
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -50571,7 +51129,19 @@ MonoBehaviour:
         m_CallState: 2
   m_SelectExited:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 6800157110368609653}
+        m_TargetAssemblyTypeName: InstalasiIoT.BoneCableController, Assembly-CSharp
+        m_MethodName: TagSelected
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   m_FirstFocusEntered:
     m_PersistentCalls:
       m_Calls: []
@@ -50839,7 +51409,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 6467639661459146425}
         m_TargetAssemblyTypeName: InstalasiIoT.BoneCableController, Assembly-CSharp
-        m_MethodName: HideTag
+        m_MethodName: TagSelected
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -50851,7 +51421,19 @@ MonoBehaviour:
         m_CallState: 2
   m_SelectExited:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 6467639661459146425}
+        m_TargetAssemblyTypeName: InstalasiIoT.BoneCableController, Assembly-CSharp
+        m_MethodName: TagSelected
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   m_FirstFocusEntered:
     m_PersistentCalls:
       m_Calls: []
@@ -51131,7 +51713,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1753447409714170154}
         m_TargetAssemblyTypeName: InstalasiIoT.BoneCableController, Assembly-CSharp
-        m_MethodName: HideTag
+        m_MethodName: TagSelected
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -51143,7 +51725,19 @@ MonoBehaviour:
         m_CallState: 2
   m_SelectExited:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1753447409714170154}
+        m_TargetAssemblyTypeName: InstalasiIoT.BoneCableController, Assembly-CSharp
+        m_MethodName: TagSelected
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   m_FirstFocusEntered:
     m_PersistentCalls:
       m_Calls: []
