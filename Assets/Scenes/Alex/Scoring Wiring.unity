@@ -646,10 +646,25 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1604861710}
     m_Modifications:
+    - target: {fileID: 542712737636394654, guid: 10728c3a93003ce4c93534aded068f80,
+        type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 460
+      objectReference: {fileID: 0}
+    - target: {fileID: 542712737636394654, guid: 10728c3a93003ce4c93534aded068f80,
+        type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 648
+      objectReference: {fileID: 0}
     - target: {fileID: 1303261444432864223, guid: 10728c3a93003ce4c93534aded068f80,
         type: 3}
       propertyPath: m_Name
       value: Tag Canvas
+      objectReference: {fileID: 0}
+    - target: {fileID: 1303261444432864223, guid: 10728c3a93003ce4c93534aded068f80,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2681826071897082552, guid: 10728c3a93003ce4c93534aded068f80,
         type: 3}
@@ -755,7 +770,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: d7eff102dec947c4a8d68ab083a2f3ad,
+      objectReference: {fileID: 21300000, guid: d324c5ba706dd5c4b82e89860503e7d1,
         type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -2174,10 +2189,25 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 637185900}
     m_Modifications:
+    - target: {fileID: 542712737636394654, guid: 10728c3a93003ce4c93534aded068f80,
+        type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 460
+      objectReference: {fileID: 0}
+    - target: {fileID: 542712737636394654, guid: 10728c3a93003ce4c93534aded068f80,
+        type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 648
+      objectReference: {fileID: 0}
     - target: {fileID: 1303261444432864223, guid: 10728c3a93003ce4c93534aded068f80,
         type: 3}
       propertyPath: m_Name
       value: Tag Canvas
+      objectReference: {fileID: 0}
+    - target: {fileID: 1303261444432864223, guid: 10728c3a93003ce4c93534aded068f80,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2681826071897082552, guid: 10728c3a93003ce4c93534aded068f80,
         type: 3}
@@ -2257,12 +2287,12 @@ PrefabInstance:
     - target: {fileID: 2681826071897082552, guid: 10728c3a93003ce4c93534aded068f80,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -0.00583
+      value: 0.0048
       objectReference: {fileID: 0}
     - target: {fileID: 2681826071897082552, guid: 10728c3a93003ce4c93534aded068f80,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 0.00554
+      value: 0.0055
       objectReference: {fileID: 0}
     - target: {fileID: 2681826071897082552, guid: 10728c3a93003ce4c93534aded068f80,
         type: 3}
@@ -2283,7 +2313,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: d7eff102dec947c4a8d68ab083a2f3ad,
+      objectReference: {fileID: 21300000, guid: d324c5ba706dd5c4b82e89860503e7d1,
         type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -8715,10 +8745,25 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 2103777709}
     m_Modifications:
+    - target: {fileID: 542712737636394654, guid: 10728c3a93003ce4c93534aded068f80,
+        type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 460
+      objectReference: {fileID: 0}
+    - target: {fileID: 542712737636394654, guid: 10728c3a93003ce4c93534aded068f80,
+        type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 648
+      objectReference: {fileID: 0}
     - target: {fileID: 1303261444432864223, guid: 10728c3a93003ce4c93534aded068f80,
         type: 3}
       propertyPath: m_Name
       value: Tag Canvas
+      objectReference: {fileID: 0}
+    - target: {fileID: 1303261444432864223, guid: 10728c3a93003ce4c93534aded068f80,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2681826071897082552, guid: 10728c3a93003ce4c93534aded068f80,
         type: 3}
@@ -8798,12 +8843,12 @@ PrefabInstance:
     - target: {fileID: 2681826071897082552, guid: 10728c3a93003ce4c93534aded068f80,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -0.00583
+      value: 0.0048
       objectReference: {fileID: 0}
     - target: {fileID: 2681826071897082552, guid: 10728c3a93003ce4c93534aded068f80,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 0.00554
+      value: 0.0055
       objectReference: {fileID: 0}
     - target: {fileID: 2681826071897082552, guid: 10728c3a93003ce4c93534aded068f80,
         type: 3}
@@ -8824,7 +8869,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: d7eff102dec947c4a8d68ab083a2f3ad,
+      objectReference: {fileID: 21300000, guid: d324c5ba706dd5c4b82e89860503e7d1,
         type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -9065,10 +9110,25 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1375544532}
     m_Modifications:
+    - target: {fileID: 542712737636394654, guid: 10728c3a93003ce4c93534aded068f80,
+        type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 460
+      objectReference: {fileID: 0}
+    - target: {fileID: 542712737636394654, guid: 10728c3a93003ce4c93534aded068f80,
+        type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 648
+      objectReference: {fileID: 0}
     - target: {fileID: 1303261444432864223, guid: 10728c3a93003ce4c93534aded068f80,
         type: 3}
       propertyPath: m_Name
       value: Tag Canvas
+      objectReference: {fileID: 0}
+    - target: {fileID: 1303261444432864223, guid: 10728c3a93003ce4c93534aded068f80,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2681826071897082552, guid: 10728c3a93003ce4c93534aded068f80,
         type: 3}
@@ -9174,7 +9234,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: d7eff102dec947c4a8d68ab083a2f3ad,
+      objectReference: {fileID: 21300000, guid: d324c5ba706dd5c4b82e89860503e7d1,
         type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -11363,10 +11423,25 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 810404545}
     m_Modifications:
+    - target: {fileID: 542712737636394654, guid: 10728c3a93003ce4c93534aded068f80,
+        type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 460
+      objectReference: {fileID: 0}
+    - target: {fileID: 542712737636394654, guid: 10728c3a93003ce4c93534aded068f80,
+        type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 648
+      objectReference: {fileID: 0}
     - target: {fileID: 1303261444432864223, guid: 10728c3a93003ce4c93534aded068f80,
         type: 3}
       propertyPath: m_Name
       value: Tag Canvas
+      objectReference: {fileID: 0}
+    - target: {fileID: 1303261444432864223, guid: 10728c3a93003ce4c93534aded068f80,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2681826071897082552, guid: 10728c3a93003ce4c93534aded068f80,
         type: 3}
@@ -11446,12 +11521,12 @@ PrefabInstance:
     - target: {fileID: 2681826071897082552, guid: 10728c3a93003ce4c93534aded068f80,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -0.00583
+      value: 0.0048
       objectReference: {fileID: 0}
     - target: {fileID: 2681826071897082552, guid: 10728c3a93003ce4c93534aded068f80,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 0.00554
+      value: 0.0055
       objectReference: {fileID: 0}
     - target: {fileID: 2681826071897082552, guid: 10728c3a93003ce4c93534aded068f80,
         type: 3}
@@ -11472,7 +11547,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: d7eff102dec947c4a8d68ab083a2f3ad,
+      objectReference: {fileID: 21300000, guid: d324c5ba706dd5c4b82e89860503e7d1,
         type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -11756,10 +11831,25 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1247539249}
     m_Modifications:
+    - target: {fileID: 542712737636394654, guid: 10728c3a93003ce4c93534aded068f80,
+        type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 460
+      objectReference: {fileID: 0}
+    - target: {fileID: 542712737636394654, guid: 10728c3a93003ce4c93534aded068f80,
+        type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 648
+      objectReference: {fileID: 0}
     - target: {fileID: 1303261444432864223, guid: 10728c3a93003ce4c93534aded068f80,
         type: 3}
       propertyPath: m_Name
       value: Tag Canvas
+      objectReference: {fileID: 0}
+    - target: {fileID: 1303261444432864223, guid: 10728c3a93003ce4c93534aded068f80,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2681826071897082552, guid: 10728c3a93003ce4c93534aded068f80,
         type: 3}
@@ -13518,10 +13608,25 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 828494172}
     m_Modifications:
+    - target: {fileID: 542712737636394654, guid: 10728c3a93003ce4c93534aded068f80,
+        type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 460
+      objectReference: {fileID: 0}
+    - target: {fileID: 542712737636394654, guid: 10728c3a93003ce4c93534aded068f80,
+        type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 648
+      objectReference: {fileID: 0}
     - target: {fileID: 1303261444432864223, guid: 10728c3a93003ce4c93534aded068f80,
         type: 3}
       propertyPath: m_Name
       value: Tag Canvas
+      objectReference: {fileID: 0}
+    - target: {fileID: 1303261444432864223, guid: 10728c3a93003ce4c93534aded068f80,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2681826071897082552, guid: 10728c3a93003ce4c93534aded068f80,
         type: 3}
@@ -13601,12 +13706,12 @@ PrefabInstance:
     - target: {fileID: 2681826071897082552, guid: 10728c3a93003ce4c93534aded068f80,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -0.00583
+      value: 0.0048
       objectReference: {fileID: 0}
     - target: {fileID: 2681826071897082552, guid: 10728c3a93003ce4c93534aded068f80,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 0.00554
+      value: 0.0055
       objectReference: {fileID: 0}
     - target: {fileID: 2681826071897082552, guid: 10728c3a93003ce4c93534aded068f80,
         type: 3}
@@ -13627,7 +13732,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: d7eff102dec947c4a8d68ab083a2f3ad,
+      objectReference: {fileID: 21300000, guid: d324c5ba706dd5c4b82e89860503e7d1,
         type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -15432,10 +15537,25 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1807010471}
     m_Modifications:
+    - target: {fileID: 542712737636394654, guid: 10728c3a93003ce4c93534aded068f80,
+        type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 460
+      objectReference: {fileID: 0}
+    - target: {fileID: 542712737636394654, guid: 10728c3a93003ce4c93534aded068f80,
+        type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 648
+      objectReference: {fileID: 0}
     - target: {fileID: 1303261444432864223, guid: 10728c3a93003ce4c93534aded068f80,
         type: 3}
       propertyPath: m_Name
       value: Tag Canvas
+      objectReference: {fileID: 0}
+    - target: {fileID: 1303261444432864223, guid: 10728c3a93003ce4c93534aded068f80,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2681826071897082552, guid: 10728c3a93003ce4c93534aded068f80,
         type: 3}
@@ -15541,7 +15661,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: d7eff102dec947c4a8d68ab083a2f3ad,
+      objectReference: {fileID: 21300000, guid: d324c5ba706dd5c4b82e89860503e7d1,
         type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -16528,10 +16648,25 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1807010469}
     m_Modifications:
+    - target: {fileID: 542712737636394654, guid: 10728c3a93003ce4c93534aded068f80,
+        type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 460
+      objectReference: {fileID: 0}
+    - target: {fileID: 542712737636394654, guid: 10728c3a93003ce4c93534aded068f80,
+        type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 648
+      objectReference: {fileID: 0}
     - target: {fileID: 1303261444432864223, guid: 10728c3a93003ce4c93534aded068f80,
         type: 3}
       propertyPath: m_Name
       value: Tag Canvas
+      objectReference: {fileID: 0}
+    - target: {fileID: 1303261444432864223, guid: 10728c3a93003ce4c93534aded068f80,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2681826071897082552, guid: 10728c3a93003ce4c93534aded068f80,
         type: 3}
@@ -16611,12 +16746,12 @@ PrefabInstance:
     - target: {fileID: 2681826071897082552, guid: 10728c3a93003ce4c93534aded068f80,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -0.00583
+      value: 0.0048
       objectReference: {fileID: 0}
     - target: {fileID: 2681826071897082552, guid: 10728c3a93003ce4c93534aded068f80,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 0.00554
+      value: 0.0055
       objectReference: {fileID: 0}
     - target: {fileID: 2681826071897082552, guid: 10728c3a93003ce4c93534aded068f80,
         type: 3}
@@ -16637,7 +16772,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: d7eff102dec947c4a8d68ab083a2f3ad,
+      objectReference: {fileID: 21300000, guid: d324c5ba706dd5c4b82e89860503e7d1,
         type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -17601,10 +17736,25 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1604861708}
     m_Modifications:
+    - target: {fileID: 542712737636394654, guid: 10728c3a93003ce4c93534aded068f80,
+        type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 460
+      objectReference: {fileID: 0}
+    - target: {fileID: 542712737636394654, guid: 10728c3a93003ce4c93534aded068f80,
+        type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 648
+      objectReference: {fileID: 0}
     - target: {fileID: 1303261444432864223, guid: 10728c3a93003ce4c93534aded068f80,
         type: 3}
       propertyPath: m_Name
       value: Tag Canvas
+      objectReference: {fileID: 0}
+    - target: {fileID: 1303261444432864223, guid: 10728c3a93003ce4c93534aded068f80,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2681826071897082552, guid: 10728c3a93003ce4c93534aded068f80,
         type: 3}
@@ -17684,12 +17834,12 @@ PrefabInstance:
     - target: {fileID: 2681826071897082552, guid: 10728c3a93003ce4c93534aded068f80,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -0.00583
+      value: 0.0048
       objectReference: {fileID: 0}
     - target: {fileID: 2681826071897082552, guid: 10728c3a93003ce4c93534aded068f80,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 0.00554
+      value: 0.0055
       objectReference: {fileID: 0}
     - target: {fileID: 2681826071897082552, guid: 10728c3a93003ce4c93534aded068f80,
         type: 3}
@@ -17710,7 +17860,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: d7eff102dec947c4a8d68ab083a2f3ad,
+      objectReference: {fileID: 21300000, guid: d324c5ba706dd5c4b82e89860503e7d1,
         type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -17768,10 +17918,25 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 2062869892}
     m_Modifications:
+    - target: {fileID: 542712737636394654, guid: 10728c3a93003ce4c93534aded068f80,
+        type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 460
+      objectReference: {fileID: 0}
+    - target: {fileID: 542712737636394654, guid: 10728c3a93003ce4c93534aded068f80,
+        type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 648
+      objectReference: {fileID: 0}
     - target: {fileID: 1303261444432864223, guid: 10728c3a93003ce4c93534aded068f80,
         type: 3}
       propertyPath: m_Name
       value: Tag Canvas
+      objectReference: {fileID: 0}
+    - target: {fileID: 1303261444432864223, guid: 10728c3a93003ce4c93534aded068f80,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2681826071897082552, guid: 10728c3a93003ce4c93534aded068f80,
         type: 3}
@@ -17851,12 +18016,12 @@ PrefabInstance:
     - target: {fileID: 2681826071897082552, guid: 10728c3a93003ce4c93534aded068f80,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -0.00583
+      value: 0.0048
       objectReference: {fileID: 0}
     - target: {fileID: 2681826071897082552, guid: 10728c3a93003ce4c93534aded068f80,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 0.00554
+      value: 0.0055
       objectReference: {fileID: 0}
     - target: {fileID: 2681826071897082552, guid: 10728c3a93003ce4c93534aded068f80,
         type: 3}
@@ -17877,7 +18042,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: d7eff102dec947c4a8d68ab083a2f3ad,
+      objectReference: {fileID: 21300000, guid: d324c5ba706dd5c4b82e89860503e7d1,
         type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -18751,10 +18916,25 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 637185902}
     m_Modifications:
+    - target: {fileID: 542712737636394654, guid: 10728c3a93003ce4c93534aded068f80,
+        type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 460
+      objectReference: {fileID: 0}
+    - target: {fileID: 542712737636394654, guid: 10728c3a93003ce4c93534aded068f80,
+        type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 648
+      objectReference: {fileID: 0}
     - target: {fileID: 1303261444432864223, guid: 10728c3a93003ce4c93534aded068f80,
         type: 3}
       propertyPath: m_Name
       value: Tag Canvas
+      objectReference: {fileID: 0}
+    - target: {fileID: 1303261444432864223, guid: 10728c3a93003ce4c93534aded068f80,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2681826071897082552, guid: 10728c3a93003ce4c93534aded068f80,
         type: 3}
@@ -18860,7 +19040,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: d7eff102dec947c4a8d68ab083a2f3ad,
+      objectReference: {fileID: 21300000, guid: d324c5ba706dd5c4b82e89860503e7d1,
         type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -21684,10 +21864,25 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 580978355}
     m_Modifications:
+    - target: {fileID: 542712737636394654, guid: 10728c3a93003ce4c93534aded068f80,
+        type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 460
+      objectReference: {fileID: 0}
+    - target: {fileID: 542712737636394654, guid: 10728c3a93003ce4c93534aded068f80,
+        type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 648
+      objectReference: {fileID: 0}
     - target: {fileID: 1303261444432864223, guid: 10728c3a93003ce4c93534aded068f80,
         type: 3}
       propertyPath: m_Name
       value: Tag Canvas
+      objectReference: {fileID: 0}
+    - target: {fileID: 1303261444432864223, guid: 10728c3a93003ce4c93534aded068f80,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2681826071897082552, guid: 10728c3a93003ce4c93534aded068f80,
         type: 3}
@@ -21767,12 +21962,12 @@ PrefabInstance:
     - target: {fileID: 2681826071897082552, guid: 10728c3a93003ce4c93534aded068f80,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -0.00583
+      value: 0.0048
       objectReference: {fileID: 0}
     - target: {fileID: 2681826071897082552, guid: 10728c3a93003ce4c93534aded068f80,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 0.00554
+      value: 0.0055
       objectReference: {fileID: 0}
     - target: {fileID: 2681826071897082552, guid: 10728c3a93003ce4c93534aded068f80,
         type: 3}
@@ -21793,7 +21988,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: d7eff102dec947c4a8d68ab083a2f3ad,
+      objectReference: {fileID: 21300000, guid: d324c5ba706dd5c4b82e89860503e7d1,
         type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -26845,10 +27040,25 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 359570009}
     m_Modifications:
+    - target: {fileID: 542712737636394654, guid: 10728c3a93003ce4c93534aded068f80,
+        type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 460
+      objectReference: {fileID: 0}
+    - target: {fileID: 542712737636394654, guid: 10728c3a93003ce4c93534aded068f80,
+        type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 648
+      objectReference: {fileID: 0}
     - target: {fileID: 1303261444432864223, guid: 10728c3a93003ce4c93534aded068f80,
         type: 3}
       propertyPath: m_Name
       value: Tag Canvas
+      objectReference: {fileID: 0}
+    - target: {fileID: 1303261444432864223, guid: 10728c3a93003ce4c93534aded068f80,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2681826071897082552, guid: 10728c3a93003ce4c93534aded068f80,
         type: 3}
@@ -26928,12 +27138,12 @@ PrefabInstance:
     - target: {fileID: 2681826071897082552, guid: 10728c3a93003ce4c93534aded068f80,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -0.00583
+      value: 0.0048
       objectReference: {fileID: 0}
     - target: {fileID: 2681826071897082552, guid: 10728c3a93003ce4c93534aded068f80,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 0.00554
+      value: 0.0055
       objectReference: {fileID: 0}
     - target: {fileID: 2681826071897082552, guid: 10728c3a93003ce4c93534aded068f80,
         type: 3}
@@ -26954,7 +27164,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: d7eff102dec947c4a8d68ab083a2f3ad,
+      objectReference: {fileID: 21300000, guid: d324c5ba706dd5c4b82e89860503e7d1,
         type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -27591,10 +27801,25 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1375544533}
     m_Modifications:
+    - target: {fileID: 542712737636394654, guid: 10728c3a93003ce4c93534aded068f80,
+        type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 460
+      objectReference: {fileID: 0}
+    - target: {fileID: 542712737636394654, guid: 10728c3a93003ce4c93534aded068f80,
+        type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 648
+      objectReference: {fileID: 0}
     - target: {fileID: 1303261444432864223, guid: 10728c3a93003ce4c93534aded068f80,
         type: 3}
       propertyPath: m_Name
       value: Tag Canvas
+      objectReference: {fileID: 0}
+    - target: {fileID: 1303261444432864223, guid: 10728c3a93003ce4c93534aded068f80,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2681826071897082552, guid: 10728c3a93003ce4c93534aded068f80,
         type: 3}
@@ -27674,12 +27899,12 @@ PrefabInstance:
     - target: {fileID: 2681826071897082552, guid: 10728c3a93003ce4c93534aded068f80,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -0.00583
+      value: 0.0048
       objectReference: {fileID: 0}
     - target: {fileID: 2681826071897082552, guid: 10728c3a93003ce4c93534aded068f80,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 0.00554
+      value: 0.0055
       objectReference: {fileID: 0}
     - target: {fileID: 2681826071897082552, guid: 10728c3a93003ce4c93534aded068f80,
         type: 3}
@@ -27700,7 +27925,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: d7eff102dec947c4a8d68ab083a2f3ad,
+      objectReference: {fileID: 21300000, guid: d324c5ba706dd5c4b82e89860503e7d1,
         type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -31159,10 +31384,25 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1780265099}
     m_Modifications:
+    - target: {fileID: 542712737636394654, guid: 10728c3a93003ce4c93534aded068f80,
+        type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 460
+      objectReference: {fileID: 0}
+    - target: {fileID: 542712737636394654, guid: 10728c3a93003ce4c93534aded068f80,
+        type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 648
+      objectReference: {fileID: 0}
     - target: {fileID: 1303261444432864223, guid: 10728c3a93003ce4c93534aded068f80,
         type: 3}
       propertyPath: m_Name
       value: Tag Canvas
+      objectReference: {fileID: 0}
+    - target: {fileID: 1303261444432864223, guid: 10728c3a93003ce4c93534aded068f80,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2681826071897082552, guid: 10728c3a93003ce4c93534aded068f80,
         type: 3}
@@ -31242,7 +31482,7 @@ PrefabInstance:
     - target: {fileID: 2681826071897082552, guid: 10728c3a93003ce4c93534aded068f80,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 0.0062
+      value: 0.0048
       objectReference: {fileID: 0}
     - target: {fileID: 2681826071897082552, guid: 10728c3a93003ce4c93534aded068f80,
         type: 3}
@@ -31268,7 +31508,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: d7eff102dec947c4a8d68ab083a2f3ad,
+      objectReference: {fileID: 21300000, guid: d324c5ba706dd5c4b82e89860503e7d1,
         type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -31328,10 +31568,25 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 828494174}
     m_Modifications:
+    - target: {fileID: 542712737636394654, guid: 10728c3a93003ce4c93534aded068f80,
+        type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 460
+      objectReference: {fileID: 0}
+    - target: {fileID: 542712737636394654, guid: 10728c3a93003ce4c93534aded068f80,
+        type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 648
+      objectReference: {fileID: 0}
     - target: {fileID: 1303261444432864223, guid: 10728c3a93003ce4c93534aded068f80,
         type: 3}
       propertyPath: m_Name
       value: Tag Canvas
+      objectReference: {fileID: 0}
+    - target: {fileID: 1303261444432864223, guid: 10728c3a93003ce4c93534aded068f80,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2681826071897082552, guid: 10728c3a93003ce4c93534aded068f80,
         type: 3}
@@ -31437,7 +31692,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: d7eff102dec947c4a8d68ab083a2f3ad,
+      objectReference: {fileID: 21300000, guid: d324c5ba706dd5c4b82e89860503e7d1,
         type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -40803,7 +41058,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!82 &1545578553
 AudioSource:
   m_ObjectHideFlags: 0
@@ -43002,10 +43257,25 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 396587124}
     m_Modifications:
+    - target: {fileID: 542712737636394654, guid: 10728c3a93003ce4c93534aded068f80,
+        type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 460
+      objectReference: {fileID: 0}
+    - target: {fileID: 542712737636394654, guid: 10728c3a93003ce4c93534aded068f80,
+        type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 648
+      objectReference: {fileID: 0}
     - target: {fileID: 1303261444432864223, guid: 10728c3a93003ce4c93534aded068f80,
         type: 3}
       propertyPath: m_Name
       value: Tag Canvas
+      objectReference: {fileID: 0}
+    - target: {fileID: 1303261444432864223, guid: 10728c3a93003ce4c93534aded068f80,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2681826071897082552, guid: 10728c3a93003ce4c93534aded068f80,
         type: 3}
@@ -43085,7 +43355,7 @@ PrefabInstance:
     - target: {fileID: 2681826071897082552, guid: 10728c3a93003ce4c93534aded068f80,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 0.0062
+      value: 0.0048
       objectReference: {fileID: 0}
     - target: {fileID: 2681826071897082552, guid: 10728c3a93003ce4c93534aded068f80,
         type: 3}
@@ -43111,7 +43381,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: d7eff102dec947c4a8d68ab083a2f3ad,
+      objectReference: {fileID: 21300000, guid: d324c5ba706dd5c4b82e89860503e7d1,
         type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -46979,10 +47249,25 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 396587126}
     m_Modifications:
+    - target: {fileID: 542712737636394654, guid: 10728c3a93003ce4c93534aded068f80,
+        type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 460
+      objectReference: {fileID: 0}
+    - target: {fileID: 542712737636394654, guid: 10728c3a93003ce4c93534aded068f80,
+        type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 648
+      objectReference: {fileID: 0}
     - target: {fileID: 1303261444432864223, guid: 10728c3a93003ce4c93534aded068f80,
         type: 3}
       propertyPath: m_Name
       value: Tag Canvas
+      objectReference: {fileID: 0}
+    - target: {fileID: 1303261444432864223, guid: 10728c3a93003ce4c93534aded068f80,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2681826071897082552, guid: 10728c3a93003ce4c93534aded068f80,
         type: 3}
@@ -47088,7 +47373,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: d7eff102dec947c4a8d68ab083a2f3ad,
+      objectReference: {fileID: 21300000, guid: d324c5ba706dd5c4b82e89860503e7d1,
         type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -49833,10 +50118,25 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 2041142394}
     m_Modifications:
+    - target: {fileID: 542712737636394654, guid: 10728c3a93003ce4c93534aded068f80,
+        type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 460
+      objectReference: {fileID: 0}
+    - target: {fileID: 542712737636394654, guid: 10728c3a93003ce4c93534aded068f80,
+        type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 648
+      objectReference: {fileID: 0}
     - target: {fileID: 1303261444432864223, guid: 10728c3a93003ce4c93534aded068f80,
         type: 3}
       propertyPath: m_Name
       value: Tag Canvas
+      objectReference: {fileID: 0}
+    - target: {fileID: 1303261444432864223, guid: 10728c3a93003ce4c93534aded068f80,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2681826071897082552, guid: 10728c3a93003ce4c93534aded068f80,
         type: 3}
@@ -49916,7 +50216,7 @@ PrefabInstance:
     - target: {fileID: 2681826071897082552, guid: 10728c3a93003ce4c93534aded068f80,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 0.0062
+      value: 0.0048
       objectReference: {fileID: 0}
     - target: {fileID: 2681826071897082552, guid: 10728c3a93003ce4c93534aded068f80,
         type: 3}
@@ -49942,7 +50242,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: d7eff102dec947c4a8d68ab083a2f3ad,
+      objectReference: {fileID: 21300000, guid: d324c5ba706dd5c4b82e89860503e7d1,
         type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -54730,10 +55030,25 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1519128077}
     m_Modifications:
+    - target: {fileID: 542712737636394654, guid: 10728c3a93003ce4c93534aded068f80,
+        type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 460
+      objectReference: {fileID: 0}
+    - target: {fileID: 542712737636394654, guid: 10728c3a93003ce4c93534aded068f80,
+        type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 648
+      objectReference: {fileID: 0}
     - target: {fileID: 1303261444432864223, guid: 10728c3a93003ce4c93534aded068f80,
         type: 3}
       propertyPath: m_Name
       value: Tag Canvas
+      objectReference: {fileID: 0}
+    - target: {fileID: 1303261444432864223, guid: 10728c3a93003ce4c93534aded068f80,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2681826071897082552, guid: 10728c3a93003ce4c93534aded068f80,
         type: 3}
@@ -54813,12 +55128,12 @@ PrefabInstance:
     - target: {fileID: 2681826071897082552, guid: 10728c3a93003ce4c93534aded068f80,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -0.00583
+      value: 0.0048
       objectReference: {fileID: 0}
     - target: {fileID: 2681826071897082552, guid: 10728c3a93003ce4c93534aded068f80,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 0.00554
+      value: 0.0055
       objectReference: {fileID: 0}
     - target: {fileID: 2681826071897082552, guid: 10728c3a93003ce4c93534aded068f80,
         type: 3}
@@ -54839,7 +55154,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: d7eff102dec947c4a8d68ab083a2f3ad,
+      objectReference: {fileID: 21300000, guid: d324c5ba706dd5c4b82e89860503e7d1,
         type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -56137,10 +56452,25 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 580978357}
     m_Modifications:
+    - target: {fileID: 542712737636394654, guid: 10728c3a93003ce4c93534aded068f80,
+        type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 460
+      objectReference: {fileID: 0}
+    - target: {fileID: 542712737636394654, guid: 10728c3a93003ce4c93534aded068f80,
+        type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 648
+      objectReference: {fileID: 0}
     - target: {fileID: 1303261444432864223, guid: 10728c3a93003ce4c93534aded068f80,
         type: 3}
       propertyPath: m_Name
       value: Tag Canvas
+      objectReference: {fileID: 0}
+    - target: {fileID: 1303261444432864223, guid: 10728c3a93003ce4c93534aded068f80,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2681826071897082552, guid: 10728c3a93003ce4c93534aded068f80,
         type: 3}
@@ -56246,7 +56576,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: d7eff102dec947c4a8d68ab083a2f3ad,
+      objectReference: {fileID: 21300000, guid: d324c5ba706dd5c4b82e89860503e7d1,
         type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
