@@ -56,8 +56,9 @@ namespace InstalasiIoT
             }
         }
 
-        public void OnCollisionEnter(Collision collision)
+       /* public void OnCollisionEnter(Collision collision)
         {
+                Debug.Log("Collision Enter with Pin Socket" + collision.gameObject.name);
             if (collision.gameObject.CompareTag("Pin Socket"))
             {
                 var cableValidator = collision.gameObject.GetComponent<CableValidator>();
@@ -78,6 +79,7 @@ namespace InstalasiIoT
         {
             if (collision.gameObject.CompareTag("Pin Socket"))
             {
+                Debug.Log("Collision Enter with Pin Socket");
                 var cableValidator = collision.gameObject.GetComponent<CableValidator>();
 
                 if (detectionCubes.Contains(cableValidator.detectionCube) && detectionCubes.Count > 1)
@@ -92,6 +94,6 @@ namespace InstalasiIoT
                     cableValidator.detectionCube.SetActive(false);
                 }
             }
-        }
+        }*/
     }
 }

@@ -3305,7 +3305,6 @@ MonoBehaviour:
   pinSocketType: 2
   socketScoreChecker:
   - {fileID: 1772576057}
-  detectionCube: {fileID: 0}
 --- !u!136 &156394830
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -3520,7 +3519,6 @@ MonoBehaviour:
   pinSocketType: 1
   socketScoreChecker:
   - {fileID: 172693089}
-  detectionCube: {fileID: 1555681469}
 --- !u!136 &161716096
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -4235,7 +4233,6 @@ MonoBehaviour:
   pinSocketType: 0
   socketScoreChecker:
   - {fileID: 1501937516}
-  detectionCube: {fileID: 119373750}
 --- !u!136 &171500249
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -7297,7 +7294,6 @@ MonoBehaviour:
   pinSocketType: 2
   socketScoreChecker:
   - {fileID: 511968053}
-  detectionCube: {fileID: 0}
 --- !u!1 &376282801
 GameObject:
   m_ObjectHideFlags: 0
@@ -9357,6 +9353,11 @@ PrefabInstance:
       propertyPath: m_Materials.Array.size
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4999745577988620892, guid: 7323f790a3f8a344cafb9a4f0e299797,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: b0cd2408ae5a62444aeac0dac8b3995c, type: 2}
     - target: {fileID: 5212901023958341418, guid: 7323f790a3f8a344cafb9a4f0e299797,
         type: 3}
       propertyPath: m_LocalScale.x
@@ -9635,7 +9636,6 @@ MonoBehaviour:
   pinSocketType: 2
   socketScoreChecker:
   - {fileID: 169746245}
-  detectionCube: {fileID: 226241101}
 --- !u!136 &502298853
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -13615,7 +13615,6 @@ MonoBehaviour:
   pinSocketType: 0
   socketScoreChecker:
   - {fileID: 509186691}
-  detectionCube: {fileID: 0}
 --- !u!136 &670961944
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -14343,7 +14342,6 @@ MonoBehaviour:
   pinSocketType: 0
   socketScoreChecker:
   - {fileID: 1501937516}
-  detectionCube: {fileID: 0}
 --- !u!136 &741022380
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -17400,7 +17398,6 @@ MonoBehaviour:
   pinSocketType: 0
   socketScoreChecker:
   - {fileID: 0}
-  detectionCube: {fileID: 0}
 --- !u!114 &818360903
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -19638,7 +19635,6 @@ MonoBehaviour:
   socketScoreChecker:
   - {fileID: 169746245}
   - {fileID: 1772576057}
-  detectionCube: {fileID: 0}
 --- !u!114 &883368560
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -27359,7 +27355,6 @@ MonoBehaviour:
   pinSocketType: 2
   socketScoreChecker:
   - {fileID: 511968053}
-  detectionCube: {fileID: 0}
 --- !u!1 &1254804272
 GameObject:
   m_ObjectHideFlags: 0
@@ -29566,7 +29561,6 @@ MonoBehaviour:
   pinSocketType: 0
   socketScoreChecker:
   - {fileID: 0}
-  detectionCube: {fileID: 0}
 --- !u!136 &1356116570
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -31392,7 +31386,6 @@ MonoBehaviour:
   pinSocketType: 0
   socketScoreChecker:
   - {fileID: 1782701553}
-  detectionCube: {fileID: 0}
 --- !u!136 &1430687721
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -37161,7 +37154,6 @@ MonoBehaviour:
   pinSocketType: 2
   socketScoreChecker:
   - {fileID: 511968053}
-  detectionCube: {fileID: 0}
 --- !u!1 &1716196445
 GameObject:
   m_ObjectHideFlags: 0
@@ -37978,7 +37970,6 @@ MonoBehaviour:
   pinSocketType: 0
   socketScoreChecker:
   - {fileID: 0}
-  detectionCube: {fileID: 0}
 --- !u!114 &1779378309
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -38666,7 +38657,6 @@ MonoBehaviour:
   pinSocketType: 2
   socketScoreChecker:
   - {fileID: 511968053}
-  detectionCube: {fileID: 0}
 --- !u!1 &1801848341
 GameObject:
   m_ObjectHideFlags: 0
@@ -39012,7 +39002,7 @@ GameObject:
   - component: {fileID: 1828715321}
   - component: {fileID: 1828715324}
   - component: {fileID: 1828715323}
-  - component: {fileID: 1828715322}
+  - component: {fileID: 1828715325}
   m_Layer: 0
   m_Name: atas (1)
   m_TagString: Untagged
@@ -39035,28 +39025,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 3032248881573874355}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!64 &1828715322
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1828715320}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 5
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: -48830487328701377, guid: 05eb60eb1a23e7c48914063879f123e2, type: 3}
 --- !u!23 &1828715323
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -39109,6 +39077,27 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1828715320}
   m_Mesh: {fileID: -48830487328701377, guid: 05eb60eb1a23e7c48914063879f123e2, type: 3}
+--- !u!65 &1828715325
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1828715320}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.020135863, y: 0.3068126, z: 0.009228307}
+  m_Center: {x: -0.0000000012001908, y: 0.16481543, z: 0.0046141534}
 --- !u!223 &1830087950 stripped
 Canvas:
   m_CorrespondingSourceObject: {fileID: 6778310363118586266, guid: 10728c3a93003ce4c93534aded068f80,
@@ -42761,7 +42750,6 @@ MonoBehaviour:
   pinSocketType: 1
   socketScoreChecker:
   - {fileID: 680043095}
-  detectionCube: {fileID: 0}
 --- !u!136 &2049493441
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -45780,7 +45768,6 @@ MonoBehaviour:
   pinSocketType: 0
   socketScoreChecker:
   - {fileID: 0}
-  detectionCube: {fileID: 0}
 --- !u!114 &689713472363651614
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -45797,7 +45784,6 @@ MonoBehaviour:
   pinSocketType: 0
   socketScoreChecker:
   - {fileID: 0}
-  detectionCube: {fileID: 0}
 --- !u!114 &689713472509901836
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -45814,7 +45800,6 @@ MonoBehaviour:
   pinSocketType: 0
   socketScoreChecker:
   - {fileID: 0}
-  detectionCube: {fileID: 0}
 --- !u!114 &689713473016787091
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -45831,7 +45816,6 @@ MonoBehaviour:
   pinSocketType: 0
   socketScoreChecker:
   - {fileID: 0}
-  detectionCube: {fileID: 0}
 --- !u!4 &744715880011040947
 Transform:
   m_ObjectHideFlags: 0

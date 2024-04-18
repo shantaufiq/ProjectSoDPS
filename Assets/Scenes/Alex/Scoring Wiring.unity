@@ -5804,7 +5804,6 @@ MonoBehaviour:
   pinSocketType: 0
   socketScoreChecker:
   - {fileID: 0}
-  detectionCube: {fileID: 0}
 --- !u!136 &194171961
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -8391,7 +8390,6 @@ MonoBehaviour:
   pinSocketType: 0
   socketScoreChecker:
   - {fileID: 0}
-  detectionCube: {fileID: 0}
 --- !u!136 &274973571
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -10395,7 +10393,6 @@ MonoBehaviour:
   pinSocketType: 0
   socketScoreChecker:
   - {fileID: 16094310}
-  detectionCube: {fileID: 0}
 --- !u!136 &370690023
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -13059,7 +13056,6 @@ MonoBehaviour:
   pinSocketType: 2
   socketScoreChecker:
   - {fileID: 1576059883}
-  detectionCube: {fileID: 0}
 --- !u!1001 &460356517
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -15581,7 +15577,6 @@ MonoBehaviour:
   socketScoreChecker:
   - {fileID: 1576059883}
   - {fileID: 976159212}
-  detectionCube: {fileID: 0}
 --- !u!1001 &558965798
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -17758,7 +17753,6 @@ MonoBehaviour:
   pinSocketType: 2
   socketScoreChecker:
   - {fileID: 1422943403}
-  detectionCube: {fileID: 0}
 --- !u!114 &609793156
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -20059,7 +20053,6 @@ MonoBehaviour:
   pinSocketType: 0
   socketScoreChecker:
   - {fileID: 12318882}
-  detectionCube: {fileID: 0}
 --- !u!136 &723799139
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -25731,7 +25724,6 @@ MonoBehaviour:
   pinSocketType: 2
   socketScoreChecker:
   - {fileID: 1422943403}
-  detectionCube: {fileID: 0}
 --- !u!65 &929370539
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -28699,7 +28691,6 @@ MonoBehaviour:
   pinSocketType: 0
   socketScoreChecker:
   - {fileID: 0}
-  detectionCube: {fileID: 0}
 --- !u!136 &1029038590
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -31551,7 +31542,6 @@ MonoBehaviour:
   pinSocketType: 0
   socketScoreChecker:
   - {fileID: 0}
-  detectionCube: {fileID: 0}
 --- !u!136 &1183039051
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -32349,7 +32339,6 @@ MonoBehaviour:
   pinSocketType: 0
   socketScoreChecker:
   - {fileID: 0}
-  detectionCube: {fileID: 0}
 --- !u!136 &1203198721
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -32726,7 +32715,6 @@ MonoBehaviour:
   pinSocketType: 0
   socketScoreChecker:
   - {fileID: 0}
-  detectionCube: {fileID: 0}
 --- !u!136 &1211389770
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -41099,7 +41087,6 @@ MonoBehaviour:
   pinSocketType: 2
   socketScoreChecker:
   - {fileID: 976159212}
-  detectionCube: {fileID: 0}
 --- !u!136 &1539437416
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -41312,7 +41299,6 @@ MonoBehaviour:
   pinSocketType: 2
   socketScoreChecker:
   - {fileID: 1422943403}
-  detectionCube: {fileID: 0}
 --- !u!65 &1544310341
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -41418,7 +41404,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!82 &1545578553
 AudioSource:
   m_ObjectHideFlags: 0
@@ -45071,7 +45057,6 @@ MonoBehaviour:
   pinSocketType: 1
   socketScoreChecker:
   - {fileID: 662881862}
-  detectionCube: {fileID: 0}
 --- !u!136 &1639322585
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -46857,7 +46842,7 @@ Transform:
   m_GameObject: {fileID: 1751174498}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: -1, z: 0, w: 0}
-  m_LocalPosition: {x: 8.043, y: 0.26, z: 0.539}
+  m_LocalPosition: {x: 8.228, y: 0.26, z: 0.539}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -47200,7 +47185,6 @@ MonoBehaviour:
   pinSocketType: 2
   socketScoreChecker:
   - {fileID: 1422943403}
-  detectionCube: {fileID: 0}
 --- !u!65 &1761668787
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -52709,7 +52693,6 @@ MonoBehaviour:
   pinSocketType: 0
   socketScoreChecker:
   - {fileID: 1616228750}
-  detectionCube: {fileID: 0}
 --- !u!1 &1921563625
 GameObject:
   m_ObjectHideFlags: 0
@@ -53232,7 +53215,6 @@ MonoBehaviour:
   pinSocketType: 0
   socketScoreChecker:
   - {fileID: 0}
-  detectionCube: {fileID: 0}
 --- !u!136 &1936996307
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -55507,7 +55489,6 @@ MonoBehaviour:
   pinSocketType: 1
   socketScoreChecker:
   - {fileID: 748941608}
-  detectionCube: {fileID: 0}
 --- !u!136 &2005469211
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -58889,7 +58870,6 @@ MonoBehaviour:
   pinSocketType: 0
   socketScoreChecker:
   - {fileID: 1616228750}
-  detectionCube: {fileID: 0}
 --- !u!1 &2091608890
 GameObject:
   m_ObjectHideFlags: 0

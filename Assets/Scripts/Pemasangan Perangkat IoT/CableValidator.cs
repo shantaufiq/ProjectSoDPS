@@ -13,7 +13,7 @@ namespace InstalasiIoT
         [SerializeField] private SocketScoreChecker[] socketScoreChecker;
         private BoneCableController boneCableController;
 
-        public GameObject detectionCube;
+        /*public GameObject detectionCube;*/
 
         private void Start()
         {
