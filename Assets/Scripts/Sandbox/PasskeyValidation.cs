@@ -15,7 +15,8 @@ public class PasskeyValidation : MonoBehaviour
 
     void Start()
     {
-        text_returnMessage.text = $" ";
+        if (text_returnMessage)
+            text_returnMessage.text = $" ";
     }
 
     public void ValidatingPassKey()
@@ -23,11 +24,13 @@ public class PasskeyValidation : MonoBehaviour
         if (!string.IsNullOrEmpty(inputField.text) && inputField.text == passkey)
         {
             OnPasskeyTrue.Invoke();
-            text_returnMessage.text = $"Correct passkey";
+            if (text_returnMessage)
+                text_returnMessage.text = $"Correct passkey";
         }
         else
         {
-            text_returnMessage.text = $"Incorrect passkey";
+            if (text_returnMessage)
+                text_returnMessage.text = $"Incorrect passkey";
         }
     }
 }
