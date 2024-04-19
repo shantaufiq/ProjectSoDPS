@@ -1,11 +1,8 @@
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
 using Seville;
 using TMPro;
-using UnityEditor;
-using UnityEngine.SceneManagement;
 using Tproject.AudioManager;
+using UnityEngine;
+using UnityEngine.SceneManagement;
 
 namespace InstalasiIoT
 {
@@ -15,7 +12,6 @@ namespace InstalasiIoT
         [SerializeField] private string headerText;
         [SerializeField] private SfxHandler sfxHandler;
         private bool showFirstTime = false;
-        private bool grabbedFirstTime = false;
 
         public void Enabled(bool value)
         {
@@ -24,13 +20,8 @@ namespace InstalasiIoT
 
         public void OpenPopup()
         {
-            if (!grabbedFirstTime)
-            {
-                sfxHandler.PlaySfxClip("Info Tugas");
-                grabbedFirstTime = true;
-            }
-
             if (showFirstTime) return;
+            sfxHandler.PlaySfxClip("Info Tugas");
             headerTMP.text = headerText;
             OnClickOpenPopup();
             showFirstTime = true;
