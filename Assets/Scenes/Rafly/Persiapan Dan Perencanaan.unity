@@ -42116,8 +42116,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1567087579}
-        m_TargetAssemblyTypeName: UnityEngine.MonoBehaviour, UnityEngine
-        m_MethodName: StopAllCoroutines
+        m_TargetAssemblyTypeName: InstalasiIoT.HighlightController, Assembly-CSharp
+        m_MethodName: StopHighlight
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
