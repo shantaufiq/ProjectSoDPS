@@ -18,8 +18,12 @@ namespace InstalasiIoT
         public bool isQuestFinish;
         private Status status;
 
+        private bool useConstraint = false;
+        public bool UseConstraint { get => useConstraint; set => useConstraint = value; }
+
         public void ValidateQuest()
         {
+            if (useConstraint) return;
             if (isQuestFinish)
             {
                 OnQuestFinish?.Invoke();
@@ -50,6 +54,7 @@ namespace InstalasiIoT
 
         public void SetStatus(Status statusValue)
         {
+            if (useConstraint) return;
             status = statusValue;
             ValidateConnection(status);
         }

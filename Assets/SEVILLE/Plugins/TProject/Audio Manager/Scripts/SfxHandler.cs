@@ -19,7 +19,7 @@ namespace Tproject.AudioManager
         void Start()
         {
             if (AudioManager.Instance != null) audioManager = AudioManager.Instance;
-            else Debug.LogWarning("please add Audio Manager for the audio video output");
+            else Debug.LogWarning("Please add AudioManager for the audio video output");
             if (isPlayOnStart) PlaySfxClip(firstClipName);
         }
 
@@ -32,6 +32,13 @@ namespace Tproject.AudioManager
                 return;
             }
 
+            // Cek apakah suara ada dalam daftar sfxClips
+            if (!IsSoundInList(clipName))
+            {
+                Debug.LogWarning("Sound " + clipName + " is not in the sfxClips list.");
+                return;
+            }
+
             Sound sound = audioManager.FindSound(clipName, sfxClips);
             if (sound != null)
             {
@@ -40,6 +47,18 @@ namespace Tproject.AudioManager
                 // Tandai suara sebagai sudah diputar
                 playedSounds[clipName] = true;
             }
+        }
+
+        private bool IsSoundInList(string clipName)
+        {
+            foreach (Sound sound in sfxClips)
+            {
+                if (sound.name == clipName)
+                {
+                    return true;
+                }
+            }
+            return false;
         }
 
         public void StopSfx()

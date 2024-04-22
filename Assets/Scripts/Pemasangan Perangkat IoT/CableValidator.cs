@@ -13,17 +13,27 @@ namespace InstalasiIoT
         [SerializeField] private SocketScoreChecker[] socketScoreChecker;
         private BoneCableController boneCableController;
 
+        /*public GameObject detectionCube;*/
+
         private void Start()
         {
             socketComponent = GetComponent<SocketInteractorTwoAttach>();
+            SocketQuestContainer.onConstraintDeactivate += CheckCable;
+        }
+
+        private void OnDestroy()
+        {
+            SocketQuestContainer.onConstraintDeactivate -= CheckCable;
         }
 
         public void CheckCable()
         {
             var obj = socketComponent.GetOldestInteractableSelected();
+            if (obj == null) return;
             if (obj.transform.gameObject.TryGetComponent<BoneCableController>(out var boneCable))
             {
                 boneCableController = boneCable;
+                if (boneCableController.CableController == null) return;
                 var cableController = boneCableController.CableController;
                 cableController.sockets.Add(socketComponent);
                 cableController.socketsType.Add(pinSocketType);
@@ -77,7 +87,7 @@ namespace InstalasiIoT
         /// <returns></returns>
         private bool TryGetScoreChecker(CableController cableController, out SocketScoreChecker scoreChecker)
         {
-            scoreChecker = new SocketScoreChecker();
+            scoreChecker = null;
             var valid = false;
             foreach (var socket in cableController.sockets)
             {
@@ -95,7 +105,7 @@ namespace InstalasiIoT
 
         public void Detach()
         {
-            if (boneCableController == null) return;
+            if (boneCableController == null || boneCableController.CableController == null) return;
             var cableController = boneCableController.CableController;
             if (cableController.sockets.Count > 0)
             {
