@@ -8,6 +8,8 @@ namespace InstalasiIoT
     public class ExamRecapInfo : ConnectionStatus
     {
         [SerializeField] private ExamScoreChecker examScoreChecker;
+        [HideInInspector]
+        public Status examInfoStatus;
 
         public override void SetStatus(Status status)
         {
@@ -24,6 +26,8 @@ namespace InstalasiIoT
                     PanelImage.sprite = WarningSprite;
                     break;
             }
+
+            examInfoStatus = status;
         }
     }
 }
