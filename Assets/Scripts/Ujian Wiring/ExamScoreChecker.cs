@@ -14,7 +14,8 @@ namespace InstalasiIoT
         [SerializeField] private Image fillSliderImage;
         [SerializeField] private TextMeshProUGUI scoreText;
         [SerializeField] private TextMeshProUGUI scoreInfo;
-        [SerializeField] private int totalQuest;
+        private int totalQuest;
+        [SerializeField] private ExamRecapInfo[] examRecapInfos;
 
         public int totalScore = 0;
 
@@ -51,9 +52,10 @@ namespace InstalasiIoT
         private void Start()
         {
             HideRecapInfo();
+            totalQuest = examRecapInfos.Length;
         }
 
-        public void AddScore()
+        /*public void AddScore()
         {
             if (examSubmitted) return;
             totalScore++;
@@ -67,6 +69,18 @@ namespace InstalasiIoT
             {
                 totalScore = 0;
             }
+        }*/
+
+        private void CheckScore()
+        {
+            if (examSubmitted) return;
+            foreach (var recapInfo in examRecapInfos)
+            {
+                if (recapInfo.examInfoStatus == Status.Connected)
+                {
+                    totalScore++;
+                }
+            }
         }
 
         
@@ -74,6 +88,7 @@ namespace InstalasiIoT
         {
             var totalStar = 0;
             scoreLayout.SetActive(true);
+            CheckScore();
             if (totalScore == scoreA)
             {
                 scoreText.text = "A";
