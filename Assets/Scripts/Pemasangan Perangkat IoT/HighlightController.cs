@@ -5,130 +5,99 @@ using UnityEngine;
 namespace InstalasiIoT {
     public class HighlightController : MonoBehaviour
     {
-        [SerializeField] private float transitionDuration = 1.0f; // Duration of the transition
-        [SerializeField] private Material[] highlightMaterials; // The materials to highlight the object
-        private Material[] originalMaterials; // The original materials of the object
-        private Renderer objectRenderer; // The renderer of the object
-        private bool isHighlighted = false; // Flag to track if the object is currently highlighted
-        [SerializeField] private bool highlightOnStart = false; // Flag to track if the object should be highlighted on start
-        private bool showNotif;
-        private bool isHovering;
+        public Color targetColor = Color.yellow;
+        public float transitionDuration = 1f;
 
-        private void Start()
+        private Material[] originalMaterials;
+        private bool isHighlighting = false;
+        private Renderer objectRenderer;
+        [SerializeField] private bool highlightOnStart;
+
+        void Start()
         {
+            // Store the original materials of the object
+            objectRenderer = GetComponent<Renderer>();
+            originalMaterials = objectRenderer.materials;
             if (highlightOnStart)
             {
-                showNotif = true;
+                StartHighlight();
             }
-
-            // Get the renderer component of the object
-            objectRenderer = GetComponent<Renderer>();
-
-            // Store the original materials
-            originalMaterials = objectRenderer.materials;
         }
 
-        private void Update()
+        public void StartHighlight()
         {
-            if (showNotif) AutoHighlightAndUnhighlight();
+            if (!isHighlighting)
+            {
+                // Start highlighting coroutine
+                isHighlighting = true;
+                StartCoroutine(HighlightCoroutine());
+            }
         }
 
-        public void StartAutoHighlight()
+        public void StopHighlight()
         {
-            showNotif = true;
+            if (isHighlighting)
+            {
+                // Stop highlighting
+                isHighlighting = false;
+                StopAllCoroutines();
+
+                // Revert materials to original colors immediately
+                objectRenderer.materials = originalMaterials;
+            }
         }
-         
-        public void StopAutoHighlight()
+
+        IEnumerator HighlightCoroutine()
         {
-            showNotif = false;
+            while (true)
+            {
+                // Highlight the object
+                float t = 0f;
+                while (t < 1f)
+                {
+                    t += Time.deltaTime / transitionDuration;
+                    Color[] lerpedColors = new Color[originalMaterials.Length];
+                    for (int i = 0; i < originalMaterials.Length; i++)
+                    {
+                        lerpedColors[i] = Color.Lerp(originalMaterials[i].color, targetColor, t);
+                    }
+                    objectRenderer.materials = GetMaterialsCopy(lerpedColors);
+                    yield return null;
+                }
+
+                // Wait for a short duration
+                yield return new WaitForSeconds(0.5f);
+
+                // Revert to original materials
+                t = 0f;
+                while (t < 1f)
+                {
+                    t += Time.deltaTime / transitionDuration;
+                    Color[] lerpedColors = new Color[originalMaterials.Length];
+                    for (int i = 0; i < originalMaterials.Length; i++)
+                    {
+                        lerpedColors[i] = Color.Lerp(targetColor, originalMaterials[i].color, t);
+                    }
+                    objectRenderer.materials = GetMaterialsCopy(lerpedColors);
+                    yield return null;
+                }
+
+                // Check if highlighting should continue
+                if (!isHighlighting)
+                    break;
+            }
+        }
+
+        // Utility method to copy the materials array
+        private Material[] GetMaterialsCopy(Color[] colors)
+        {
+            Material[] materialsCopy = new Material[originalMaterials.Length];
             for (int i = 0; i < originalMaterials.Length; i++)
             {
-                objectRenderer.materials[i] = new Material(originalMaterials[i]);
+                materialsCopy[i] = new Material(originalMaterials[i]);
+                materialsCopy[i].color = colors[i];
             }
-        }
-
-        private void AutoHighlightAndUnhighlight()
-        {
-            if (isHovering) return;
-
-            // Calculate the duration for each state
-            float totalDuration = transitionDuration * 2f;
-
-            // Calculate the time since the script started
-            float timeSinceStart = Time.time;
-
-            // Calculate the remainder of division by the total duration
-            float remainder = timeSinceStart % totalDuration;
-
-            // If the remainder is less than the transition duration, highlight the object
-            if (remainder < transitionDuration)
-            {
-                if (!isHighlighted)
-                {
-                    Highlight();
-                }
-            }
-            else // If the remainder is greater than or equal to the transition duration, unhighlight the object
-            {
-                if (isHighlighted)
-                {
-                    Unhighlight();
-                }
-            }
-        }
-
-        public void HighlightInstant()
-        {
-            isHovering = true;
-            objectRenderer.materials = highlightMaterials;
-            StopAllCoroutines();
-        }
-
-        private void Highlight()
-        {
-            // Start the highlighting coroutine
-            StartCoroutine(TransitionMaterials(highlightMaterials, originalMaterials));
-            isHighlighted = true;
-        }
-
-        public void UnhighlightInstant()
-        {
-            isHovering = false;
-            objectRenderer.materials = originalMaterials;
-        }
-
-        private void Unhighlight()
-        {
-            // Start the unhighlighting coroutine
-            StartCoroutine(TransitionMaterials(originalMaterials, highlightMaterials));
-            isHighlighted = false;
-        }
-
-        private IEnumerator TransitionMaterials(Material[] startMaterials, Material[] targetMaterials)
-        {
-            float elapsedTime = 0f;
-
-            // Transition between materials
-            while (elapsedTime < transitionDuration)
-            {
-                // Calculate the interpolation factor
-                float t = elapsedTime / transitionDuration;
-
-                // Interpolate between the start materials and the target materials
-                Material[] lerpedMaterials = new Material[startMaterials.Length];
-                for (int i = 0; i < startMaterials.Length; i++)
-                {
-                    lerpedMaterials[i] = new Material(startMaterials[i]);
-                    lerpedMaterials[i].CopyPropertiesFromMaterial(targetMaterials[i]);
-                    lerpedMaterials[i].Lerp(startMaterials[i], targetMaterials[i], t);
-                }
-
-                objectRenderer.materials = lerpedMaterials;
-
-                // Increment the elapsed time
-                elapsedTime += Time.deltaTime;
-                yield return null; // Wait for the next frame
-            }
+            return materialsCopy;
         }
     }
 }

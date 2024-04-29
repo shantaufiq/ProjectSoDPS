@@ -12,6 +12,8 @@ namespace Tproject.AudioManager
 
         private Coroutine fadeCoroutine;
 
+        private float M_LastMusicVolume;
+
         private void Awake()
         {
             if (Instance != null && Instance != this)
@@ -65,10 +67,19 @@ namespace Tproject.AudioManager
             }
         }
 
+        public void PlayMandatorySFX(AudioClip clip)
+        {
+            if (clip != null && !sfxSource.mute)
+            {
+                M_LastMusicVolume = musicSource.volume;
+                StartCoroutine(TransitionMandatorySfx(clip, .6f));
+            }
+        }
+
         public void SetSfxVolume(float volume) =>
             sfxSource.volume = volume;
 
-        private Sound FindSound(string name, Sound[] sounds)
+        public Sound FindSound(string name, Sound[] sounds)
         {
             foreach (var sound in sounds)
             {
@@ -81,6 +92,7 @@ namespace Tproject.AudioManager
             Debug.LogWarning($"{name} isn't available");
             return null;
         }
+
 
         public void MuteMusic()
         {
@@ -146,6 +158,47 @@ namespace Tproject.AudioManager
             while (musicSource.volume < targetVolume)
             {
                 musicSource.volume += targetVolume * Time.deltaTime / time;
+                yield return null;
+            }
+        }
+
+        private IEnumerator TransitionMandatorySfx(AudioClip newClip, float transitionTime)
+        {
+            float _time = transitionTime / 2;
+
+            musicSource.volume -= .4f;
+            yield return StartCoroutine(FadeOutSourceVolume(sfxSource, _time));
+            sfxSource.PlayOneShot(newClip);
+            yield return new WaitForSeconds(newClip.length);
+            musicSource.volume = M_LastMusicVolume;
+        }
+
+        private IEnumerator FadeOutSourceVolume(AudioSource _source, float time)
+        {
+            float startVolume = _source.volume;
+
+            while (_source.volume > 0)
+            {
+                _source.volume -= startVolume * Time.deltaTime / time;
+                yield return null;
+            }
+
+            _source.Stop();
+
+            _source.volume = startVolume;
+        }
+
+        private IEnumerator FadeInSourceVolume(AudioSource _source, float time)
+        {
+            float targetVolume = _source.volume;
+            _source.volume = 0;
+            _source.mute = false;
+            if (!_source.isPlaying)
+                _source.Play();
+
+            while (_source.volume < targetVolume)
+            {
+                _source.volume += targetVolume * Time.deltaTime / time;
                 yield return null;
             }
         }

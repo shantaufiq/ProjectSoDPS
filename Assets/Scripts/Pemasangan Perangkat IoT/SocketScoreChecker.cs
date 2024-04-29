@@ -1,54 +1,62 @@
+using Sandbox;
 using Seville;
+using System;
 using System.Collections;
 using Tproject.Quest;
 using UnityEngine;
+using UnityEngine.Events;
+using UnityEngine.XR.Interaction.Toolkit;
 
 namespace InstalasiIoT
 {
     public class SocketScoreChecker : MonoBehaviour
     {
-        public int targetScore;
-        [SerializeField] private int questIndex;
-        [SerializeField] private PartialQuestController _partialQuestController;
-        [SerializeField] private XRGrabInteractableTwoAttach[] objectInteractables;
-        private int _currentScore;
-        private bool _isQuestFinished;
+        [SerializeField] private UnityEvent OnQuestFinish;
+        [SerializeField] private UnityEvent OnQuestFail;
+        [SerializeField] private ConnectionStatus connectionStatus;
+        public SocketInteractorTwoAttach identitySocket; // The socket that will be the difiner for this quest
+        public bool isQuestFinish;
+        private Status status;
 
-        public bool Success()
+        private bool useConstraint = false;
+        public bool UseConstraint { get => useConstraint; set => useConstraint = value; }
+
+        public void ValidateQuest()
         {
-            if (_isQuestFinished)
+            if (useConstraint) return;
+            if (isQuestFinish)
             {
-                return true;
+                OnQuestFinish?.Invoke();
             }
             else
             {
-                return false;
+                OnQuestFail?.Invoke();
             }
+            
         }
 
-        public void AddScore()
+        private void ValidateConnection(Status statusValue)
         {
-            _currentScore++;
-            StartCoroutine(ValidateQuest());
-        }
-
-        public void RemoveScore()
-        {
-            _currentScore--;
-        }
-
-        private IEnumerator ValidateQuest()
-        {
-            if (_currentScore >= targetScore)
+            if (connectionStatus == null) return;
+            switch (statusValue)
             {
-                _partialQuestController.FinishItem(questIndex);
-                yield return new WaitForSeconds(0.5f);
-                foreach (var obj in objectInteractables)
-                {
-                    obj.enabled = false;
-                }
+                case Status.Connected:
+                    connectionStatus.SetStatus(Status.Connected);
+                    break;
+                case Status.Error:
+                    connectionStatus.SetStatus(Status.Error);
+                    break;
+                case Status.Warning:
+                    connectionStatus.SetStatus(Status.Warning);
+                    break;
             }
         }
 
+        public void SetStatus(Status statusValue)
+        {
+            if (useConstraint) return;
+            status = statusValue;
+            ValidateConnection(status);
+        }
     }
 }
